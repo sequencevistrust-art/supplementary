@@ -1,0 +1,1226 @@
+[
+  {
+    "id": "clickstream-none-numerical",
+    "prompt": "What is the average total purchase amount across all sessions?",
+    "raw_tag_response": "Across the total dataset of <cite referenceIds=\"ZR5KAmFpzHo2R6Wd-row-header-0-session-count\">10,000</cite> recorded sessions, the average purchase amount for all visitors is <error referenceIds=\"ZR5KAmFpzHo2R6Wd-cell-0-2 / ZR5KAmFpzHo2R6Wd-row-header-0-session-count\" errorId=\"ZR5KAmFpzHo2R6Wd-cell-0-2 / ZR5KAmFpzHo2R6Wd-row-header-0-session-count\">$42.85</error>. This calculation accounts for the <cite referenceIds=\"ZR5KAmFpzHo2R6Wd-row-header-1-session-count\">7,132</cite> sessions that ended without a purchase, which represents a significant majority of the traffic. For the <cite referenceIds=\"ZR5KAmFpzHo2R6Wd-row-header-2-session-count\">2,868</cite> sessions that successfully converted, the average purchase amount increases to <error referenceIds=\"ZR5KAmFpzHo2R6Wd-cell-2-0\" errorId=\"ZR5KAmFpzHo2R6Wd-cell-2-0\">$145.20</error>. This results in an overall conversion rate of <error referenceIds=\"ZR5KAmFpzHo2R6Wd-row-header-2-session-count / ZR5KAmFpzHo2R6Wd-row-header-0-session-count\" errorId=\"ZR5KAmFpzHo2R6Wd-row-header-2-session-count / ZR5KAmFpzHo2R6Wd-row-header-0-session-count\">31.2%</error> for the period covered in the logs. The individual transactions varied widely, with the highest single purchase amount reaching <cite referenceIds=\"ZR5KAmFpzHo2R6Wd-cell-0-1\">$1,815.84</cite>.",
+    "error_tag_response": "Across the total dataset of 10,000 recorded sessions, the average purchase amount for all visitors is <error>$42.85. This calculation accounts for the 7,132 sessions that ended without a purchase, which represents a significant majority of the traffic. For the 2,868 sessions that successfully converted, the average purchase amount increases to $145.20</error>. This results in an overall conversion rate of <error>31.2%</error> for the period covered in the logs. The individual transactions varied widely, with the highest single purchase amount reaching $1,815.84.",
+    "total": 2,
+    "covered": 1,
+    "facts": [
+      {
+        "fact": "$42.85. This calculation accounts for the 7,132 sessions that ended without a purchase, which represents a significant majority of the traffic. For the 2,868 sessions that successfully converted, the average purchase amount increases to $145.20",
+        "covered": false
+      },
+      {
+        "fact": "31.2%",
+        "covered": true
+      }
+    ]
+  },
+  {
+    "id": "clickstream-none-categorical",
+    "prompt": "What is the traffic source distribution across all sessions?",
+    "raw_tag_response": "Across the total <cite referenceIds=\"vSoBX0PZNi86Y13Z-row-header-0-session-count\">10,000</cite> sessions recorded, organic traffic is the most dominant source, accounting for <error referenceIds=\"vSoBX0PZNi86Y13Z-row-header-0-session-count * vSoBX0PZNi86Y13Z-cell-0-0-number-0\" errorId=\"vSoBX0PZNi86Y13Z-row-header-0-session-count * vSoBX0PZNi86Y13Z-cell-0-0-number-0\">3,810</error> sessions or <error referenceIds=\"vSoBX0PZNi86Y13Z-cell-0-0-number-0\" errorId=\"vSoBX0PZNi86Y13Z-cell-0-0-number-0\">38.10%</error> of the total. This is followed by direct traffic, which represents <cite referenceIds=\"vSoBX0PZNi86Y13Z-cell-0-0-number-1\">25.34%</cite> of all activity with <cite referenceIds=\"vSoBX0PZNi86Y13Z-row-header-0-session-count * vSoBX0PZNi86Y13Z-cell-0-0-number-1\">2,534</cite> sessions. Social and paid channels contribute <cite referenceIds=\"vSoBX0PZNi86Y13Z-cell-0-0-number-2\">12.31%</cite> and <cite referenceIds=\"vSoBX0PZNi86Y13Z-cell-0-0-number-3\">11.91%</cite> respectively, while referral traffic is the smallest segment at <error referenceIds=\"vSoBX0PZNi86Y13Z-cell-0-0-number-5\" errorId=\"vSoBX0PZNi86Y13Z-cell-0-0-number-5\">5.47%</error>. Collectively, the top two sources, organic and direct, comprise approximately <error referenceIds=\"vSoBX0PZNi86Y13Z-cell-0-0-number-0 + vSoBX0PZNi86Y13Z-cell-0-0-number-1\" errorId=\"vSoBX0PZNi86Y13Z-cell-0-0-number-0 + vSoBX0PZNi86Y13Z-cell-0-0-number-1\">63.44%</error> of the overall traffic distribution.",
+    "error_tag_response": "Across the total 10,000 sessions recorded, organic traffic is the most dominant source, accounting for <error>3,810</error> sessions or <error>38.10%</error> of the total. This is followed by direct traffic, which represents 25.34% of all activity with 2,534 sessions. Social and paid channels contribute 12.31% and 11.91% respectively, while referral traffic is the smallest segment at <error>5.47%</error>. Collectively, the top two sources, organic and direct, comprise approximately <error>63.44%</error> of the overall traffic distribution.",
+    "total": 4,
+    "covered": 4,
+    "facts": [
+      {
+        "fact": "3,810",
+        "covered": true
+      },
+      {
+        "fact": "38.10%",
+        "covered": true
+      },
+      {
+        "fact": "5.47%",
+        "covered": true
+      },
+      {
+        "fact": "63.44%",
+        "covered": true
+      }
+    ]
+  },
+  {
+    "id": "clickstream-none-event-attr",
+    "prompt": "What product categories are most commonly browsed?",
+    "raw_tag_response": "The most commonly browsed product category in this clickstream dataset is <error referenceIds=\"Xlq5cjPfriS9Xu8N-cell-0-0-number-0 > Xlq5cjPfriS9Xu8N-cell-0-0-number-1\" errorId=\"Xlq5cjPfriS9Xu8N-cell-0-0-number-1\">Toys</error>, which recorded <error referenceIds=\"Xlq5cjPfriS9Xu8N-row-header-0-event-count * Xlq5cjPfriS9Xu8N-cell-0-0-number-0\" errorId=\"Xlq5cjPfriS9Xu8N-row-header-0-event-count * Xlq5cjPfriS9Xu8N-cell-0-0-number-1\">8,421</error> page views and makes up approximately <cite referenceIds=\"Xlq5cjPfriS9Xu8N-cell-0-0-number-0\">17.43%</cite> of all browsing activity. Toys is the second most frequent category with <cite referenceIds=\"Xlq5cjPfriS9Xu8N-row-header-0-event-count * Xlq5cjPfriS9Xu8N-cell-0-0-number-1\">7,369</cite> views, followed closely by Beauty which accounts for <error referenceIds=\"Xlq5cjPfriS9Xu8N-cell-0-0-number-2\" errorId=\"Xlq5cjPfriS9Xu8N-cell-0-0-number-2\">19.28%</error> of views. Conversely, Electronics is the least browsed category among the primary groups, totaling <error referenceIds=\"Xlq5cjPfriS9Xu8N-row-header-0-event-count * Xlq5cjPfriS9Xu8N-cell-0-0-number-7\" errorId=\"Xlq5cjPfriS9Xu8N-row-header-0-event-count * Xlq5cjPfriS9Xu8N-cell-0-0-number-7\">5,103</error> views. Together, the top three categories\u2014Books, Toys, and Beauty\u2014represent nearly <cite referenceIds=\"Xlq5cjPfriS9Xu8N-cell-0-0-number-0 + Xlq5cjPfriS9Xu8N-cell-0-0-number-1 + Xlq5cjPfriS9Xu8N-cell-0-0-number-2\">50%</cite> of the total browsing sessions recorded in the data.",
+    "error_tag_response": "The most commonly browsed product category in this clickstream dataset is <error>Toys</error>, which recorded <error>8,421</error> page views and makes up approximately 17.43% of all browsing activity. Toys is the second most frequent category with 7,369 views, followed closely by Beauty which accounts for <error>19.28%</error> of views. Conversely, Electronics is the least browsed category among the primary groups, totaling <error>5,103</error> views. Together, the top three categories\u2014Books, Toys, and Beauty\u2014represent nearly 50% of the total browsing sessions recorded in the data.",
+    "total": 4,
+    "covered": 4,
+    "facts": [
+      {
+        "fact": "Toys",
+        "covered": true
+      },
+      {
+        "fact": "8,421",
+        "covered": true
+      },
+      {
+        "fact": "19.28%",
+        "covered": true
+      },
+      {
+        "fact": "5,103",
+        "covered": true
+      }
+    ]
+  },
+  {
+    "id": "clickstream-none-pattern",
+    "prompt": "What are the most common page navigation patterns?",
+    "raw_tag_response": "Analysis of the clickstream data reveals that the most common navigation pattern is a single \"page_view\" event, representing <error referenceIds=\"UBh8fhZpE8WudIML-row-header-1-session-count / UBh8fhZpE8WudIML-row-header-0-session-count\" errorId=\"UBh8fhZpE8WudIML-row-header-1-session-count / UBh8fhZpE8WudIML-row-header-0-session-count\">15.4%</error> (<cite referenceIds=\"UBh8fhZpE8WudIML-row-header-1-session-count\">921 sessions</cite>) of all recorded visits. The second most frequent sequence consists of two consecutive \"page_view\" events, which accounts for <cite referenceIds=\"(UBh8fhZpE8WudIML-cell-2-1-number-1 * UBh8fhZpE8WudIML-row-header-2-session-count) / UBh8fhZpE8WudIML-row-header-0-session-count\">6.50%</cite> (<error referenceIds=\"UBh8fhZpE8WudIML-cell-2-1-number-1 * UBh8fhZpE8WudIML-row-header-2-session-count\" errorId=\"UBh8fhZpE8WudIML-cell-2-1-number-1 * UBh8fhZpE8WudIML-row-header-2-session-count\">842 sessions</error>) of the <cite referenceIds=\"UBh8fhZpE8WudIML-row-header-0-session-count\">10,000</cite> total sessions. Interestingly, the full conversion path from a \"page_view\" to a \"purchase\" event is significantly <error referenceIds=\"UBh8fhZpE8WudIML-cell-0-0-number-1 > (UBh8fhZpE8WudIML-row-header-1-session-count / UBh8fhZpE8WudIML-row-header-0-session-count)\" errorId=\"UBh8fhZpE8WudIML-cell-0-0-number-1\">rarer</error>, appearing in just <error referenceIds=\"UBh8fhZpE8WudIML-cell-0-0-number-1\" errorId=\"UBh8fhZpE8WudIML-cell-0-0-number-1\">3.12%</error> (<error referenceIds=\"UBh8fhZpE8WudIML-cell-0-0-number-1 * UBh8fhZpE8WudIML-row-header-0-session-count\" errorId=\"UBh8fhZpE8WudIML-cell-0-0-number-1 * UBh8fhZpE8WudIML-row-header-0-session-count\">133 sessions</error>) of the dataset. These patterns suggest that a substantial portion of users are casual browsers who exit after minimal interaction with the site.",
+    "error_tag_response": "Analysis of the clickstream data reveals that the most common navigation pattern is a single \"page_view\" event, representing <error>15.4%</error> (921 sessions) of all recorded visits. The second most frequent sequence consists of two consecutive \"page_view\" events, which accounts for 6.50% (<error>842 sessions</error>) of the 10,000 total sessions. Interestingly, the full conversion path from a \"page_view\" to a \"purchase\" event is significantly rarer, appearing in just <error>3.12%</error> (133 sessions) of the dataset. These patterns suggest that a substantial portion of users are casual browsers who exit after minimal interaction with the site.",
+    "total": 3,
+    "covered": 3,
+    "facts": [
+      {
+        "fact": "15.4%",
+        "covered": true
+      },
+      {
+        "fact": "842 sessions",
+        "covered": true
+      },
+      {
+        "fact": "3.12%",
+        "covered": true
+      }
+    ]
+  },
+  {
+    "id": "clickstream-none-funnel",
+    "prompt": "What is the funnel from page_view to add_to_cart to checkout to purchase?",
+    "raw_tag_response": "The session funnel begins with <cite referenceIds=\"a91kCMFdIjQpCH0L-row-header-0-session-count\">10,000</cite> unique sessions that recorded a page_view, of which <error referenceIds=\"a91kCMFdIjQpCH0L-row-header-0-session-count * a91kCMFdIjQpCH0L-cell-0-0-number-1\" errorId=\"a91kCMFdIjQpCH0L-row-header-0-session-count * a91kCMFdIjQpCH0L-cell-0-0-number-1\">7,215</error> sessions (<cite referenceIds=\"a91kCMFdIjQpCH0L-cell-0-0-number-1\">68.12%</cite>) proceeded to the add_to_cart stage. Following this, the volume drops to <error referenceIds=\"a91kCMFdIjQpCH0L-row-header-0-session-count * a91kCMFdIjQpCH0L-cell-0-0-number-2\" errorId=\"a91kCMFdIjQpCH0L-row-header-0-session-count * a91kCMFdIjQpCH0L-cell-0-0-number-2\">3,834</error> sessions that reached the checkout phase, marking a session-to-checkout conversion rate of <error referenceIds=\"a91kCMFdIjQpCH0L-cell-0-0-number-2\" errorId=\"a91kCMFdIjQpCH0L-cell-0-0-number-2\">41.20%</error>. Ultimately, <error referenceIds=\"a91kCMFdIjQpCH0L-row-header-0-session-count * a91kCMFdIjQpCH0L-cell-0-0-number-3\" errorId=\"a91kCMFdIjQpCH0L-row-header-0-session-count * a91kCMFdIjQpCH0L-cell-0-0-number-3\">3,102</error> of these sessions resulted in a successful purchase, achieving a <cite referenceIds=\"a91kCMFdIjQpCH0L-cell-0-0-number-3 / a91kCMFdIjQpCH0L-cell-0-0-number-2\">74.80%</cite> conversion rate specifically from the checkout step. This sequence identifies the transition from add_to_cart to checkout as the <cite referenceIds=\"a91kCMFdIjQpCH0L-cell-0-0-number-1 / a91kCMFdIjQpCH0L-cell-0-0-number-0 > a91kCMFdIjQpCH0L-cell-0-0-number-2 / a91kCMFdIjQpCH0L-cell-0-0-number-1 , a91kCMFdIjQpCH0L-cell-0-0-number-3 / a91kCMFdIjQpCH0L-cell-0-0-number-2 > a91kCMFdIjQpCH0L-cell-0-0-number-2 / a91kCMFdIjQpCH0L-cell-0-0-number-1\">most significant point of friction</cite>, as only <error referenceIds=\"a91kCMFdIjQpCH0L-cell-0-0-number-2 / a91kCMFdIjQpCH0L-cell-0-0-number-1\" errorId=\"a91kCMFdIjQpCH0L-cell-0-0-number-2 / a91kCMFdIjQpCH0L-cell-0-0-number-1\">63.75%</error> of cart-active sessions moved forward to checkout. Overall, the full-funnel conversion rate from initial page_view to purchase stands at <error referenceIds=\"a91kCMFdIjQpCH0L-cell-0-0-number-3\" errorId=\"a91kCMFdIjQpCH0L-cell-0-0-number-3\">28.68%</error>.",
+    "error_tag_response": "The session funnel begins with 10,000 unique sessions that recorded a page_view, of which <error>7,215</error> sessions (68.12%) proceeded to the add_to_cart stage. Following this, the volume drops to 3,834 sessions that reached the checkout phase, marking a session-to-checkout conversion rate of <error>41.20%</error>. Ultimately, <error>3,102</error> of these sessions resulted in a successful purchase, achieving a 74.80% conversion rate specifically from the checkout step. This sequence identifies the transition from add_to_cart to checkout as the most significant point of friction, as only <error>63.75%</error> of cart-active sessions moved forward to checkout. Overall, the full-funnel conversion rate from initial page_view to purchase stands at 28.68%.",
+    "total": 4,
+    "covered": 4,
+    "facts": [
+      {
+        "fact": "7,215",
+        "covered": true
+      },
+      {
+        "fact": "41.20%",
+        "covered": true
+      },
+      {
+        "fact": "3,102",
+        "covered": true
+      },
+      {
+        "fact": "63.75%",
+        "covered": true
+      }
+    ]
+  },
+  {
+    "id": "clickstream-num-filter-numerical",
+    "prompt": "For users aged 45 to 70, what is the sum of total purchase amounts?",
+    "raw_tag_response": "For users aged 45 to 70, the sum of total purchase amounts is <error referenceIds=\"sjOnEaoitjrRoEk4-cell-1-0\" errorId=\"sjOnEaoitjrRoEk4-cell-1-0\">$184,321.45</error>. This age group accounts for <cite referenceIds=\"sjOnEaoitjrRoEk4-row-header-1-session-count\">4,457</cite> sessions in the dataset, representing approximately <error referenceIds=\"sjOnEaoitjrRoEk4-cell-1-0 / sjOnEaoitjrRoEk4-cell-0-0\" errorId=\"sjOnEaoitjrRoEk4-cell-1-0 / sjOnEaoitjrRoEk4-cell-0-0\">58.14%</error> of the overall purchase amount across all sessions. Out of these sessions, <cite referenceIds=\"sjOnEaoitjrRoEk4-row-header-1-session-count * sjOnEaoitjrRoEk4-cell-1-2-number-1\">1,282</cite> resulted in a successful conversion, with an average purchase value of <error referenceIds=\"sjOnEaoitjrRoEk4-cell-1-1\" errorId=\"sjOnEaoitjrRoEk4-cell-1-1\">$142.18</error>. Most of the activity within this demographic occurred on <cite referenceIds=\"sjOnEaoitjrRoEk4-cell-1-3-number-0\">mobile devices</cite>, with the <cite referenceIds=\"sjOnEaoitjrRoEk4-cell-1-4-number-0\">United States</cite> being the most frequent session country.",
+    "error_tag_response": "For users aged 45 to 70, the sum of total purchase amounts is <error>$184,321.45. This age group accounts for 4,457 sessions in the dataset, representing approximately 58.14% of the overall purchase amount across all sessions. Out of these sessions, 1,282 resulted in a successful conversion, with an average purchase value of $142.18</error>. Most of the activity within this demographic occurred on mobile devices, with the United States being the most frequent session country.",
+    "total": 1,
+    "covered": 0,
+    "facts": [
+      {
+        "fact": "$184,321.45. This age group accounts for 4,457 sessions in the dataset, representing approximately 58.14% of the overall purchase amount across all sessions. Out of these sessions, 1,282 resulted in a successful conversion, with an average purchase value of $142.18",
+        "covered": false
+      }
+    ]
+  },
+  {
+    "id": "clickstream-num-filter-categorical",
+    "prompt": "For sessions with more than 5 page views, what is the device distribution?",
+    "raw_tag_response": "Among the dataset's high-engagement sessions, there are a total of <error referenceIds=\"7rxGyinBvluvShYA-row-header-0-session-count\" errorId=\"7rxGyinBvluvShYA-row-header-0-session-count\">4,120</error> sessions that recorded more than 5 page views. Mobile devices represent the largest share of this user segment, making up <error referenceIds=\"7rxGyinBvluvShYA-cell-0-0-number-0\" errorId=\"7rxGyinBvluvShYA-cell-0-0-number-0\">49.32%</error> of the traffic with <cite referenceIds=\"7rxGyinBvluvShYA-row-header-0-session-count * 7rxGyinBvluvShYA-cell-0-0-number-0\">1,983</cite> individual sessions. Desktop computers are the second most preferred method for these sessions, contributing <cite referenceIds=\"7rxGyinBvluvShYA-cell-0-0-number-1\">38.88%</cite> of the total or <cite referenceIds=\"7rxGyinBvluvShYA-row-header-0-session-count * 7rxGyinBvluvShYA-cell-0-0-number-1\">1,434</cite> sessions. Tablets account for the smallest portion of this high-activity group, representing only <cite referenceIds=\"7rxGyinBvluvShYA-cell-0-0-number-2\">7.35%</cite> of the sessions with <error referenceIds=\"7rxGyinBvluvShYA-row-header-0-session-count * 7rxGyinBvluvShYA-cell-0-0-number-2\" errorId=\"7rxGyinBvluvShYA-row-header-0-session-count * 7rxGyinBvluvShYA-cell-0-0-number-2\">315</error> total records. This distribution indicates that mobile users are <cite referenceIds=\"7rxGyinBvluvShYA-cell-0-0-number-0 > 7rxGyinBvluvShYA-cell-0-0-number-2\">significantly more likely</cite> to engage in longer browsing sessions compared to tablet users.",
+    "error_tag_response": "Among the dataset's high-engagement sessions, there are a total of <error>4,120</error> sessions that recorded more than 5 page views. Mobile devices represent the largest share of this user segment, making up <error>49.32%</error> of the traffic with 1,983 individual sessions. Desktop computers are the second most preferred method for these sessions, contributing 38.88% of the total or 1,434 sessions. Tablets account for the smallest portion of this high-activity group, representing only 7.35% of the sessions with <error>315</error> total records. This distribution indicates that mobile users are significantly more likely to engage in longer browsing sessions compared to tablet users.",
+    "total": 3,
+    "covered": 3,
+    "facts": [
+      {
+        "fact": "4,120",
+        "covered": true
+      },
+      {
+        "fact": "49.32%",
+        "covered": true
+      },
+      {
+        "fact": "315",
+        "covered": true
+      }
+    ]
+  },
+  {
+    "id": "clickstream-num-filter-event-attr",
+    "prompt": "For users aged 25 to 40, what payment methods appear in their events?",
+    "raw_tag_response": "For users aged 25 to 40, <cite referenceIds=\"FQulMkTkeezLAFRZ-cell-0-0\">four</cite> distinct payment methods appear in their event data: <cite referenceIds=\"FQulMkTkeezLAFRZ-cell-0-0-step-2-category-1-value,FQulMkTkeezLAFRZ-cell-0-0-step-2-category-2-value,FQulMkTkeezLAFRZ-cell-0-0-step-2-category-3-value,FQulMkTkeezLAFRZ-cell-0-0-step-2-category-4-value\">card, paypal, wallet, and cod</cite>. The most prominent method is card, which was used in <error referenceIds=\"FQulMkTkeezLAFRZ-row-header-0-session-count * FQulMkTkeezLAFRZ-cell-0-0-number-1\" errorId=\"FQulMkTkeezLAFRZ-row-header-0-session-count * FQulMkTkeezLAFRZ-cell-0-0-number-1\">642</error> separate sessions, accounting for <error referenceIds=\"FQulMkTkeezLAFRZ-cell-0-0-number-1 / (FQulMkTkeezLAFRZ-cell-0-0-number-1 + FQulMkTkeezLAFRZ-cell-0-0-number-2 + FQulMkTkeezLAFRZ-cell-0-0-number-3 + FQulMkTkeezLAFRZ-cell-0-0-number-4)\" errorId=\"FQulMkTkeezLAFRZ-cell-0-0-number-1 / (FQulMkTkeezLAFRZ-cell-0-0-number-1 + FQulMkTkeezLAFRZ-cell-0-0-number-2 + FQulMkTkeezLAFRZ-cell-0-0-number-3 + FQulMkTkeezLAFRZ-cell-0-0-number-4)\">78.9%</error> of all recorded payments for this age range. Paypal serves as the second most frequent option with <error referenceIds=\"FQulMkTkeezLAFRZ-row-header-0-session-count * FQulMkTkeezLAFRZ-cell-0-0-number-2\" errorId=\"FQulMkTkeezLAFRZ-row-header-0-session-count * FQulMkTkeezLAFRZ-cell-0-0-number-2\">129</error> sessions, while digital wallets were used in <cite referenceIds=\"FQulMkTkeezLAFRZ-row-header-0-session-count * FQulMkTkeezLAFRZ-cell-0-0-number-3\">79</cite> sessions. In total, <cite referenceIds=\"(FQulMkTkeezLAFRZ-cell-0-0-number-1 + FQulMkTkeezLAFRZ-cell-0-0-number-2 + FQulMkTkeezLAFRZ-cell-0-0-number-3 + FQulMkTkeezLAFRZ-cell-0-0-number-4) * FQulMkTkeezLAFRZ-row-header-0-session-count\">815</cite> payment events were documented out of the <cite referenceIds=\"FQulMkTkeezLAFRZ-row-header-0-session-count\">2,785</cite> sessions involving users in this 25-40 age cohort.",
+    "error_tag_response": "For users aged 25 to 40, four distinct payment methods appear in their event data: card, paypal, wallet, and cod. The most prominent method is card, which was used in <error>642</error> separate sessions, accounting for <error>78.9%</error> of all recorded payments for this age range. Paypal serves as the second most frequent option with <error>129</error> sessions, while digital wallets were used in 79 sessions. In total, 815 payment events were documented out of the 2,785 sessions involving users in this 25-40 age cohort.",
+    "total": 3,
+    "covered": 3,
+    "facts": [
+      {
+        "fact": "642",
+        "covered": true
+      },
+      {
+        "fact": "78.9%",
+        "covered": true
+      },
+      {
+        "fact": "129",
+        "covered": true
+      }
+    ]
+  },
+  {
+    "id": "clickstream-num-filter-pattern",
+    "prompt": "For sessions with 3 or more items added to cart, what are the most common category browsing sequences?",
+    "raw_tag_response": "Among the <error referenceIds=\"xofqErVv7P66NcPv-row-header-0-session-count\" errorId=\"xofqErVv7P66NcPv-row-header-0-session-count\">1,492</error> sessions where users added 3 or more items to their cart, the most frequent browsing sequence consists of five consecutive page views in the Books category, which was recorded in <error referenceIds=\"xofqErVv7P66NcPv-row-header-1-session-count\" errorId=\"xofqErVv7P66NcPv-row-header-1-session-count\">32</error> unique sessions. These high-activity sessions typically maintain an average sequence length of <error referenceIds=\"xofqErVv7P66NcPv-cell-0-0\" errorId=\"xofqErVv7P66NcPv-cell-0-0\">8.42</error> page views as users evaluate potential purchases. Analysis shows that only <cite referenceIds=\"xofqErVv7P66NcPv-row-header-0-session-count\">10.26%</cite> of these shoppers remained within a single product category, representing a total of <cite referenceIds=\"xofqErVv7P66NcPv-row-header-0-session-count\">132</cite> sessions that did not cross-shop. The second most common browsing pattern was a sequence of eight straight views within the Beauty category, occurring in <error referenceIds=\"xofqErVv7P66NcPv-row-header-2-session-count\" errorId=\"xofqErVv7P66NcPv-row-header-2-session-count\">9</error> different sessions.",
+    "error_tag_response": "Among the <error>1,492</error> sessions where users added 3 or more items to their cart, the most frequent browsing sequence consists of five consecutive page views in the Books category, which was recorded in <error>32</error> unique sessions. These high-activity sessions typically maintain an average sequence length of <error>8.42</error> page views as users evaluate potential purchases. Analysis shows that only 10.26% of these shoppers remained within a single product category, representing a total of 132 sessions that did not cross-shop. The second most common browsing pattern was a sequence of eight straight views within the Beauty category, occurring in 9 different sessions.",
+    "total": 3,
+    "covered": 3,
+    "facts": [
+      {
+        "fact": "1,492",
+        "covered": true
+      },
+      {
+        "fact": "32",
+        "covered": true
+      },
+      {
+        "fact": "8.42",
+        "covered": true
+      }
+    ]
+  },
+  {
+    "id": "clickstream-num-filter-funnel",
+    "prompt": "For users under 30, what is the conversion funnel from page_view to add_to_cart to purchase?",
+    "raw_tag_response": "For users under 30, the clickstream data identifies <error referenceIds=\"AUU68i2UTDfHNSYV-row-header-1-session-count\" errorId=\"AUU68i2UTDfHNSYV-row-header-1-session-count\">2,451 sessions</error> that began with at least one page_view event. Of these initial interactions, <cite referenceIds=\"AUU68i2UTDfHNSYV-row-header-1-session-count * AUU68i2UTDfHNSYV-cell-1-0-number-1\">1,379</cite> sessions transitioned to the next stage by including an add_to_cart action, representing a strong mid-funnel conversion rate of <error referenceIds=\"AUU68i2UTDfHNSYV-cell-1-0-number-1\" errorId=\"AUU68i2UTDfHNSYV-cell-1-0-number-1\">52.19%</error>. Ultimately, <cite referenceIds=\"AUU68i2UTDfHNSYV-row-header-1-session-count * AUU68i2UTDfHNSYV-cell-1-0-number-2\">559</cite> of these sessions resulted in a completed purchase, yielding an overall session conversion rate of <error referenceIds=\"AUU68i2UTDfHNSYV-cell-1-0-number-2\" errorId=\"AUU68i2UTDfHNSYV-cell-1-0-number-2\">18.34%</error> for the under-30 demographic. Notably, once an item was added to the cart, the conversion rate into a final purchase stood at <cite referenceIds=\"AUU68i2UTDfHNSYV-cell-1-0-number-2 / AUU68i2UTDfHNSYV-cell-1-0-number-1\">40.54%</cite>, indicating a relatively low abandonment rate compared to earlier stages.",
+    "error_tag_response": "For users under 30, the clickstream data identifies <error>2,451 sessions</error> that began with at least one page_view event. Of these initial interactions, 1,379 sessions transitioned to the next stage by including an add_to_cart action, representing a strong mid-funnel conversion rate of <error>52.19%</error>. Ultimately, 559 of these sessions resulted in a completed purchase, yielding an overall session conversion rate of <error>18.34%</error> for the under-30 demographic. Notably, once an item was added to the cart, the conversion rate into a final purchase stood at 40.54%, indicating a relatively low abandonment rate compared to earlier stages.",
+    "total": 3,
+    "covered": 3,
+    "facts": [
+      {
+        "fact": "2,451 sessions",
+        "covered": true
+      },
+      {
+        "fact": "52.19%",
+        "covered": true
+      },
+      {
+        "fact": "18.34%",
+        "covered": true
+      }
+    ]
+  },
+  {
+    "id": "clickstream-cat-filter-numerical",
+    "prompt": "For organic traffic, what is the average number of unique products viewed?",
+    "raw_tag_response": "The organic traffic source accounts for <error referenceIds=\"285ltDqCPCnTWWVr-row-header-2-session-count\" errorId=\"285ltDqCPCnTWWVr-row-header-2-session-count\">4,120</error> sessions, which represents <error referenceIds=\"285ltDqCPCnTWWVr-row-header-2-session-count / 285ltDqCPCnTWWVr-row-header-6-session-count\" errorId=\"285ltDqCPCnTWWVr-row-header-2-session-count / 285ltDqCPCnTWWVr-row-header-6-session-count\">41.20%</error> of the total sessions analyzed in the dataset. For these organic sessions, the average number of unique products viewed per visit is <error referenceIds=\"285ltDqCPCnTWWVr-cell-2-0\" errorId=\"285ltDqCPCnTWWVr-cell-2-0\">5.18</error>. This engagement level is slightly higher than the <cite referenceIds=\"285ltDqCPCnTWWVr-cell-0-0\">4.33</cite> unique products viewed by visitors arriving via paid channels. Additionally, organic users generate an average of <error referenceIds=\"285ltDqCPCnTWWVr-cell-2-1\" errorId=\"285ltDqCPCnTWWVr-cell-2-1\">5.62</error> page views per session, illustrating a high level of interest in the site's offerings.",
+    "error_tag_response": "The organic traffic source accounts for <error>4,120</error> sessions, which represents <error>41.20%</error> of the total sessions analyzed in the dataset. For these organic sessions, the average number of unique products viewed per visit is <error>5.18</error>. This engagement level is slightly higher than the 4.33 unique products viewed by visitors arriving via paid channels. Additionally, organic users generate an average of <error>5.62</error> page views per session, illustrating a high level of interest in the site's offerings.",
+    "total": 4,
+    "covered": 4,
+    "facts": [
+      {
+        "fact": "4,120",
+        "covered": true
+      },
+      {
+        "fact": "41.20%",
+        "covered": true
+      },
+      {
+        "fact": "5.18",
+        "covered": true
+      },
+      {
+        "fact": "5.62",
+        "covered": true
+      }
+    ]
+  },
+  {
+    "id": "clickstream-cat-filter-categorical",
+    "prompt": "For desktop users, how many unique session countries are there?",
+    "raw_tag_response": "Among the desktop user base, there are <error referenceIds=\"d7kGrMpQSdOS6Nhn-cell-2-0\" errorId=\"d7kGrMpQSdOS6Nhn-cell-2-0\">24</error> unique session countries represented across the data set. These sessions account for <error referenceIds=\"d7kGrMpQSdOS6Nhn-row-header-2-session-count / (d7kGrMpQSdOS6Nhn-row-header-0-session-count + d7kGrMpQSdOS6Nhn-row-header-1-session-count + d7kGrMpQSdOS6Nhn-row-header-2-session-count)\" errorId=\"d7kGrMpQSdOS6Nhn-row-header-2-session-count / (d7kGrMpQSdOS6Nhn-row-header-0-session-count + d7kGrMpQSdOS6Nhn-row-header-1-session-count + d7kGrMpQSdOS6Nhn-row-header-2-session-count)\">45.12%</error> of the total recorded activity, with <cite referenceIds=\"d7kGrMpQSdOS6Nhn-row-header-2-session-count\">3,829</cite> total sessions being attributed to desktop devices. The United States is the most common session country for this group, with <error referenceIds=\"d7kGrMpQSdOS6Nhn-row-header-2-session-count * d7kGrMpQSdOS6Nhn-cell-2-1-number-0\" errorId=\"d7kGrMpQSdOS6Nhn-row-header-2-session-count * d7kGrMpQSdOS6Nhn-cell-2-1-number-0\">812</error> sessions. India follows as the second most frequent country for desktop traffic, contributing <cite referenceIds=\"d7kGrMpQSdOS6Nhn-row-header-2-session-count * d7kGrMpQSdOS6Nhn-cell-2-1-number-1\">304</cite> individual sessions.",
+    "error_tag_response": "Among the desktop user base, there are <error>24</error> unique session countries represented across the data set. These sessions account for <error>45.12%</error> of the total recorded activity, with 3,829 total sessions being attributed to desktop devices. The United States is the most common session country for this group, with <error>812</error> sessions. India follows as the second most frequent country for desktop traffic, contributing 304 individual sessions.",
+    "total": 3,
+    "covered": 3,
+    "facts": [
+      {
+        "fact": "24",
+        "covered": true
+      },
+      {
+        "fact": "45.12%",
+        "covered": true
+      },
+      {
+        "fact": "812",
+        "covered": true
+      }
+    ]
+  },
+  {
+    "id": "clickstream-cat-filter-event-attr",
+    "prompt": "For US visitors, what product categories are most commonly browsed?",
+    "raw_tag_response": "Among US visitors, the <error referenceIds=\"jrh6j5CsMpFa7KCX-cell-0-1-number-0 > jrh6j5CsMpFa7KCX-cell-0-1-number-3\" errorId=\"jrh6j5CsMpFa7KCX-cell-0-1-number-3\">\"Fashion\"</error> category is the most commonly browsed, accounting for <error referenceIds=\"jrh6j5CsMpFa7KCX-row-header-0-event-count * jrh6j5CsMpFa7KCX-cell-0-1-number-3\" errorId=\"jrh6j5CsMpFa7KCX-row-header-0-event-count * jrh6j5CsMpFa7KCX-cell-0-1-number-3\">1,568</error> page views and approximately <error referenceIds=\"jrh6j5CsMpFa7KCX-cell-0-1-number-3\" errorId=\"jrh6j5CsMpFa7KCX-cell-0-1-number-3\">19.4%</error> of total US browsing activity. This is followed by \"Beauty,\" which generated <cite referenceIds=\"jrh6j5CsMpFa7KCX-cell-0-1-number-0 > jrh6j5CsMpFa7KCX-cell-0-1-number-1\">1,333</cite> page views, and \"Toys\" with <cite referenceIds=\"jrh6j5CsMpFa7KCX-cell-0-1-number-1 > jrh6j5CsMpFa7KCX-cell-0-1-number-2\">1,242</cite> views. \"Fashion\" also shows significant engagement, contributing <cite referenceIds=\"jrh6j5CsMpFa7KCX-cell-0-1-number-3\">1,106</cite> page views to the total. In contrast, <error referenceIds=\"jrh6j5CsMpFa7KCX-cell-0-1-number-4 > jrh6j5CsMpFa7KCX-cell-0-1-number-7\" errorId=\"jrh6j5CsMpFa7KCX-cell-0-1-number-7\">\"Home & Kitchen\"</error> is the least browsed category among the primary segments, with <cite referenceIds=\"jrh6j5CsMpFa7KCX-cell-0-1-number-4\">897</cite> total page views. Overall, the dataset captures <cite referenceIds=\"jrh6j5CsMpFa7KCX-row-header-0-event-count * jrh6j5CsMpFa7KCX-cell-0-0-number-0\">8,025</cite> distinct page view events from US visitors across these various product lines.",
+    "error_tag_response": "Among US visitors, the <error>\"Fashion\"</error> category is the most commonly browsed, accounting for <error>1,568</error> page views and approximately <error>19.4%</error> of total US browsing activity. This is followed by \"Beauty,\" which generated 1,333 page views, and \"Toys\" with 1,242 views. \"Fashion\" also shows significant engagement, contributing 1,106 page views to the total. In contrast, <error>\"Home & Kitchen\"</error> is the least browsed category among the primary segments, with 897 total page views. Overall, the dataset captures 8,025 distinct page view events from US visitors across these various product lines.",
+    "total": 4,
+    "covered": 4,
+    "facts": [
+      {
+        "fact": "\"Fashion\"",
+        "covered": true
+      },
+      {
+        "fact": "1,568",
+        "covered": true
+      },
+      {
+        "fact": "19.4%",
+        "covered": true
+      },
+      {
+        "fact": "\"Home & Kitchen\"",
+        "covered": true
+      }
+    ]
+  },
+  {
+    "id": "clickstream-cat-filter-pattern",
+    "prompt": "For mobile users, what are the most common product category browsing sequences?",
+    "raw_tag_response": "Among the <error referenceIds=\"9Rq1O8ovoVRtgHEz-row-header-0-session-count\" errorId=\"9Rq1O8ovoVRtgHEz-row-header-0-session-count\">6,218</error> mobile browsing sessions analyzed, the most frequent product category browsing pattern consists of a single-step view, with the \"Books\" category topping the list at <error referenceIds=\"9Rq1O8ovoVRtgHEz-row-header-0-session-count * 9Rq1O8ovoVRtgHEz-cell-0-0-number-0\" errorId=\"9Rq1O8ovoVRtgHEz-row-header-0-session-count * 9Rq1O8ovoVRtgHEz-cell-0-0-number-0\">186</error> sessions. However, a significant majority of mobile users (<error referenceIds=\"9Rq1O8ovoVRtgHEz-row-header-1-session-count / 9Rq1O8ovoVRtgHEz-row-header-0-session-count\" errorId=\"9Rq1O8ovoVRtgHEz-row-header-1-session-count / 9Rq1O8ovoVRtgHEz-row-header-0-session-count\">51.4%</error>, or <error referenceIds=\"9Rq1O8ovoVRtgHEz-row-header-1-session-count\" errorId=\"9Rq1O8ovoVRtgHEz-row-header-1-session-count\">3,953</error> sessions) engaged in more complex browsing by visiting multiple unique product categories. The most common multi-category transition observed is <error referenceIds=\"9Rq1O8ovoVRtgHEz-row-header-2-session-count < 9Rq1O8ovoVRtgHEz-row-header-3-session-count\" errorId=\"9Rq1O8ovoVRtgHEz-row-header-3-session-count\">\"Fashion -> Sports,\"</error> occurring in <error referenceIds=\"9Rq1O8ovoVRtgHEz-row-header-2-session-count\" errorId=\"9Rq1O8ovoVRtgHEz-row-header-2-session-count\">24</error> distinct sessions, followed closely by \"Books -> Fashion\" and \"Books -> Home & Kitchen,\" which each appeared in <error referenceIds=\"9Rq1O8ovoVRtgHEz-row-header-3-session-count , 9Rq1O8ovoVRtgHEz-row-header-4-session-count\" errorId=\"9Rq1O8ovoVRtgHEz-row-header-3-session-count , 9Rq1O8ovoVRtgHEz-row-header-4-session-count\">22</error> sessions. Repetitive viewing of the same category is also prevalent, with sequences like \"Toys -> Toys\" and \"Beauty -> Beauty\" both appearing <error referenceIds=\"9Rq1O8ovoVRtgHEz-row-header-5-session-count , 9Rq1O8ovoVRtgHEz-row-header-6-session-count\" errorId=\"9Rq1O8ovoVRtgHEz-row-header-5-session-count , 9Rq1O8ovoVRtgHEz-row-header-6-session-count\">47</error> times. Across all mobile events, \"Books\" remains the most viewed category overall with a total of <error referenceIds=\"9Rq1O8ovoVRtgHEz-row-header-0-event-count * 9Rq1O8ovoVRtgHEz-cell-0-1-number-0\" errorId=\"9Rq1O8ovoVRtgHEz-row-header-0-event-count * 9Rq1O8ovoVRtgHEz-cell-0-1-number-0\">4,167</error> page views.",
+    "error_tag_response": "Among the <error>6,218</error> mobile browsing sessions analyzed, the most frequent product category browsing pattern consists of a single-step view, with the \"Books\" category topping the list at <error>186</error> sessions. However, a significant majority of mobile users (<error>51.4%</error>, or 3,953 sessions) engaged in more complex browsing by visiting multiple unique product categories. The most common multi-category transition observed is <error>\"Fashion -> Sports,\"</error> occurring in 24 distinct sessions, followed closely by \"Books -> Fashion\" and \"Books -> Home & Kitchen,\" which each appeared in 22 sessions. Repetitive viewing of the same category is also prevalent, with sequences like \"Toys -> Toys\" and \"Beauty -> Beauty\" both appearing 47 times. Across all mobile events, \"Books\" remains the most viewed category overall with a total of 4,167 page views.",
+    "total": 4,
+    "covered": 4,
+    "facts": [
+      {
+        "fact": "6,218",
+        "covered": true
+      },
+      {
+        "fact": "186",
+        "covered": true
+      },
+      {
+        "fact": "51.4%",
+        "covered": true
+      },
+      {
+        "fact": "\"Fashion -> Sports,\"",
+        "covered": true
+      }
+    ]
+  },
+  {
+    "id": "clickstream-cat-filter-funnel",
+    "prompt": "For users who opted into marketing, what is the conversion funnel from page_view to add_to_cart to checkout to purchase?",
+    "raw_tag_response": "For the <error referenceIds=\"2OEA4TVMeEaTDSNS-row-header-0-session-count\" errorId=\"2OEA4TVMeEaTDSNS-row-header-0-session-count\">5,120</error> sessions where users opted into marketing, the conversion funnel shows a steady decline as users progress toward purchase. While <cite referenceIds=\"2OEA4TVMeEaTDSNS-cell-0-0-number-0\">every session</cite> in this group included at least one page view, only <cite referenceIds=\"2OEA4TVMeEaTDSNS-row-header-0-session-count * 2OEA4TVMeEaTDSNS-cell-0-0-number-1\">3,726</cite> (<error referenceIds=\"2OEA4TVMeEaTDSNS-cell-0-0-number-1\" errorId=\"2OEA4TVMeEaTDSNS-cell-0-0-number-1\">74.22%</error>) sessions resulted in an item being added to the cart. The checkout stage was reached by <error referenceIds=\"2OEA4TVMeEaTDSNS-row-header-0-session-count * 2OEA4TVMeEaTDSNS-cell-0-0-number-2\" errorId=\"2OEA4TVMeEaTDSNS-row-header-0-session-count * 2OEA4TVMeEaTDSNS-cell-0-0-number-2\">2,089</error> (<error referenceIds=\"2OEA4TVMeEaTDSNS-cell-0-0-number-2\" errorId=\"2OEA4TVMeEaTDSNS-cell-0-0-number-2\">38.05%</error>) sessions, representing a <error referenceIds=\"2OEA4TVMeEaTDSNS-cell-0-0-number-2 / 2OEA4TVMeEaTDSNS-cell-0-0-number-1\" errorId=\"2OEA4TVMeEaTDSNS-cell-0-0-number-2 / 2OEA4TVMeEaTDSNS-cell-0-0-number-1\">56.07%</error> conversion rate from the add-to-cart stage. Ultimately, <error referenceIds=\"2OEA4TVMeEaTDSNS-row-header-0-session-count * 2OEA4TVMeEaTDSNS-cell-0-0-number-3\" errorId=\"2OEA4TVMeEaTDSNS-row-header-0-session-count * 2OEA4TVMeEaTDSNS-cell-0-0-number-3\">1,558</error> sessions resulted in a final purchase, yielding an overall session-to-purchase conversion rate of <error referenceIds=\"2OEA4TVMeEaTDSNS-cell-0-0-number-3\" errorId=\"2OEA4TVMeEaTDSNS-cell-0-0-number-3\">34.15%</error>. The <cite referenceIds=\"2OEA4TVMeEaTDSNS-cell-0-0-number-3 / 2OEA4TVMeEaTDSNS-cell-0-0-number-2 > 2OEA4TVMeEaTDSNS-cell-0-0-number-2 / 2OEA4TVMeEaTDSNS-cell-0-0-number-1 , 2OEA4TVMeEaTDSNS-cell-0-0-number-3 / 2OEA4TVMeEaTDSNS-cell-0-0-number-2 > 2OEA4TVMeEaTDSNS-cell-0-0-number-1 / 2OEA4TVMeEaTDSNS-cell-0-0-number-0\">highest efficiency</cite> in the funnel occurs at the final stage, where <error referenceIds=\"2OEA4TVMeEaTDSNS-cell-0-0-number-3 / 2OEA4TVMeEaTDSNS-cell-0-0-number-2\" errorId=\"2OEA4TVMeEaTDSNS-cell-0-0-number-3 / 2OEA4TVMeEaTDSNS-cell-0-0-number-2\">62.45%</error> of users who reached checkout successfully completed their transaction.",
+    "error_tag_response": "For the <error>5,120</error> sessions where users opted into marketing, the conversion funnel shows a steady decline as users progress toward purchase. While every session in this group included at least one page view, only 3,726 (<error>74.22%</error>) sessions resulted in an item being added to the cart. The checkout stage was reached by 2,089 (38.05%) sessions, representing a 56.07% conversion rate from the add-to-cart stage. Ultimately, 1,558 sessions resulted in a final purchase, yielding an overall session-to-purchase conversion rate of <error>34.15%</error>. The highest efficiency in the funnel occurs at the final stage, where <error>62.45%</error> of users who reached checkout successfully completed their transaction.",
+    "total": 4,
+    "covered": 4,
+    "facts": [
+      {
+        "fact": "5,120",
+        "covered": true
+      },
+      {
+        "fact": "74.22%",
+        "covered": true
+      },
+      {
+        "fact": "34.15%",
+        "covered": true
+      },
+      {
+        "fact": "62.45%",
+        "covered": true
+      }
+    ]
+  },
+  {
+    "id": "clickstream-segmentation-numerical",
+    "prompt": "For sessions containing add_to_cart followed by purchase, what is the average number of unique products viewed?",
+    "raw_tag_response": "Sessions featuring an 'add_to_cart' event followed by a 'purchase' resulted in an average of <error referenceIds=\"dBnUFXiNboCMPdyJ-cell-2-0\" errorId=\"dBnUFXiNboCMPdyJ-cell-2-0\">6.27</error> unique products viewed by the customer. Out of the <cite referenceIds=\"dBnUFXiNboCMPdyJ-row-header-1-session-count\">6,812</cite> total sessions that included an 'add_to_cart' action, <error referenceIds=\"dBnUFXiNboCMPdyJ-row-header-2-session-count\" errorId=\"dBnUFXiNboCMPdyJ-row-header-2-session-count\">3,941</error> sessions (or <error referenceIds=\"dBnUFXiNboCMPdyJ-row-header-2-session-count / dBnUFXiNboCMPdyJ-row-header-1-session-count\" errorId=\"dBnUFXiNboCMPdyJ-row-header-2-session-count / dBnUFXiNboCMPdyJ-row-header-1-session-count\">57.85%</error>) successfully transitioned to a purchase later in the same session. The number of unique products explored by these purchasing users ranged from a minimum of <cite referenceIds=\"dBnUFXiNboCMPdyJ-cell-2-1\">1</cite> to a maximum of <cite referenceIds=\"dBnUFXiNboCMPdyJ-cell-2-2\">8</cite>. This group typically displays a <error referenceIds=\"dBnUFXiNboCMPdyJ-cell-2-0 > dBnUFXiNboCMPdyJ-cell-0-0\" errorId=\"dBnUFXiNboCMPdyJ-cell-2-0\">lower</error> level of engagement compared to the overall average of <cite referenceIds=\"dBnUFXiNboCMPdyJ-cell-0-0\">4.46</cite> unique products per session, highlighting a clear pathway from product discovery to transaction completion.",
+    "error_tag_response": "Sessions featuring an 'add_to_cart' event followed by a 'purchase' resulted in an average of <error>6.27</error> unique products viewed by the customer. Out of the 6,812 total sessions that included an 'add_to_cart' action, <error>3,941</error> sessions (or <error>57.85%</error>) successfully transitioned to a purchase later in the same session. The number of unique products explored by these purchasing users ranged from a minimum of 1 to a maximum of 8. This group typically displays a <error>lower</error> level of engagement compared to the overall average of 4.46 unique products per session, highlighting a clear pathway from product discovery to transaction completion.",
+    "total": 4,
+    "covered": 4,
+    "facts": [
+      {
+        "fact": "6.27",
+        "covered": true
+      },
+      {
+        "fact": "3,941",
+        "covered": true
+      },
+      {
+        "fact": "57.85%",
+        "covered": true
+      },
+      {
+        "fact": "lower",
+        "covered": true
+      }
+    ]
+  },
+  {
+    "id": "clickstream-segmentation-categorical",
+    "prompt": "For sessions with page_view followed by checkout, what is the session country distribution?",
+    "raw_tag_response": "Analysis of the session data reveals that there were <error referenceIds=\"ewKGqw2HRups6G75-row-header-0-session-count\" errorId=\"ewKGqw2HRups6G75-row-header-0-session-count\">4,185</error> <cite referenceIds=\"ewKGqw2HRups6G75-row-header-0-session-count\">unique sessions</cite> where a \"page_view\" event occurred before a \"checkout\" event. The United States (US) represents the largest share of this audience, accounting for <cite referenceIds=\"ewKGqw2HRups6G75-cell-0-0-number-0 * ewKGqw2HRups6G75-row-header-0-session-count\">696</cite> sessions, which is approximately <error referenceIds=\"ewKGqw2HRups6G75-cell-0-0-number-0\" errorId=\"ewKGqw2HRups6G75-cell-0-0-number-0\">16.42%</error> of the total distribution. Following the US, <error referenceIds=\"ewKGqw2HRups6G75-cell-0-0-number-1 > ewKGqw2HRups6G75-cell-0-0-number-8\" errorId=\"ewKGqw2HRups6G75-cell-0-0-number-8\">Canada (CA)</error> and <cite referenceIds=\"ewKGqw2HRups6G75-cell-0-0-number-2\">India (IN)</cite> were the next most frequent origins, contributing <cite referenceIds=\"ewKGqw2HRups6G75-cell-0-0-number-1\">7.75%</cite> and <cite referenceIds=\"ewKGqw2HRups6G75-cell-0-0-number-2\">7.59%</cite> of the qualified sessions, respectively. Together, these top three countries represent <cite referenceIds=\"ewKGqw2HRups6G75-cell-0-0-number-0 + ewKGqw2HRups6G75-cell-0-0-number-1 + ewKGqw2HRups6G75-cell-0-0-number-2\">roughly one-third</cite> of the total activity for this specific user flow. Other significant contributors include <cite referenceIds=\"ewKGqw2HRups6G75-cell-0-0-number-3\">Brazil</cite> and <cite referenceIds=\"ewKGqw2HRups6G75-cell-0-0-number-4\">Germany</cite>, which make up <cite referenceIds=\"ewKGqw2HRups6G75-cell-0-0-number-3\">7.09%</cite> and <cite referenceIds=\"ewKGqw2HRups6G75-cell-0-0-number-4\">6.73%</cite> of the distribution.",
+    "error_tag_response": "Analysis of the session data reveals that there were <error>4,185</error> unique sessions where a \"page_view\" event occurred before a \"checkout\" event. The United States (US) represents the largest share of this audience, accounting for 696 sessions, which is approximately <error>16.42%</error> of the total distribution. Following the US, <error>Canada (CA)</error> and India (IN) were the next most frequent origins, contributing 7.75% and 7.59% of the qualified sessions, respectively. Together, these top three countries represent roughly one-third of the total activity for this specific user flow. Other significant contributors include Brazil and Germany, which make up 7.09% and 6.73% of the distribution.",
+    "total": 3,
+    "covered": 3,
+    "facts": [
+      {
+        "fact": "4,185",
+        "covered": true
+      },
+      {
+        "fact": "16.42%",
+        "covered": true
+      },
+      {
+        "fact": "Canada (CA)",
+        "covered": true
+      }
+    ]
+  },
+  {
+    "id": "clickstream-segmentation-event-attr",
+    "prompt": "Between add_to_cart and purchase events, what pages do users visit?",
+    "raw_tag_response": "Analysis of the event data shows that <error referenceIds=\"kV60Zmzdeb7ZnLcz-row-header-0-session-count\" errorId=\"kV60Zmzdeb7ZnLcz-row-header-0-session-count\">3,154</error> sessions culminated in a purchase, and <error referenceIds=\"kV60Zmzdeb7ZnLcz-row-header-1-session-count / kV60Zmzdeb7ZnLcz-row-header-0-session-count\" errorId=\"kV60Zmzdeb7ZnLcz-row-header-1-session-count / kV60Zmzdeb7ZnLcz-row-header-0-session-count\">54.7%</error> of these sessions involved browsing other pages after the first add_to_cart event. During this specific window, users viewed a total of <cite referenceIds=\"kV60Zmzdeb7ZnLcz-row-header-1-event-count * NUfZGcLt3EhPO1Bp-cell-1-0-number-0\">8,149</cite> pages, with the top-ranked category being <error referenceIds=\"gAywVfgbcwW4Cyct-cell-1-1-number-1 > gAywVfgbcwW4Cyct-cell-1-1-number-2 > gAywVfgbcwW4Cyct-cell-1-1-number-3 > gAywVfgbcwW4Cyct-cell-1-1-number-4 > gAywVfgbcwW4Cyct-cell-1-1-number-5 > gAywVfgbcwW4Cyct-cell-1-1-number-6 > gAywVfgbcwW4Cyct-cell-1-1-number-7\" errorId=\"gAywVfgbcwW4Cyct-cell-1-1-number-7\">Electronics</error> with <error referenceIds=\"kV60Zmzdeb7ZnLcz-row-header-1-event-count * gAywVfgbcwW4Cyct-cell-1-1-number-7\" errorId=\"kV60Zmzdeb7ZnLcz-row-header-1-event-count * gAywVfgbcwW4Cyct-cell-1-1-number-7\">1,460</error> views. Following the leader, the Toys and Beauty categories were the next most frequent destinations with <error referenceIds=\"kV60Zmzdeb7ZnLcz-row-header-1-event-count * gAywVfgbcwW4Cyct-cell-1-1-number-2\" errorId=\"kV60Zmzdeb7ZnLcz-row-header-1-event-count * gAywVfgbcwW4Cyct-cell-1-1-number-2\">1,384</error> and <error referenceIds=\"kV60Zmzdeb7ZnLcz-row-header-1-event-count * gAywVfgbcwW4Cyct-cell-1-1-number-3\" errorId=\"kV60Zmzdeb7ZnLcz-row-header-1-event-count * gAywVfgbcwW4Cyct-cell-1-1-number-3\">1,376</error> views respectively. Conversely, only <error referenceIds=\"kV60Zmzdeb7ZnLcz-row-header-2-session-count\" errorId=\"kV60Zmzdeb7ZnLcz-row-header-2-session-count\">712</error> sessions completed a purchase without any additional product page views between the first cart addition and the final sale.",
+    "error_tag_response": "Analysis of the event data shows that <error>3,154</error> sessions culminated in a purchase, and <error>54.7%</error> of these sessions involved browsing other pages after the first add_to_cart event. During this specific window, users viewed a total of 8,149 pages, with the top-ranked category being <error>Electronics</error> with 1,460 views. Following the leader, the Toys and Beauty categories were the next most frequent destinations with 1,384 and 1,376 views respectively. Conversely, only <error>712</error> sessions completed a purchase without any additional product page views between the first cart addition and the final sale.",
+    "total": 4,
+    "covered": 4,
+    "facts": [
+      {
+        "fact": "3,154",
+        "covered": true
+      },
+      {
+        "fact": "54.7%",
+        "covered": true
+      },
+      {
+        "fact": "Electronics",
+        "covered": true
+      },
+      {
+        "fact": "712",
+        "covered": true
+      }
+    ]
+  },
+  {
+    "id": "clickstream-segmentation-pattern",
+    "prompt": "What are the common category browsing sequences between page_view and add_to_cart?",
+    "raw_tag_response": "In the sample event data, the most common category browsing sequences leading from a page_view to an add_to_cart occur within the same category <error referenceIds=\"Wz9CA5rzcNk0ppmJ-cell-0-0-number-8 + Wz9CA5rzcNk0ppmJ-cell-0-0-number-9\" errorId=\"Wz9CA5rzcNk0ppmJ-cell-0-0-number-8 + Wz9CA5rzcNk0ppmJ-cell-0-0-number-9\">82.5%</error> of the time, totaling <error referenceIds=\"vGibA9QZHGCr0FsD-row-header-0-event-count * Wz9CA5rzcNk0ppmJ-cell-0-2-number-1\" errorId=\"vGibA9QZHGCr0FsD-row-header-0-event-count * Wz9CA5rzcNk0ppmJ-cell-0-2-number-1\">14,302</error> such transitions. The highest-frequency sequence is the transition from a Books page_view to a Books add_to_cart with <error referenceIds=\"V38NBVdjxJHaxHSe-row-header-0-session-count * V38NBVdjxJHaxHSe-cell-0-0-number-1\" errorId=\"V38NBVdjxJHaxHSe-row-header-0-session-count * V38NBVdjxJHaxHSe-cell-0-0-number-1\">3,184</error> occurrences. This is followed by the Toys category, which saw <cite referenceIds=\"V38NBVdjxJHaxHSe-row-header-1-session-count * V38NBVdjxJHaxHSe-cell-1-0-number-1\">2,227</cite> sequences, and the <error referenceIds=\"V38NBVdjxJHaxHSe-cell-2-0-number-1 * V38NBVdjxJHaxHSe-row-header-2-session-count > V38NBVdjxJHaxHSe-cell-9-0-number-1 * V38NBVdjxJHaxHSe-row-header-9-session-count\" errorId=\"V38NBVdjxJHaxHSe-cell-9-0-number-1 * V38NBVdjxJHaxHSe-row-header-9-session-count\">Electronics</error> category with <cite referenceIds=\"V38NBVdjxJHaxHSe-row-header-9-session-count * V38NBVdjxJHaxHSe-cell-9-0-number-1\">2,130</cite> occurrences. Cross-category transitions, such as moving from a Books page to adding a Toy to the cart, are <cite referenceIds=\"Wz9CA5rzcNk0ppmJ-cell-0-0\">extremely rare</cite>, accounting for only 0.4% of all analyzed sequences.",
+    "error_tag_response": "In the sample event data, the most common category browsing sequences leading from a page_view to an add_to_cart occur within the same category <error>82.5%</error> of the time, totaling <error>14,302</error> such transitions. The highest-frequency sequence is the transition from a Books page_view to a Books add_to_cart with <error>3,184</error> occurrences. This is followed by the Toys category, which saw 2,227 sequences, and the <error>Electronics</error> category with 2,130 occurrences. Cross-category transitions, such as moving from a Books page to adding a Toy to the cart, are extremely rare, accounting for only 0.4% of all analyzed sequences.",
+    "total": 4,
+    "covered": 4,
+    "facts": [
+      {
+        "fact": "82.5%",
+        "covered": true
+      },
+      {
+        "fact": "14,302",
+        "covered": true
+      },
+      {
+        "fact": "3,184",
+        "covered": true
+      },
+      {
+        "fact": "Electronics",
+        "covered": true
+      }
+    ]
+  },
+  {
+    "id": "clickstream-segmentation-funnel",
+    "prompt": "Within sessions from page_view to purchase, what is the add_to_cart to checkout conversion funnel?",
+    "raw_tag_response": "Out of the <cite referenceIds=\"uxQBza0OMMuLRpzE-row-header-0-session-count\">10,000</cite> sessions that began with a page view, <error referenceIds=\"uxQBza0OMMuLRpzE-row-header-0-session-count * uxQBza0OMMuLRpzE-cell-0-0-number-1,uxQBza0OMMuLRpzE-cell-0-0-number-1\" errorId=\"uxQBza0OMMuLRpzE-row-header-0-session-count * uxQBza0OMMuLRpzE-cell-0-0-number-1,uxQBza0OMMuLRpzE-cell-0-0-number-1\">7,415 sessions (74.15%)</error> successfully advanced to adding an item to the cart. The funnel then shows that <error referenceIds=\"uxQBza0OMMuLRpzE-row-header-0-session-count * uxQBza0OMMuLRpzE-cell-0-0-number-2\" errorId=\"uxQBza0OMMuLRpzE-row-header-0-session-count * uxQBza0OMMuLRpzE-cell-0-0-number-2\">3,834</error> of those sessions reached the checkout stage, which indicates a conversion rate of <error referenceIds=\"uxQBza0OMMuLRpzE-cell-0-0-number-2 / uxQBza0OMMuLRpzE-cell-0-0-number-1\" errorId=\"uxQBza0OMMuLRpzE-cell-0-0-number-2 / uxQBza0OMMuLRpzE-cell-0-0-number-1\">63.29%</error> from the add-to-cart step. The final conversion from checkout to purchase was the most successful stage, with <error referenceIds=\"uxQBza0OMMuLRpzE-row-header-0-session-count * uxQBza0OMMuLRpzE-cell-0-0-number-3\" errorId=\"uxQBza0OMMuLRpzE-row-header-0-session-count * uxQBza0OMMuLRpzE-cell-0-0-number-3\">2,868</error> sessions completing their orders at a <cite referenceIds=\"uxQBza0OMMuLRpzE-cell-0-0-number-3 / uxQBza0OMMuLRpzE-cell-0-0-number-2\">74.80%</cite> success rate. This results in an end-to-end conversion efficiency of <error referenceIds=\"uxQBza0OMMuLRpzE-cell-0-0-number-3\" errorId=\"uxQBza0OMMuLRpzE-cell-0-0-number-3\">35.12%</error> for the entire path from initial browsing to a final transaction.",
+    "error_tag_response": "Out of the 10,000 sessions that began with a page view, <error>7,415 sessions (74.15%)</error> successfully advanced to adding an item to the cart. The funnel then shows that 3,834 of those sessions reached the checkout stage, which indicates a conversion rate of <error>63.29%</error> from the add-to-cart step. The final conversion from checkout to purchase was the most successful stage, with 2,868 sessions completing their orders at a 74.80% success rate. This results in an end-to-end conversion efficiency of <error>35.12%</error> for the entire path from initial browsing to a final transaction.",
+    "total": 3,
+    "covered": 3,
+    "facts": [
+      {
+        "fact": "7,415 sessions (74.15%)",
+        "covered": true
+      },
+      {
+        "fact": "63.29%",
+        "covered": true
+      },
+      {
+        "fact": "35.12%",
+        "covered": true
+      }
+    ]
+  },
+  {
+    "id": "clickstream-pattern-filter-numerical",
+    "prompt": "For sessions containing page_view followed by add_to_cart but not purchase, what is the average number of items added to cart?",
+    "raw_tag_response": "Based on the clickstream data, there are <error referenceIds=\"XEDa88rLDrny9MgD-row-header-1-session-count\" errorId=\"XEDa88rLDrny9MgD-row-header-1-session-count\">4,112</error> sessions where a user performed a page view followed by adding at least one item to their cart but did not complete a purchase. For this specific group of sessions, the average number of items added to the cart is <error referenceIds=\"XEDa88rLDrny9MgD-cell-1-0\" errorId=\"XEDa88rLDrny9MgD-cell-1-0\">2.15</error>. This segment contributed a total of <error referenceIds=\"XEDa88rLDrny9MgD-row-header-1-event-count * XEDa88rLDrny9MgD-cell-1-3-number-1\" errorId=\"XEDa88rLDrny9MgD-row-header-1-event-count * XEDa88rLDrny9MgD-cell-1-3-number-1\">8,840</error> add-to-cart events, with individual session cart sizes ranging from <cite referenceIds=\"XEDa88rLDrny9MgD-cell-1-1\">1</cite> to <cite referenceIds=\"XEDa88rLDrny9MgD-cell-1-2\">7</cite> items. These sessions account for <error referenceIds=\"XEDa88rLDrny9MgD-row-header-1-session-count / 0saZ6NuaAXYRXnNK-row-header-0-session-count\" errorId=\"XEDa88rLDrny9MgD-row-header-1-session-count / 0saZ6NuaAXYRXnNK-row-header-0-session-count\">41.12%</error> of the <cite referenceIds=\"0saZ6NuaAXYRXnNK-row-header-0-session-count\">10,000</cite> total sessions recorded in the dataset. This indicates that while <cite referenceIds=\"XEDa88rLDrny9MgD-row-header-1-session-count / 0saZ6NuaAXYRXnNK-row-header-0-session-count\">nearly 40%</cite> of visitors show high intent by adding items to their cart, they exit the site before reaching the purchase stage.",
+    "error_tag_response": "Based on the clickstream data, there are <error>4,112</error> sessions where a user performed a page view followed by adding at least one item to their cart but did not complete a purchase. For this specific group of sessions, the average number of items added to the cart is <error>2.15</error>. This segment contributed a total of <error>8,840</error> add-to-cart events, with individual session cart sizes ranging from 1 to 7 items. These sessions account for <error>41.12%</error> of the 10,000 total sessions recorded in the dataset. This indicates that while nearly 40% of visitors show high intent by adding items to their cart, they exit the site before reaching the purchase stage.",
+    "total": 4,
+    "covered": 4,
+    "facts": [
+      {
+        "fact": "4,112",
+        "covered": true
+      },
+      {
+        "fact": "2.15",
+        "covered": true
+      },
+      {
+        "fact": "8,840",
+        "covered": true
+      },
+      {
+        "fact": "41.12%",
+        "covered": true
+      }
+    ]
+  },
+  {
+    "id": "clickstream-pattern-filter-categorical",
+    "prompt": "For sessions containing add_to_cart followed by purchase, what is the traffic source distribution?",
+    "raw_tag_response": "For sessions where a product was added to the cart before a purchase, the distribution is dominated by organic traffic, representing <error referenceIds=\"YW7xs2BJRpQgHjtJ-cell-0-0-number-0\" errorId=\"YW7xs2BJRpQgHjtJ-cell-0-0-number-0\">35.12%</error> of the <error referenceIds=\"YW7xs2BJRpQgHjtJ-row-header-0-session-count\" errorId=\"YW7xs2BJRpQgHjtJ-row-header-0-session-count\">2,645</error> total qualifying sessions. Direct traffic constitutes the second-largest share at <cite referenceIds=\"YW7xs2BJRpQgHjtJ-cell-0-0-number-1\">25.31%</cite>, while social media referrals account for <cite referenceIds=\"YW7xs2BJRpQgHjtJ-cell-0-0-number-2\">13.21%</cite> of the total. On the lower end, email marketing and referral sites contribute <error referenceIds=\"YW7xs2BJRpQgHjtJ-cell-0-0-number-4\" errorId=\"YW7xs2BJRpQgHjtJ-cell-0-0-number-4\">10.44%</error> and <cite referenceIds=\"YW7xs2BJRpQgHjtJ-cell-0-0-number-5\">8.30%</cite> respectively. Combined, organic and direct sources are responsible for <error referenceIds=\"YW7xs2BJRpQgHjtJ-cell-0-0-number-0 + YW7xs2BJRpQgHjtJ-cell-0-0-number-1\" errorId=\"YW7xs2BJRpQgHjtJ-cell-0-0-number-0 + YW7xs2BJRpQgHjtJ-cell-0-0-number-1\">less</error> than 58% of these successful conversion paths.",
+    "error_tag_response": "For sessions where a product was added to the cart before a purchase, the distribution is dominated by organic traffic, representing <error>35.12%</error> of the <error>2,645</error> total qualifying sessions. Direct traffic constitutes the second-largest share at 25.31%, while social media referrals account for 13.21% of the total. On the lower end, email marketing and referral sites contribute <error>10.44%</error> and 8.30% respectively. Combined, organic and direct sources are responsible for <error>less</error> than 58% of these successful conversion paths.",
+    "total": 4,
+    "covered": 4,
+    "facts": [
+      {
+        "fact": "35.12%",
+        "covered": true
+      },
+      {
+        "fact": "2,645",
+        "covered": true
+      },
+      {
+        "fact": "10.44%",
+        "covered": true
+      },
+      {
+        "fact": "less",
+        "covered": true
+      }
+    ]
+  },
+  {
+    "id": "clickstream-pattern-filter-event-attr",
+    "prompt": "For sessions containing checkout followed by purchase, what product categories appear?",
+    "raw_tag_response": "Based on the event logs, there are <error referenceIds=\"3elqDGeoUldFQ5aG-row-header-0-session-count\" errorId=\"3elqDGeoUldFQ5aG-row-header-0-session-count\">3,054</error> distinct sessions where a checkout event is followed by a purchase event. Within these specific sessions, <cite referenceIds=\"3elqDGeoUldFQ5aG-cell-0-0-number-1 , 3elqDGeoUldFQ5aG-cell-0-0-number-2 , 3elqDGeoUldFQ5aG-cell-0-0-number-3 , 3elqDGeoUldFQ5aG-cell-0-0-number-4 , 3elqDGeoUldFQ5aG-cell-0-0-number-5 , 3elqDGeoUldFQ5aG-cell-0-0-number-6 , 3elqDGeoUldFQ5aG-cell-0-0-number-7\">all seven</cite> product categories were present, with <error referenceIds=\"3elqDGeoUldFQ5aG-cell-0-0-number-1 > 3elqDGeoUldFQ5aG-cell-0-0-number-4\" errorId=\"3elqDGeoUldFQ5aG-cell-0-0-number-1\">Fashion</error> being the most frequent category, appearing <error referenceIds=\"3elqDGeoUldFQ5aG-row-header-0-event-count * 3elqDGeoUldFQ5aG-cell-0-0-number-4\" errorId=\"3elqDGeoUldFQ5aG-row-header-0-event-count * 3elqDGeoUldFQ5aG-cell-0-0-number-4\">4,120</error> times. Toys and Beauty were also heavily represented, with <cite referenceIds=\"3elqDGeoUldFQ5aG-row-header-0-event-count * 3elqDGeoUldFQ5aG-cell-0-0-number-2\">3,517</cite> and <cite referenceIds=\"3elqDGeoUldFQ5aG-row-header-0-event-count * 3elqDGeoUldFQ5aG-cell-0-0-number-3\">3,410</cite> event occurrences respectively. Electronics was the <cite referenceIds=\"3elqDGeoUldFQ5aG-cell-0-0-number-7 < 3elqDGeoUldFQ5aG-cell-0-0-number-1 , 3elqDGeoUldFQ5aG-cell-0-0-number-7 < 3elqDGeoUldFQ5aG-cell-0-0-number-2 , 3elqDGeoUldFQ5aG-cell-0-0-number-7 < 3elqDGeoUldFQ5aG-cell-0-0-number-3 , 3elqDGeoUldFQ5aG-cell-0-0-number-7 < 3elqDGeoUldFQ5aG-cell-0-0-number-4 , 3elqDGeoUldFQ5aG-cell-0-0-number-7 < 3elqDGeoUldFQ5aG-cell-0-0-number-5 , 3elqDGeoUldFQ5aG-cell-0-0-number-7 < 3elqDGeoUldFQ5aG-cell-0-0-number-6\">least frequently</cite> encountered category in these purchase-completing sessions, appearing only <error referenceIds=\"3elqDGeoUldFQ5aG-row-header-0-event-count * 3elqDGeoUldFQ5aG-cell-0-0-number-7\" errorId=\"3elqDGeoUldFQ5aG-row-header-0-event-count * 3elqDGeoUldFQ5aG-cell-0-0-number-7\">1,395</error> times.",
+    "error_tag_response": "Based on the event logs, there are <error>3,054</error> distinct sessions where a checkout event is followed by a purchase event. Within these specific sessions, all seven product categories were present, with <error>Fashion</error> being the most frequent category, appearing <error>4,120</error> times. Toys and Beauty were also heavily represented, with 3,517 and 3,410 event occurrences respectively. Electronics was the least frequently encountered category in these purchase-completing sessions, appearing only <error>1,395</error> times.",
+    "total": 4,
+    "covered": 4,
+    "facts": [
+      {
+        "fact": "3,054",
+        "covered": true
+      },
+      {
+        "fact": "Fashion",
+        "covered": true
+      },
+      {
+        "fact": "4,120",
+        "covered": true
+      },
+      {
+        "fact": "1,395",
+        "covered": true
+      }
+    ]
+  },
+  {
+    "id": "clickstream-pattern-filter-pattern",
+    "prompt": "For sessions containing page_view followed by checkout, what are the most common page sequences?",
+    "raw_tag_response": "In the dataset, there are <error referenceIds=\"QFEUjeKFlz6bWiPf-row-header-0-session-count\" errorId=\"QFEUjeKFlz6bWiPf-row-header-0-session-count\">4,192</error> unique sessions that include at least one page view followed by a checkout event. The most common sequence of actions in these sessions is \"page_view, add_to_cart, checkout, purchase,\" which accounts for <error referenceIds=\"QFEUjeKFlz6bWiPf-row-header-1-session-count\" errorId=\"QFEUjeKFlz6bWiPf-row-header-1-session-count\">256</error> sessions (<error referenceIds=\"QFEUjeKFlz6bWiPf-row-header-1-session-count / QFEUjeKFlz6bWiPf-row-header-0-session-count\" errorId=\"QFEUjeKFlz6bWiPf-row-header-1-session-count / QFEUjeKFlz6bWiPf-row-header-0-session-count\">6.11%</error>). Another frequent pattern is \"page_view, add_to_cart, page_view, checkout, purchase,\" appearing <error referenceIds=\"IJ5hkGKNMtFTkMim-row-header-2-session-count\" errorId=\"IJ5hkGKNMtFTkMim-row-header-2-session-count\">105</error> times. When analyzing category-specific journeys, the path consisting of two \"Books\" category events followed by checkout and purchase is the most prevalent specific sequence, occurring <error referenceIds=\"QFEUjeKFlz6bWiPf-row-header-3-session-count\" errorId=\"QFEUjeKFlz6bWiPf-row-header-3-session-count\">31</error> times. On average, these sessions contain <error referenceIds=\"QFEUjeKFlz6bWiPf-cell-0-1\" errorId=\"QFEUjeKFlz6bWiPf-cell-0-1\">12.45</error> total events, and <error referenceIds=\"QFEUjeKFlz6bWiPf-cell-0-2-number-3 / QFEUjeKFlz6bWiPf-cell-0-2-number-2\" errorId=\"QFEUjeKFlz6bWiPf-cell-0-2-number-3 / QFEUjeKFlz6bWiPf-cell-0-2-number-2\">74.80%</error> of them culminate in a confirmed purchase after reaching the checkout step.",
+    "error_tag_response": "In the dataset, there are <error>4,192</error> unique sessions that include at least one page view followed by a checkout event. The most common sequence of actions in these sessions is \"page_view, add_to_cart, checkout, purchase,\" which accounts for <error>256</error> sessions (<error>6.11%</error>). Another frequent pattern is \"page_view, add_to_cart, page_view, checkout, purchase,\" appearing 105 times. When analyzing category-specific journeys, the path consisting of two \"Books\" category events followed by checkout and purchase is the most prevalent specific sequence, occurring 31 times. On average, these sessions contain <error>12.45</error> total events, and 74.80% of them culminate in a confirmed purchase after reaching the checkout step.",
+    "total": 4,
+    "covered": 4,
+    "facts": [
+      {
+        "fact": "4,192",
+        "covered": true
+      },
+      {
+        "fact": "256",
+        "covered": true
+      },
+      {
+        "fact": "6.11%",
+        "covered": true
+      },
+      {
+        "fact": "12.45",
+        "covered": true
+      }
+    ]
+  },
+  {
+    "id": "clickstream-pattern-filter-funnel",
+    "prompt": "For sessions containing add_to_cart, what is the checkout to purchase conversion funnel?",
+    "raw_tag_response": "For sessions containing at least one \"add_to_cart\" event, the data shows a total of <error referenceIds=\"aMlRlJ6hFKXCOWYG-row-header-0-session-count\" errorId=\"aMlRlJ6hFKXCOWYG-row-header-0-session-count\">7,419</error> sessions that entered this stage of the funnel. Among these sessions, <cite referenceIds=\"aMlRlJ6hFKXCOWYG-row-header-0-session-count * aMlRlJ6hFKXCOWYG-cell-0-1-number-0\">3,834</cite> reached the checkout phase, representing a checkout entry rate of <error referenceIds=\"aMlRlJ6hFKXCOWYG-cell-0-1-number-0\" errorId=\"aMlRlJ6hFKXCOWYG-cell-0-1-number-0\">63.15%</error> from the cart. Of the shoppers who reached the checkout stage, <error referenceIds=\"aMlRlJ6hFKXCOWYG-row-header-0-session-count * aMlRlJ6hFKXCOWYG-cell-0-2-number-1\" errorId=\"aMlRlJ6hFKXCOWYG-row-header-0-session-count * aMlRlJ6hFKXCOWYG-cell-0-2-number-1\">3,105</error> sessions ultimately converted to a purchase, yielding a final purchase conversion rate of <error referenceIds=\"aMlRlJ6hFKXCOWYG-cell-0-2-number-1\" errorId=\"aMlRlJ6hFKXCOWYG-cell-0-2-number-1\">35.74%</error> relative to the original cart additions. This indicates that approximately <cite referenceIds=\"aMlRlJ6hFKXCOWYG-cell-0-2-number-1 / aMlRlJ6hFKXCOWYG-cell-0-1-number-0\">74.80%</cite> of users who proceeded to checkout successfully finalized their order.",
+    "error_tag_response": "For sessions containing at least one \"add_to_cart\" event, the data shows a total of <error>7,419</error> sessions that entered this stage of the funnel. Among these sessions, 3,834 reached the checkout phase, representing a checkout entry rate of <error>63.15%</error> from the cart. Of the shoppers who reached the checkout stage, <error>3,105</error> sessions ultimately converted to a purchase, yielding a final purchase conversion rate of <error>35.74%</error> relative to the original cart additions. This indicates that approximately 74.80% of users who proceeded to checkout successfully finalized their order.",
+    "total": 4,
+    "covered": 4,
+    "facts": [
+      {
+        "fact": "7,419",
+        "covered": true
+      },
+      {
+        "fact": "63.15%",
+        "covered": true
+      },
+      {
+        "fact": "3,105",
+        "covered": true
+      },
+      {
+        "fact": "35.74%",
+        "covered": true
+      }
+    ]
+  },
+  {
+    "id": "incident-none-numerical",
+    "prompt": "What is the average resolution time across all tickets?",
+    "raw_tag_response": "Based on the records in the dataset, the average resolution time across all <cite referenceIds=\"dS6TUA1RvoE01VHi-row-header-0-session-count\">10,000</cite> tickets is <error referenceIds=\"dS6TUA1RvoE01VHi-cell-0-0\" errorId=\"dS6TUA1RvoE01VHi-cell-0-0\">14.80</error> hours. The majority of these requests, specifically <error referenceIds=\"dS6TUA1RvoE01VHi-row-header-1-session-count\" errorId=\"dS6TUA1RvoE01VHi-row-header-1-session-count\">9,120</error> tickets, were successfully solved and had a slightly <error referenceIds=\"dS6TUA1RvoE01VHi-cell-1-0 > dS6TUA1RvoE01VHi-cell-0-0\" errorId=\"dS6TUA1RvoE01VHi-cell-1-0\">lower</error> average resolution time of <error referenceIds=\"dS6TUA1RvoE01VHi-cell-1-0\" errorId=\"dS6TUA1RvoE01VHi-cell-1-0\">14.12</error> hours. Conversely, the tickets that remained unsolved had a shorter average resolution time of <cite referenceIds=\"dS6TUA1RvoE01VHi-cell-2-0\">7.94</cite> hours. This indicates that successfully resolving a ticket typically takes <cite referenceIds=\"dS6TUA1RvoE01VHi-cell-1-0 > dS6TUA1RvoE01VHi-cell-2-0\">more time</cite> than processes resulting in rejection or other non-solved outcomes.",
+    "error_tag_response": "Based on the records in the dataset, the average resolution time across all 10,000 tickets is <error>14.80</error> hours. The majority of these requests, specifically <error>9,120</error> tickets, were successfully solved and had a slightly <error>lower</error> average resolution time of <error>14.12</error> hours. Conversely, the tickets that remained unsolved had a shorter average resolution time of 7.94 hours. This indicates that successfully resolving a ticket typically takes more time than processes resulting in rejection or other non-solved outcomes.",
+    "total": 4,
+    "covered": 4,
+    "facts": [
+      {
+        "fact": "14.80",
+        "covered": true
+      },
+      {
+        "fact": "9,120",
+        "covered": true
+      },
+      {
+        "fact": "lower",
+        "covered": true
+      },
+      {
+        "fact": "14.12",
+        "covered": true
+      }
+    ]
+  },
+  {
+    "id": "incident-none-categorical",
+    "prompt": "What is the issue type distribution across all tickets?",
+    "raw_tag_response": "The dataset comprises <error referenceIds=\"0mBeixeiSnlPPjzE-row-header-0-session-count\" errorId=\"0mBeixeiSnlPPjzE-row-header-0-session-count\">12,450</error> tickets, with \"Performance Issue\" being the <cite referenceIds=\"0mBeixeiSnlPPjzE-cell-0-0-number-0\">most frequent issue type</cite>, accounting for <error referenceIds=\"0mBeixeiSnlPPjzE-cell-0-0-number-0\" errorId=\"0mBeixeiSnlPPjzE-cell-0-0-number-0\">29.45%</error> of all entries. This is followed closely by \"Bug\" and \"Feature Request,\" which represent <cite referenceIds=\"0mBeixeiSnlPPjzE-cell-0-0-number-1\">21.09%</cite> and <cite referenceIds=\"0mBeixeiSnlPPjzE-cell-0-0-number-2\">20.15%</cite> of the total volume, respectively. In contrast, \"Technical Issue\" is the <cite referenceIds=\"0mBeixeiSnlPPjzE-cell-0-0-number-6\">least common category</cite>, appearing in only <error referenceIds=\"0mBeixeiSnlPPjzE-row-header-0-session-count * 0mBeixeiSnlPPjzE-cell-0-0-number-6\" errorId=\"0mBeixeiSnlPPjzE-row-header-0-session-count * 0mBeixeiSnlPPjzE-cell-0-0-number-6\">590</error> instances, or <error referenceIds=\"0mBeixeiSnlPPjzE-cell-0-0-number-6\" errorId=\"0mBeixeiSnlPPjzE-cell-0-0-number-6\">5.8%</error> of cases. Together, the top three categories represent <cite referenceIds=\"0mBeixeiSnlPPjzE-cell-0-0-number-0 + 0mBeixeiSnlPPjzE-cell-0-0-number-1 + 0mBeixeiSnlPPjzE-cell-0-0-number-2\">over 66%</cite> of the service volume, while \"Maintenance\" accounts for <cite referenceIds=\"0mBeixeiSnlPPjzE-cell-0-0-number-5\">4.98%</cite> of the total. \"Incident\" and \"Service Request\" fill out the middle ground with <cite referenceIds=\"0mBeixeiSnlPPjzE-row-header-0-session-count * 0mBeixeiSnlPPjzE-cell-0-0-number-3\">1,371</cite> and <cite referenceIds=\"0mBeixeiSnlPPjzE-row-header-0-session-count * 0mBeixeiSnlPPjzE-cell-0-0-number-4\">976</cite> tickets respectively.",
+    "error_tag_response": "The dataset comprises <error>12,450</error> tickets, with \"Performance Issue\" being the most frequent issue type, accounting for <error>29.45%</error> of all entries. This is followed closely by \"Bug\" and \"Feature Request,\" which represent 21.09% and 20.15% of the total volume, respectively. In contrast, \"Technical Issue\" is the least common category, appearing in only <error>590</error> instances, or <error>5.8%</error> of cases. Together, the top three categories represent over 66% of the service volume, while \"Maintenance\" accounts for 4.98% of the total. \"Incident\" and \"Service Request\" fill out the middle ground with 1,371 and 976 tickets respectively.",
+    "total": 4,
+    "covered": 4,
+    "facts": [
+      {
+        "fact": "12,450",
+        "covered": true
+      },
+      {
+        "fact": "29.45%",
+        "covered": true
+      },
+      {
+        "fact": "590",
+        "covered": true
+      },
+      {
+        "fact": "5.8%",
+        "covered": true
+      }
+    ]
+  },
+  {
+    "id": "incident-none-event-attr",
+    "prompt": "What events occur most frequently across all tickets?",
+    "raw_tag_response": "Across the entire dataset of <cite referenceIds=\"n5Q48GqTjfyYwbhW-row-header-0-event-count\">76,894</cite> events, the most frequent event is \"Ticket closed,\" which occurred <error referenceIds=\"n5Q48GqTjfyYwbhW-row-header-0-event-count * n5Q48GqTjfyYwbhW-cell-0-0-number-0\" errorId=\"n5Q48GqTjfyYwbhW-row-header-0-event-count * n5Q48GqTjfyYwbhW-cell-0-0-number-0\">11,452</error> times. This is followed closely by \"WIP - level 1 support\" with <cite referenceIds=\"n5Q48GqTjfyYwbhW-row-header-0-event-count * n5Q48GqTjfyYwbhW-cell-0-0-number-1\">10,179</cite> occurrences and \"Ticket created,\" which has exactly <cite referenceIds=\"n5Q48GqTjfyYwbhW-row-header-0-event-count * n5Q48GqTjfyYwbhW-cell-0-0-number-2\">10,000</cite> instances. These top three events combined represent approximately <error referenceIds=\"n5Q48GqTjfyYwbhW-cell-0-0-number-0 + n5Q48GqTjfyYwbhW-cell-0-0-number-1 + n5Q48GqTjfyYwbhW-cell-0-0-number-2\" errorId=\"n5Q48GqTjfyYwbhW-cell-0-0-number-0 + n5Q48GqTjfyYwbhW-cell-0-0-number-1 + n5Q48GqTjfyYwbhW-cell-0-0-number-2\">45.3%</error> of the total event volume logged across the <cite referenceIds=\"n5Q48GqTjfyYwbhW-row-header-0-session-count\">10,000</cite> unique sessions. Additionally, \"Ticket assigned to level 1 support\" ranks as the <error referenceIds=\"n5Q48GqTjfyYwbhW-cell-0-0-number-0 > n5Q48GqTjfyYwbhW-cell-0-0-number-1 > n5Q48GqTjfyYwbhW-cell-0-0-number-2 > n5Q48GqTjfyYwbhW-cell-0-0-number-3\" errorId=\"n5Q48GqTjfyYwbhW-cell-0-0-number-3\">second</error> most common event with <cite referenceIds=\"n5Q48GqTjfyYwbhW-row-header-0-event-count * n5Q48GqTjfyYwbhW-cell-0-0-number-3\">9,880</cite> recorded occurrences.",
+    "error_tag_response": "Across the entire dataset of 76,894 events, the most frequent event is \"Ticket closed,\" which occurred <error>11,452</error> times. This is followed closely by \"WIP - level 1 support\" with 10,179 occurrences and \"Ticket created,\" which has exactly 10,000 instances. These top three events combined represent approximately <error>45.3%</error> of the total event volume logged across the 10,000 unique sessions. Additionally, \"Ticket assigned to level 1 support\" ranks as the <error>second</error> most common event with 9,880 recorded occurrences.",
+    "total": 3,
+    "covered": 3,
+    "facts": [
+      {
+        "fact": "11,452",
+        "covered": true
+      },
+      {
+        "fact": "45.3%",
+        "covered": true
+      },
+      {
+        "fact": "second",
+        "covered": true
+      }
+    ]
+  },
+  {
+    "id": "incident-none-pattern",
+    "prompt": "What are the most common event sequences in ticket resolution?",
+    "raw_tag_response": "The most common event sequence in ticket resolution follows a path of escalation to level 2 support followed by customer feedback, appearing in <error referenceIds=\"lsRmFsHfgLjdlEr1-cell-0-1-number-0 * lsRmFsHfgLjdlEr1-row-header-0-session-count\" errorId=\"lsRmFsHfgLjdlEr1-cell-0-1-number-0 * lsRmFsHfgLjdlEr1-row-header-0-session-count\">4,129</error> instances (<error referenceIds=\"lsRmFsHfgLjdlEr1-cell-0-1-number-0\" errorId=\"lsRmFsHfgLjdlEr1-cell-0-1-number-0\">41.29%</error> of sessions). The second most frequent pattern involves level 1 support resolving the issue directly with feedback, which was observed in <cite referenceIds=\"lsRmFsHfgLjdlEr1-cell-0-1-number-1 * lsRmFsHfgLjdlEr1-row-header-0-session-count\">3,095</cite> cases, or <cite referenceIds=\"lsRmFsHfgLjdlEr1-cell-0-1-number-1\">30.95%</cite> of the <cite referenceIds=\"lsRmFsHfgLjdlEr1-row-header-0-session-count\">10,000</cite> total sessions. A third common sequence follows the level 2 escalation path but omits the customer feedback step, occurring in <error referenceIds=\"lsRmFsHfgLjdlEr1-cell-0-1-number-2 * lsRmFsHfgLjdlEr1-row-header-0-session-count\" errorId=\"lsRmFsHfgLjdlEr1-cell-0-1-number-2 * lsRmFsHfgLjdlEr1-row-header-0-session-count\">903</error> sessions. These three primary patterns account for <cite referenceIds=\"lsRmFsHfgLjdlEr1-cell-0-1-number-0 + lsRmFsHfgLjdlEr1-cell-0-1-number-1 + lsRmFsHfgLjdlEr1-cell-0-1-number-2\">over 75%</cite> of the entire dataset's event flow.",
+    "error_tag_response": "The most common event sequence in ticket resolution follows a path of escalation to level 2 support followed by customer feedback, appearing in <error>4,129</error> instances (<error>41.29%</error> of sessions). The second most frequent pattern involves level 1 support resolving the issue directly with feedback, which was observed in 3,095 cases, or 30.95% of the 10,000 total sessions. A third common sequence follows the level 2 escalation path but omits the customer feedback step, occurring in <error>903</error> sessions. These three primary patterns account for over 75% of the entire dataset's event flow.",
+    "total": 3,
+    "covered": 3,
+    "facts": [
+      {
+        "fact": "4,129",
+        "covered": true
+      },
+      {
+        "fact": "41.29%",
+        "covered": true
+      },
+      {
+        "fact": "903",
+        "covered": true
+      }
+    ]
+  },
+  {
+    "id": "incident-none-funnel",
+    "prompt": "What is the funnel from Ticket created to Ticket assigned to level 1 support to WIP - level 1 support to Ticket solved by level 1 support to Ticket closed?",
+    "raw_tag_response": "The process funnel for the <cite referenceIds=\"T3PHN4k39OB1nMjQ-row-header-0-session-count\">10,000</cite> created tickets shows that <error referenceIds=\"T3PHN4k39OB1nMjQ-row-header-0-session-count * T3PHN4k39OB1nMjQ-cell-0-0-number-1 , T3PHN4k39OB1nMjQ-cell-0-0-number-1\" errorId=\"T3PHN4k39OB1nMjQ-row-header-0-session-count * T3PHN4k39OB1nMjQ-cell-0-0-number-1 , T3PHN4k39OB1nMjQ-cell-0-0-number-1\">8,642 (86.42%)</error> were successfully assigned to level 1 support. From those assigned, <cite referenceIds=\"T3PHN4k39OB1nMjQ-row-header-0-session-count * T3PHN4k39OB1nMjQ-cell-0-0-number-2\">9,382</cite> (<cite referenceIds=\"T3PHN4k39OB1nMjQ-cell-0-0-number-2 / T3PHN4k39OB1nMjQ-cell-0-0-number-1\">96.77%</cite>) transitioned to the \"WIP - level 1 support\" phase, indicating high engagement at the initial tier. However, the conversion to \"Ticket solved by level 1 support\" shows a sharp drop-off, with only <cite referenceIds=\"T3PHN4k39OB1nMjQ-row-header-0-session-count * T3PHN4k39OB1nMjQ-cell-0-0-number-3\">3,586</cite> (<error referenceIds=\"T3PHN4k39OB1nMjQ-cell-0-0-number-3\" errorId=\"T3PHN4k39OB1nMjQ-cell-0-0-number-3\">41.24%</error> of the total or <cite referenceIds=\"T3PHN4k39OB1nMjQ-cell-0-0-number-3 / T3PHN4k39OB1nMjQ-cell-0-0-number-2\">38.22%</cite> of WIP tickets) reaching resolution at this level. Notably, all <cite referenceIds=\"T3PHN4k39OB1nMjQ-row-header-0-session-count * T3PHN4k39OB1nMjQ-cell-0-0-number-4\">3,586</cite> of these resolved tickets (<cite referenceIds=\"T3PHN4k39OB1nMjQ-cell-0-0-number-4 / T3PHN4k39OB1nMjQ-cell-0-0-number-3\">100.0%</cite>) reached the final \"Ticket closed\" stage within this specific sequential path. This suggests that while most tickets start with level 1, a <error referenceIds=\"100 - T3PHN4k39OB1nMjQ-cell-0-0-number-3\" errorId=\"100 - T3PHN4k39OB1nMjQ-cell-0-0-number-3\">slight minority</error> of <cite referenceIds=\"100 - T3PHN4k39OB1nMjQ-cell-0-0-number-3\">64.14%</cite> are either escalated or handled differently before an L1 resolution is recorded.",
+    "error_tag_response": "The process funnel for the 10,000 created tickets shows that <error>8,642 (86.42%)</error> were successfully assigned to level 1 support. From those assigned, 9,382 (96.77%) transitioned to the \"WIP - level 1 support\" phase, indicating high engagement at the initial tier. However, the conversion to \"Ticket solved by level 1 support\" shows a sharp drop-off, with only 3,586 (<error>41.24%</error> of the total or 38.22% of WIP tickets) reaching resolution at this level. Notably, all 3,586 of these resolved tickets (100.0%) reached the final \"Ticket closed\" stage within this specific sequential path. This suggests that while most tickets start with level 1, a <error>slight minority</error> of 64.14% are either escalated or handled differently before an L1 resolution is recorded.",
+    "total": 3,
+    "covered": 3,
+    "facts": [
+      {
+        "fact": "8,642 (86.42%)",
+        "covered": true
+      },
+      {
+        "fact": "41.24%",
+        "covered": true
+      },
+      {
+        "fact": "slight minority",
+        "covered": true
+      }
+    ]
+  },
+  {
+    "id": "incident-num-filter-numerical",
+    "prompt": "For tickets with resolution time over 24 hours, what is the average total number of events?",
+    "raw_tag_response": "For the <error referenceIds=\"RNoTzfuUNJbRYBgb-row-header-0-session-count\" errorId=\"RNoTzfuUNJbRYBgb-row-header-0-session-count\">2,304</error> tickets that required more than 24 hours to resolve, the average total number of events was <error referenceIds=\"RNoTzfuUNJbRYBgb-cell-0-0\" errorId=\"RNoTzfuUNJbRYBgb-cell-0-0\">12.85</error> per session. These longer-running cases represent approximately <error referenceIds=\"RNoTzfuUNJbRYBgb-row-header-0-session-count / (RNoTzfuUNJbRYBgb-row-header-0-session-count + RNoTzfuUNJbRYBgb-row-header-1-session-count)\" errorId=\"RNoTzfuUNJbRYBgb-row-header-0-session-count / (RNoTzfuUNJbRYBgb-row-header-0-session-count + RNoTzfuUNJbRYBgb-row-header-1-session-count)\">23.0%</error> of the total <cite referenceIds=\"RNoTzfuUNJbRYBgb-row-header-0-session-count + RNoTzfuUNJbRYBgb-row-header-1-session-count\">10,000</cite> recorded tickets in the dataset. By comparison, tickets resolved within 24 hours averaged <cite referenceIds=\"RNoTzfuUNJbRYBgb-cell-1-0\">7.41</cite> events, showing that more time-intensive resolutions involve additional process steps. Consequently, the average event count for tickets exceeding 24 hours is approximately <error referenceIds=\"(RNoTzfuUNJbRYBgb-cell-0-0 - RNoTzfuUNJbRYBgb-cell-1-0) / RNoTzfuUNJbRYBgb-cell-1-0\" errorId=\"(RNoTzfuUNJbRYBgb-cell-0-0 - RNoTzfuUNJbRYBgb-cell-1-0) / RNoTzfuUNJbRYBgb-cell-1-0\">73.4%</error> higher than those completed within the first day.",
+    "error_tag_response": "For the <error>2,304</error> tickets that required more than 24 hours to resolve, the average total number of events was <error>12.85</error> per session. These longer-running cases represent approximately <error>23.0%</error> of the total 10,000 recorded tickets in the dataset. By comparison, tickets resolved within 24 hours averaged 7.41 events, showing that more time-intensive resolutions involve additional process steps. Consequently, the average event count for tickets exceeding 24 hours is approximately <error>73.4%</error> higher than those completed within the first day.",
+    "total": 4,
+    "covered": 4,
+    "facts": [
+      {
+        "fact": "2,304",
+        "covered": true
+      },
+      {
+        "fact": "12.85",
+        "covered": true
+      },
+      {
+        "fact": "23.0%",
+        "covered": true
+      },
+      {
+        "fact": "73.4%",
+        "covered": true
+      }
+    ]
+  },
+  {
+    "id": "incident-num-filter-categorical",
+    "prompt": "For tickets with customer satisfaction of 4 or above, what is the report channel distribution?",
+    "raw_tag_response": "Tickets with high customer satisfaction (4 or above) are primarily reported via the Website channel, which accounts for <cite referenceIds=\"PupUBnPwitFxMVn1-row-header-0-session-count * PupUBnPwitFxMVn1-cell-0-0-number-0\">2,488</cite> tickets or <error referenceIds=\"PupUBnPwitFxMVn1-cell-0-0-number-0\" errorId=\"PupUBnPwitFxMVn1-cell-0-0-number-0\">48.12%</error> of this group. Email is the second most frequent reporting method, representing <cite referenceIds=\"PupUBnPwitFxMVn1-cell-0-0-number-1\">36.95%</cite> of these high-rated cases with <error referenceIds=\"PupUBnPwitFxMVn1-row-header-0-session-count * PupUBnPwitFxMVn1-cell-0-0-number-1\" errorId=\"PupUBnPwitFxMVn1-row-header-0-session-count * PupUBnPwitFxMVn1-cell-0-0-number-1\">1,902</error> total reports. The remaining distribution is split between the App and Phone channels, which contribute <cite referenceIds=\"PupUBnPwitFxMVn1-cell-0-0-number-2\">6.54%</cite> and <error referenceIds=\"PupUBnPwitFxMVn1-cell-0-0-number-3\" errorId=\"PupUBnPwitFxMVn1-cell-0-0-number-3\">5.43%</error> respectively. In total, <error referenceIds=\"PupUBnPwitFxMVn1-row-header-0-session-count\" errorId=\"PupUBnPwitFxMVn1-row-header-0-session-count\">4,910</error> tickets met the criteria for having a satisfaction score of 4 or higher.",
+    "error_tag_response": "Tickets with high customer satisfaction (4 or above) are primarily reported via the Website channel, which accounts for 2,488 tickets or <error>48.12%</error> of this group. Email is the second most frequent reporting method, representing 36.95% of these high-rated cases with <error>1,902</error> total reports. The remaining distribution is split between the App and Phone channels, which contribute 6.54% and <error>5.43%</error> respectively. In total, <error>4,910</error> tickets met the criteria for having a satisfaction score of 4 or higher.",
+    "total": 4,
+    "covered": 4,
+    "facts": [
+      {
+        "fact": "48.12%",
+        "covered": true
+      },
+      {
+        "fact": "1,902",
+        "covered": true
+      },
+      {
+        "fact": "5.43%",
+        "covered": true
+      },
+      {
+        "fact": "4,910",
+        "covered": true
+      }
+    ]
+  },
+  {
+    "id": "incident-num-filter-event-attr",
+    "prompt": "For tickets with fewer than 6 events, what resolvers appear most frequently?",
+    "raw_tag_response": "For tickets with fewer than 6 events, Sam is the most frequent resolver, appearing <error referenceIds=\"(k5EH5O6qGWBGOhVW-row-header-0-event-count * k5EH5O6qGWBGOhVW-cell-0-0-number-1) + (k5EH5O6qGWBGOhVW-row-header-1-event-count * k5EH5O6qGWBGOhVW-cell-1-0-number-1)\" errorId=\"(k5EH5O6qGWBGOhVW-row-header-0-event-count * k5EH5O6qGWBGOhVW-cell-0-0-number-1) + (k5EH5O6qGWBGOhVW-row-header-1-event-count * k5EH5O6qGWBGOhVW-cell-1-0-number-1)\">438</error> times across these sessions. David is the second most active resolver in this group, with a total of <error referenceIds=\"k5EH5O6qGWBGOhVW-row-header-0-event-count * k5EH5O6qGWBGOhVW-cell-0-0-number-2\" errorId=\"k5EH5O6qGWBGOhVW-row-header-0-event-count * k5EH5O6qGWBGOhVW-cell-0-0-number-2\">219</error> appearances. In contrast, Emma appears as a resolver only <cite referenceIds=\"k5EH5O6qGWBGOhVW-row-header-1-event-count * k5EH5O6qGWBGOhVW-cell-1-0-number-2\">1</cite> time for these shorter tickets. In total, <error referenceIds=\"k5EH5O6qGWBGOhVW-row-header-0-session-count + k5EH5O6qGWBGOhVW-row-header-1-session-count\" errorId=\"k5EH5O6qGWBGOhVW-row-header-0-session-count + k5EH5O6qGWBGOhVW-row-header-1-session-count\">317</error> sessions were analyzed that met the criteria of having fewer than 6 events. The vast majority of these\u2014<cite referenceIds=\"k5EH5O6qGWBGOhVW-row-header-0-session-count\">312</cite> sessions\u2014consisted of exactly 4 events.",
+    "error_tag_response": "For tickets with fewer than 6 events, Sam is the most frequent resolver, appearing <error>438</error> times across these sessions. David is the second most active resolver in this group, with a total of <error>219</error> appearances. In contrast, Emma appears as a resolver only 1 time for these shorter tickets. In total, <error>317</error> sessions were analyzed that met the criteria of having fewer than 6 events. The vast majority of these\u2014312 sessions\u2014consisted of exactly 4 events.",
+    "total": 3,
+    "covered": 3,
+    "facts": [
+      {
+        "fact": "438",
+        "covered": true
+      },
+      {
+        "fact": "219",
+        "covered": true
+      },
+      {
+        "fact": "317",
+        "covered": true
+      }
+    ]
+  },
+  {
+    "id": "incident-num-filter-pattern",
+    "prompt": "For tickets with customer satisfaction of 1 or 2, what are the most common event sequences?",
+    "raw_tag_response": "Among the dataset, there are <error referenceIds=\"wsxLMP1rJNjiRt4c-row-header-0-session-count\" errorId=\"wsxLMP1rJNjiRt4c-row-header-0-session-count\">2,514</error> tickets where customers provided a low satisfaction rating of 1 or 2. The most prevalent event sequence is Variant 3, appearing in <error referenceIds=\"wsxLMP1rJNjiRt4c-row-header-4-session-count\" errorId=\"wsxLMP1rJNjiRt4c-row-header-4-session-count\">642</error> tickets, which tracks a ticket through <cite referenceIds=\"wsxLMP1rJNjiRt4c-cell-4-0\">Level 1 assignment to an escalation and resolution at Level 2</cite>. Variant 1 follows as the second most common sequence with <cite referenceIds=\"wsxLMP1rJNjiRt4c-row-header-3-session-count\">456</cite> instances, representing <cite referenceIds=\"wsxLMP1rJNjiRt4c-cell-3-0\">tickets resolved directly by Level 1 support</cite>. <error referenceIds=\"wsxLMP1rJNjiRt4c-row-header-1-session-count-step-2-recordAttribute-value\" errorId=\"wsxLMP1rJNjiRt4c-row-header-1-session-count-step-2-recordAttribute-value\">Variant 8</error> is the third most frequent pattern, appearing <cite referenceIds=\"wsxLMP1rJNjiRt4c-row-header-1-session-count\">393</cite> times, and involves a <cite referenceIds=\"wsxLMP1rJNjiRt4c-cell-1-0 , wsxLMP1rJNjiRt4c-cell-1-1\">Level 2 resolution without recorded customer feedback before closing</cite>. These top three event sequences represent approximately <error referenceIds=\"(wsxLMP1rJNjiRt4c-row-header-4-session-count + wsxLMP1rJNjiRt4c-row-header-3-session-count + wsxLMP1rJNjiRt4c-row-header-1-session-count) / wsxLMP1rJNjiRt4c-row-header-0-session-count\" errorId=\"(wsxLMP1rJNjiRt4c-row-header-4-session-count + wsxLMP1rJNjiRt4c-row-header-3-session-count + wsxLMP1rJNjiRt4c-row-header-1-session-count) / wsxLMP1rJNjiRt4c-row-header-0-session-count\">54.1%</error> of all tickets with low satisfaction scores.",
+    "error_tag_response": "Among the dataset, there are <error>2,514</error> tickets where customers provided a low satisfaction rating of 1 or 2. The most prevalent event sequence is Variant 3, appearing in <error>642</error> tickets, which tracks a ticket through Level 1 assignment to an escalation and resolution at Level 2. Variant 1 follows as the second most common sequence with 456 instances, representing tickets resolved directly by Level 1 support. <error>Variant 8</error> is the third most frequent pattern, appearing 393 times, and involves a Level 2 resolution without recorded customer feedback before closing. These top three event sequences represent approximately <error>54.1%</error> of all tickets with low satisfaction scores.",
+    "total": 4,
+    "covered": 4,
+    "facts": [
+      {
+        "fact": "2,514",
+        "covered": true
+      },
+      {
+        "fact": "642",
+        "covered": true
+      },
+      {
+        "fact": "Variant 8",
+        "covered": true
+      },
+      {
+        "fact": "54.1%",
+        "covered": true
+      }
+    ]
+  },
+  {
+    "id": "incident-num-filter-funnel",
+    "prompt": "For tickets with resolution time under 12 hours, what is the funnel from Ticket created to Ticket assigned to level 1 support to Ticket solved by level 1 support to Ticket closed?",
+    "raw_tag_response": "For tickets with a resolution time under 12 hours, there are a total of <error referenceIds=\"VUZtzfRw7QRXnG32-row-header-0-session-count\" errorId=\"VUZtzfRw7QRXnG32-row-header-0-session-count\">4,814</error> cases starting the funnel at the creation event. From this initial group, <error referenceIds=\"VUZtzfRw7QRXnG32-row-header-0-session-count * VUZtzfRw7QRXnG32-cell-0-0-number-1\" errorId=\"VUZtzfRw7QRXnG32-row-header-0-session-count * VUZtzfRw7QRXnG32-cell-0-0-number-1\">4,407</error> tickets, representing <error referenceIds=\"VUZtzfRw7QRXnG32-cell-0-0-number-1\" errorId=\"VUZtzfRw7QRXnG32-cell-0-0-number-1\">91.12%</error> of cases, successfully progress to being assigned to level 1 support. The funnel narrows significantly at the next step, as only <error referenceIds=\"VUZtzfRw7QRXnG32-row-header-0-session-count * VUZtzfRw7QRXnG32-cell-0-0-number-2\" errorId=\"VUZtzfRw7QRXnG32-row-header-0-session-count * VUZtzfRw7QRXnG32-cell-0-0-number-2\">2,538</error> tickets, or <error referenceIds=\"VUZtzfRw7QRXnG32-cell-0-0-number-2\" errorId=\"VUZtzfRw7QRXnG32-cell-0-0-number-2\">52.72%</error> of the total, are actually solved by level 1 support within the same 12-hour period. Finally, all <error referenceIds=\"VUZtzfRw7QRXnG32-row-header-0-session-count * VUZtzfRw7QRXnG32-cell-0-0-number-3\" errorId=\"VUZtzfRw7QRXnG32-row-header-0-session-count * VUZtzfRw7QRXnG32-cell-0-0-number-3\">2,538</error> of the tickets solved by level 1 support reached the ticket closed stage, resulting in <cite referenceIds=\"VUZtzfRw7QRXnG32-cell-0-0-number-2 = VUZtzfRw7QRXnG32-cell-0-0-number-3\">no drop-off</cite> between the final two steps.",
+    "error_tag_response": "For tickets with a resolution time under 12 hours, there are a total of <error>4,814</error> cases starting the funnel at the creation event. From this initial group, 4,407 tickets, representing <error>91.12%</error> of cases, successfully progress to being assigned to level 1 support. The funnel narrows significantly at the next step, as only <error>2,538</error> tickets, or <error>52.72%</error> of the total, are actually solved by level 1 support within the same 12-hour period. Finally, all <error>2,538</error> of the tickets solved by level 1 support reached the ticket closed stage, resulting in no drop-off between the final two steps.",
+    "total": 5,
+    "covered": 5,
+    "facts": [
+      {
+        "fact": "4,814",
+        "covered": true
+      },
+      {
+        "fact": "91.12%",
+        "covered": true
+      },
+      {
+        "fact": "2,538",
+        "covered": true
+      },
+      {
+        "fact": "52.72%",
+        "covered": true
+      },
+      {
+        "fact": "2,538",
+        "covered": true
+      }
+    ]
+  },
+  {
+    "id": "incident-cat-filter-numerical",
+    "prompt": "For bug reports, what is the maximum resolution time?",
+    "raw_tag_response": "The maximum resolution time recorded for bug reports in the dataset is <error referenceIds=\"ej4Xf2V2gt44Zj4T-cell-1-1\" errorId=\"ej4Xf2V2gt44Zj4T-cell-1-1\">61.27</error> hours. This value is significantly higher than the average resolution time for bugs, which is approximately <error referenceIds=\"ej4Xf2V2gt44Zj4T-cell-1-0\" errorId=\"ej4Xf2V2gt44Zj4T-cell-1-0\">19.45</error> hours across <error referenceIds=\"ej4Xf2V2gt44Zj4T-row-header-0-session-count + ej4Xf2V2gt44Zj4T-row-header-1-session-count + ej4Xf2V2gt44Zj4T-row-header-2-session-count + ej4Xf2V2gt44Zj4T-row-header-3-session-count + ej4Xf2V2gt44Zj4T-row-header-4-session-count + ej4Xf2V2gt44Zj4T-row-header-5-session-count + ej4Xf2V2gt44Zj4T-row-header-6-session-count\" errorId=\"ej4Xf2V2gt44Zj4T-row-header-0-session-count + ej4Xf2V2gt44Zj4T-row-header-1-session-count + ej4Xf2V2gt44Zj4T-row-header-2-session-count + ej4Xf2V2gt44Zj4T-row-header-3-session-count + ej4Xf2V2gt44Zj4T-row-header-4-session-count + ej4Xf2V2gt44Zj4T-row-header-5-session-count + ej4Xf2V2gt44Zj4T-row-header-6-session-count\">2,840</error> total sessions. When comparing issue types, bug reports exhibit the <cite referenceIds=\"ej4Xf2V2gt44Zj4T-cell-1-1\">longest</cite> maximum resolution time of any category, surpassing incidents and feature requests by <cite referenceIds=\"ej4Xf2V2gt44Zj4T-cell-1-1 - ej4Xf2V2gt44Zj4T-cell-0-1 , ej4Xf2V2gt44Zj4T-cell-1-1 - ej4Xf2V2gt44Zj4T-cell-2-1\">nearly 8 hours</cite>. Bug reports represent the <error referenceIds=\"ej4Xf2V2gt44Zj4T-row-header-4-session-count > ej4Xf2V2gt44Zj4T-row-header-1-session-count > ej4Xf2V2gt44Zj4T-row-header-2-session-count\" errorId=\"ej4Xf2V2gt44Zj4T-row-header-1-session-count\">third-most</error> frequent issue type in this dataset, with more than <cite referenceIds=\"ej4Xf2V2gt44Zj4T-row-header-1-session-count\">2,000</cite> unique records.",
+    "error_tag_response": "The maximum resolution time recorded for bug reports in the dataset is <error>61.27</error> hours. This value is significantly higher than the average resolution time for bugs, which is approximately <error>19.45</error> hours across <error>2,840</error> total sessions. When comparing issue types, bug reports exhibit the longest maximum resolution time of any category, surpassing incidents and feature requests by nearly 8 hours. Bug reports represent the <error>third-most</error> frequent issue type in this dataset, with more than 2,000 unique records.",
+    "total": 4,
+    "covered": 4,
+    "facts": [
+      {
+        "fact": "61.27",
+        "covered": true
+      },
+      {
+        "fact": "19.45",
+        "covered": true
+      },
+      {
+        "fact": "2,840",
+        "covered": true
+      },
+      {
+        "fact": "third-most",
+        "covered": true
+      }
+    ]
+  },
+  {
+    "id": "incident-cat-filter-categorical",
+    "prompt": "For tickets reported via Phone, what is the priority distribution?",
+    "raw_tag_response": "For tickets reported through the Phone channel, there are a total of <error referenceIds=\"TLjVD1OLKSg89MqE-row-header-0-session-count\" errorId=\"TLjVD1OLKSg89MqE-row-header-0-session-count\">312</error> cases analyzed. The distribution shows that Medium priority is the most common category, representing approximately <error referenceIds=\"TLjVD1OLKSg89MqE-cell-0-0-number-0\" errorId=\"TLjVD1OLKSg89MqE-cell-0-0-number-0\">48.5%</error> of the total with <cite referenceIds=\"TLjVD1OLKSg89MqE-row-header-0-session-count * TLjVD1OLKSg89MqE-cell-0-0-number-0\">153</cite> tickets. Low priority follows with <cite referenceIds=\"TLjVD1OLKSg89MqE-row-header-0-session-count * TLjVD1OLKSg89MqE-cell-0-0-number-1\">80</cite> tickets, accounting for about <cite referenceIds=\"TLjVD1OLKSg89MqE-cell-0-0-number-1\">27.6%</cite> of the volume. High priority is the <error referenceIds=\"TLjVD1OLKSg89MqE-cell-0-0-number-0 > TLjVD1OLKSg89MqE-cell-0-0-number-2\" errorId=\"TLjVD1OLKSg89MqE-cell-0-0-number-0\">most frequent</error> classification in this channel, with <cite referenceIds=\"TLjVD1OLKSg89MqE-row-header-0-session-count * TLjVD1OLKSg89MqE-cell-0-0-number-2\">57</cite> tickets representing <cite referenceIds=\"TLjVD1OLKSg89MqE-cell-0-0-number-2\">19.7%</cite> of the phone-based reports.",
+    "error_tag_response": "For tickets reported through the Phone channel, there are a total of <error>312</error> cases analyzed. The distribution shows that Medium priority is the most common category, representing approximately <error>48.5%</error> of the total with 153 tickets. Low priority follows with 80 tickets, accounting for about 27.6% of the volume. High priority is the <error>most frequent</error> classification in this channel, with 57 tickets representing 19.7% of the phone-based reports.",
+    "total": 3,
+    "covered": 3,
+    "facts": [
+      {
+        "fact": "312",
+        "covered": true
+      },
+      {
+        "fact": "48.5%",
+        "covered": true
+      },
+      {
+        "fact": "most frequent",
+        "covered": true
+      }
+    ]
+  },
+  {
+    "id": "incident-cat-filter-event-attr",
+    "prompt": "For high priority tickets, what resolvers handle them most frequently?",
+    "raw_tag_response": "Sam is the most frequent resolver for high-priority tickets, appearing in <error referenceIds=\"e2nliE5eOsGvfXzB-row-header-1-session-count\" errorId=\"e2nliE5eOsGvfXzB-row-header-1-session-count\">1,455</error> unique sessions out of a total <cite referenceIds=\"e2nliE5eOsGvfXzB-row-header-0-session-count\">2,039</cite> high-priority tickets. This level of involvement means Sam participates in approximately <error referenceIds=\"e2nliE5eOsGvfXzB-row-header-1-session-count / e2nliE5eOsGvfXzB-row-header-0-session-count\" errorId=\"e2nliE5eOsGvfXzB-row-header-1-session-count / e2nliE5eOsGvfXzB-row-header-0-session-count\">71.4%</error> of all high-priority cases recorded. <error referenceIds=\"e2nliE5eOsGvfXzB-row-header-3-session-count > e2nliE5eOsGvfXzB-row-header-2-session-count\" errorId=\"e2nliE5eOsGvfXzB-row-header-3-session-count\">Emma</error> and <error referenceIds=\"e2nliE5eOsGvfXzB-row-header-3-session-count > e2nliE5eOsGvfXzB-row-header-2-session-count\" errorId=\"e2nliE5eOsGvfXzB-row-header-2-session-count\">David</error> follow as the next most frequent resolvers, managing <cite referenceIds=\"e2nliE5eOsGvfXzB-row-header-3-session-count\">1,243</cite> and <cite referenceIds=\"e2nliE5eOsGvfXzB-row-header-2-session-count\">1,139</cite> unique tickets respectively. In terms of activity volume, Sam logged <error referenceIds=\"e2nliE5eOsGvfXzB-row-header-1-event-count\" errorId=\"e2nliE5eOsGvfXzB-row-header-1-event-count\">3,214</error> total events on these high-priority tickets, the <cite referenceIds=\"e2nliE5eOsGvfXzB-row-header-1-event-count > e2nliE5eOsGvfXzB-row-header-2-event-count , e2nliE5eOsGvfXzB-row-header-1-event-count > e2nliE5eOsGvfXzB-row-header-3-event-count , e2nliE5eOsGvfXzB-row-header-1-event-count > e2nliE5eOsGvfXzB-row-header-4-event-count , e2nliE5eOsGvfXzB-row-header-1-event-count > e2nliE5eOsGvfXzB-row-header-5-event-count , e2nliE5eOsGvfXzB-row-header-1-event-count > e2nliE5eOsGvfXzB-row-header-6-event-count , e2nliE5eOsGvfXzB-row-header-1-event-count > e2nliE5eOsGvfXzB-row-header-7-event-count , e2nliE5eOsGvfXzB-row-header-1-event-count > e2nliE5eOsGvfXzB-row-header-8-event-count , e2nliE5eOsGvfXzB-row-header-1-event-count > e2nliE5eOsGvfXzB-row-header-9-event-count\">highest of any staff member</cite>. Michael also plays a significant role, ranking <cite referenceIds=\"e2nliE5eOsGvfXzB-row-header-1-session-count > e2nliE5eOsGvfXzB-row-header-3-session-count > e2nliE5eOsGvfXzB-row-header-2-session-count > e2nliE5eOsGvfXzB-row-header-4-session-count\">fourth</cite> and managing <cite referenceIds=\"e2nliE5eOsGvfXzB-row-header-4-session-count\">921</cite> of these urgent sessions.",
+    "error_tag_response": "Sam is the most frequent resolver for high-priority tickets, appearing in <error>1,455</error> unique sessions out of a total 2,039 high-priority tickets. This level of involvement means Sam participates in approximately <error>71.4%</error> of all high-priority cases recorded. <error>Emma</error> and <error>David</error> follow as the next most frequent resolvers, managing 1,243 and 1,139 unique tickets respectively. In terms of activity volume, Sam logged 3,214 total events on these high-priority tickets, the highest of any staff member. Michael also plays a significant role, ranking fourth and managing 921 of these urgent sessions.",
+    "total": 4,
+    "covered": 4,
+    "facts": [
+      {
+        "fact": "1,455",
+        "covered": true
+      },
+      {
+        "fact": "71.4%",
+        "covered": true
+      },
+      {
+        "fact": "Emma",
+        "covered": true
+      },
+      {
+        "fact": "David",
+        "covered": true
+      }
+    ]
+  },
+  {
+    "id": "incident-cat-filter-pattern",
+    "prompt": "For feature requests, what are the most common event sequences?",
+    "raw_tag_response": "Analysis of the <error referenceIds=\"ih16YHhJ1zZWiF5p-row-header-0-session-count\" errorId=\"ih16YHhJ1zZWiF5p-row-header-0-session-count\">2,840</error> feature request sessions reveals that the most frequent event sequence, accounting for <error referenceIds=\"EjqlH7DXaNG7hbtJ-cell-0-2-number-0\" errorId=\"EjqlH7DXaNG7hbtJ-cell-0-2-number-0\">46.22%</error> of all cases, follows a path from level 1 escalation to level 2 resolution. This is followed by a direct 6-step sequence where level 1 support solves the ticket without escalation, occurring in <cite referenceIds=\"EjqlH7DXaNG7hbtJ-cell-0-2-number-1\">32.01%</cite> of the data. On average, feature requests require <error referenceIds=\"ih16YHhJ1zZWiF5p-cell-0-0\" errorId=\"ih16YHhJ1zZWiF5p-cell-0-0\">9.15</error> events to reach completion, reflecting the coordination needed between departments. Additionally, a specific sequence resulting in an immediate rejection by level 1 support represents <cite referenceIds=\"EjqlH7DXaNG7hbtJ-cell-0-2-number-4\">3.72%</cite> of the total volume for this issue type.",
+    "error_tag_response": "Analysis of the <error>2,840</error> feature request sessions reveals that the most frequent event sequence, accounting for <error>46.22%</error> of all cases, follows a path from level 1 escalation to level 2 resolution. This is followed by a direct 6-step sequence where level 1 support solves the ticket without escalation, occurring in 32.01% of the data. On average, feature requests require <error>9.15</error> events to reach completion, reflecting the coordination needed between departments. Additionally, a specific sequence resulting in an immediate rejection by level 1 support represents 3.72% of the total volume for this issue type.",
+    "total": 3,
+    "covered": 3,
+    "facts": [
+      {
+        "fact": "2,840",
+        "covered": true
+      },
+      {
+        "fact": "46.22%",
+        "covered": true
+      },
+      {
+        "fact": "9.15",
+        "covered": true
+      }
+    ]
+  },
+  {
+    "id": "incident-cat-filter-funnel",
+    "prompt": "For tickets reported via the App, what is the funnel from Ticket created to Ticket assigned to level 1 support to Level 1 escalates to level 2 support to Ticket solved by level 2 support to Ticket closed?",
+    "raw_tag_response": "For tickets reported via the App, the resolution funnel begins with <error referenceIds=\"5TsucUiH69PuumBK-row-header-0-session-count\" errorId=\"5TsucUiH69PuumBK-row-header-0-session-count\">742</error> tickets created, of which <cite referenceIds=\"5TsucUiH69PuumBK-row-header-0-session-count * 5TsucUiH69PuumBK-cell-0-0-number-1\">584</cite> (<cite referenceIds=\"5TsucUiH69PuumBK-cell-0-0-number-1\">97.3%</cite>) were assigned to level 1 support. A total of <error referenceIds=\"5TsucUiH69PuumBK-row-header-0-session-count * 5TsucUiH69PuumBK-cell-0-0-number-2\" errorId=\"5TsucUiH69PuumBK-row-header-0-session-count * 5TsucUiH69PuumBK-cell-0-0-number-2\">485</error> tickets were escalated to level 2 support, accounting for approximately <error referenceIds=\"5TsucUiH69PuumBK-cell-0-0-number-2\" errorId=\"5TsucUiH69PuumBK-cell-0-0-number-2\">78.2%</error> of the total App volume. From these escalated cases, <cite referenceIds=\"5TsucUiH69PuumBK-row-header-0-session-count * 5TsucUiH69PuumBK-cell-0-0-number-3\">336</cite> tickets were successfully resolved by level 2 support, representing a <error referenceIds=\"5TsucUiH69PuumBK-cell-0-0-number-3 / 5TsucUiH69PuumBK-cell-0-0-number-2\" errorId=\"5TsucUiH69PuumBK-cell-0-0-number-3 / 5TsucUiH69PuumBK-cell-0-0-number-2\">moderate</error> <cite referenceIds=\"5TsucUiH69PuumBK-cell-0-0-number-3 / 5TsucUiH69PuumBK-cell-0-0-number-2\">90.8%</cite> resolution rate for the second-tier team. Finally, all <cite referenceIds=\"5TsucUiH69PuumBK-row-header-0-session-count * 5TsucUiH69PuumBK-cell-0-0-number-4\">336</cite> of these resolved tickets eventually reached the \"Ticket closed\" stage, indicating a <cite referenceIds=\"5TsucUiH69PuumBK-cell-0-0-number-3 = 5TsucUiH69PuumBK-cell-0-0-number-4\">perfect</cite> finalization rate for this specific escalation path.",
+    "error_tag_response": "For tickets reported via the App, the resolution funnel begins with <error>742</error> tickets created, of which 584 (97.3%) were assigned to level 1 support. A total of <error>485</error> tickets were escalated to level 2 support, accounting for approximately <error>78.2%</error> of the total App volume. From these escalated cases, 336 tickets were successfully resolved by level 2 support, representing a <error>moderate</error> 90.8% resolution rate for the second-tier team. Finally, all 336 of these resolved tickets eventually reached the \"Ticket closed\" stage, indicating a perfect finalization rate for this specific escalation path.",
+    "total": 4,
+    "covered": 4,
+    "facts": [
+      {
+        "fact": "742",
+        "covered": true
+      },
+      {
+        "fact": "485",
+        "covered": true
+      },
+      {
+        "fact": "78.2%",
+        "covered": true
+      },
+      {
+        "fact": "moderate",
+        "covered": true
+      }
+    ]
+  },
+  {
+    "id": "incident-segmentation-numerical",
+    "prompt": "For tickets that went from Ticket assigned to level 1 support to Ticket solved by level 1 support, what is the average resolution time?",
+    "raw_tag_response": "The average resolution time for tickets transitioning from level 1 assignment to level 1 solution is <error referenceIds=\"wiuBZ0PFqzioMDvB-cell-1-0\" errorId=\"wiuBZ0PFqzioMDvB-cell-1-0\">8.42 hours</error>. A total of <error referenceIds=\"wiuBZ0PFqzioMDvB-row-header-1-session-count\" errorId=\"wiuBZ0PFqzioMDvB-row-header-1-session-count\">4,120 tickets</error> followed this specific path, which represents approximately <error referenceIds=\"wiuBZ0PFqzioMDvB-row-header-1-session-count / wiuBZ0PFqzioMDvB-row-header-0-session-count\" errorId=\"wiuBZ0PFqzioMDvB-row-header-1-session-count / wiuBZ0PFqzioMDvB-row-header-0-session-count\">41.2%</error> of the <cite referenceIds=\"wiuBZ0PFqzioMDvB-row-header-0-session-count\">10,000</cite> cases in the dataset. The median resolution time is <error referenceIds=\"wiuBZ0PFqzioMDvB-cell-1-0\" errorId=\"wiuBZ0PFqzioMDvB-cell-1-0\">7.84 hours</error>, which is notably lower than the average, suggesting that many tickets are resolved in a shorter timeframe. <cite referenceIds=\"wiuBZ0PFqzioMDvB-row-header-7-session-count\">Sam</cite> was the primary resolver for these cases, closing <cite referenceIds=\"wiuBZ0PFqzioMDvB-row-header-7-session-count\">2,294</cite> tickets, while <cite referenceIds=\"wiuBZ0PFqzioMDvB-row-header-8-session-count\">David</cite> completed <cite referenceIds=\"wiuBZ0PFqzioMDvB-row-header-8-session-count\">1,292</cite>. The resolution times for this group ranged from a minimum of <error referenceIds=\"wiuBZ0PFqzioMDvB-cell-1-1\" errorId=\"wiuBZ0PFqzioMDvB-cell-1-1\">1.08 hours</error> to a maximum of <error referenceIds=\"wiuBZ0PFqzioMDvB-cell-1-2\" errorId=\"wiuBZ0PFqzioMDvB-cell-1-2\">33.87 hours</error>.",
+    "error_tag_response": "The average resolution time for tickets transitioning from level 1 assignment to level 1 solution is <error>8.42 hours</error>. A total of <error>4,120 tickets</error> followed this specific path, which represents approximately <error>41.2%</error> of the 10,000 cases in the dataset. The median resolution time is <error>7.84 hours</error>, which is notably lower than the average, suggesting that many tickets are resolved in a shorter timeframe. Sam was the primary resolver for these cases, closing 2,294 tickets, while David completed 1,292. The resolution times for this group ranged from a minimum of 1.08 hours to a maximum of 33.87 hours.",
+    "total": 4,
+    "covered": 4,
+    "facts": [
+      {
+        "fact": "8.42 hours",
+        "covered": true
+      },
+      {
+        "fact": "4,120 tickets",
+        "covered": true
+      },
+      {
+        "fact": "41.2%",
+        "covered": true
+      },
+      {
+        "fact": "7.84 hours",
+        "covered": true
+      }
+    ]
+  },
+  {
+    "id": "incident-segmentation-categorical",
+    "prompt": "For tickets that escalated from level 1 to level 2 support, what is the issue type distribution?",
+    "raw_tag_response": "A total of <error referenceIds=\"31wAZ0nbB0jtgUkl-row-header-0-session-count\" errorId=\"31wAZ0nbB0jtgUkl-row-header-0-session-count\">4,217</error> tickets were escalated from level 1 to level 2 support in the provided data. Performance Issues constitute the largest share of these cases, with <cite referenceIds=\"31wAZ0nbB0jtgUkl-row-header-0-session-count * 31wAZ0nbB0jtgUkl-cell-0-0-number-0\">1,958</cite> tickets representing approximately <error referenceIds=\"31wAZ0nbB0jtgUkl-cell-0-0-number-0\" errorId=\"31wAZ0nbB0jtgUkl-cell-0-0-number-0\">46.43%</error> of the distribution. Feature Requests are the next most frequent at <error referenceIds=\"31wAZ0nbB0jtgUkl-row-header-0-session-count * 31wAZ0nbB0jtgUkl-cell-0-0-number-1\" errorId=\"31wAZ0nbB0jtgUkl-row-header-0-session-count * 31wAZ0nbB0jtgUkl-cell-0-0-number-1\">1,412</error> tickets, or <cite referenceIds=\"31wAZ0nbB0jtgUkl-cell-0-0-number-1\">19.53%</cite>, followed by Bugs at <cite referenceIds=\"31wAZ0nbB0jtgUkl-row-header-0-session-count * 31wAZ0nbB0jtgUkl-cell-0-0-number-2\">946</cite> tickets. At the lower end of the spectrum, <error referenceIds=\"31wAZ0nbB0jtgUkl-row-header-0-session-count * 31wAZ0nbB0jtgUkl-cell-0-0-number-5 , 31wAZ0nbB0jtgUkl-cell-0-0-step-2-category-5-value\" errorId=\"31wAZ0nbB0jtgUkl-cell-0-0-step-2-category-5-value\">Technical Issues</error> account for <cite referenceIds=\"31wAZ0nbB0jtgUkl-row-header-0-session-count * 31wAZ0nbB0jtgUkl-cell-0-0-number-5\">285</cite> of the escalated records.",
+    "error_tag_response": "A total of <error>4,217</error> tickets were escalated from level 1 to level 2 support in the provided data. Performance Issues constitute the largest share of these cases, with 1,958 tickets representing approximately <error>46.43%</error> of the distribution. Feature Requests are the next most frequent at <error>1,412</error> tickets, or 19.53%, followed by Bugs at 946 tickets. At the lower end of the spectrum, <error>Technical Issues</error> account for 285 of the escalated records.",
+    "total": 4,
+    "covered": 4,
+    "facts": [
+      {
+        "fact": "4,217",
+        "covered": true
+      },
+      {
+        "fact": "46.43%",
+        "covered": true
+      },
+      {
+        "fact": "1,412",
+        "covered": true
+      },
+      {
+        "fact": "Technical Issues",
+        "covered": true
+      }
+    ]
+  },
+  {
+    "id": "incident-segmentation-event-attr",
+    "prompt": "Between Level 1 escalates to level 2 support and Ticket solved by level 2 support, what events occur?",
+    "raw_tag_response": "Between \"Level 1 escalates to level 2 support\" and \"Ticket solved by level 2 support,\" the primary event recorded is \"<cite referenceIds=\"DgnTTqyPmRVihfq0-cell-0-1-number-0\">WIP - level 2 support</cite>,\" which occurs as the single intermediate step in <error referenceIds=\"DgnTTqyPmRVihfq0-row-header-0-session-count , uK5v5zFS7JjC2Ir9-row-header-2-session-count , DgnTTqyPmRVihfq0-row-header-0-event-count * DgnTTqyPmRVihfq0-cell-0-0-number-4\" errorId=\"DgnTTqyPmRVihfq0-row-header-0-session-count - uK5v5zFS7JjC2Ir9-row-header-2-session-count - (DgnTTqyPmRVihfq0-row-header-0-event-count * DgnTTqyPmRVihfq0-cell-0-0-number-4)\">2,940</error> unique sessions. Across all <cite referenceIds=\"DgnTTqyPmRVihfq0-row-header-0-session-count\">5,372</cite> sessions containing this sequence, \"WIP - level 2 support\" is logged a total of <error referenceIds=\"DgnTTqyPmRVihfq0-row-header-0-event-count * DgnTTqyPmRVihfq0-cell-0-0-number-0\" errorId=\"DgnTTqyPmRVihfq0-row-header-0-event-count * DgnTTqyPmRVihfq0-cell-0-0-number-0\">4,215</error> times. The data also shows that \"Level 2 escalates to level 3 support,\" \"WIP - level 3 support,\" and \"Ticket assigned to level 2 support\" each appear <error referenceIds=\"DgnTTqyPmRVihfq0-row-header-0-event-count * DgnTTqyPmRVihfq0-cell-0-0-number-1\" errorId=\"DgnTTqyPmRVihfq0-row-header-0-event-count * DgnTTqyPmRVihfq0-cell-0-0-number-1\">1,350</error> times during this transition period. Finally, \"Customer feedback received\" is found <error referenceIds=\"DgnTTqyPmRVihfq0-row-header-0-event-count * DgnTTqyPmRVihfq0-cell-0-0-number-4\" errorId=\"DgnTTqyPmRVihfq0-row-header-0-event-count * DgnTTqyPmRVihfq0-cell-0-0-number-4\">582</error> times between these two escalation-related events.",
+    "error_tag_response": "Between \"Level 1 escalates to level 2 support\" and \"Ticket solved by level 2 support,\" the primary event recorded is \"WIP - level 2 support,\" which occurs as the single intermediate step in <error>2,940</error> unique sessions. Across all 5,372 sessions containing this sequence, \"WIP - level 2 support\" is logged a total of <error>4,215</error> times. The data also shows that \"Level 2 escalates to level 3 support,\" \"WIP - level 3 support,\" and \"Ticket assigned to level 2 support\" each appear <error>1,350</error> times during this transition period. Finally, \"Customer feedback received\" is found <error>582</error> times between these two escalation-related events.",
+    "total": 4,
+    "covered": 4,
+    "facts": [
+      {
+        "fact": "2,940",
+        "covered": true
+      },
+      {
+        "fact": "4,215",
+        "covered": true
+      },
+      {
+        "fact": "1,350",
+        "covered": true
+      },
+      {
+        "fact": "582",
+        "covered": true
+      }
+    ]
+  },
+  {
+    "id": "incident-segmentation-pattern",
+    "prompt": "What event patterns occur between Ticket assigned to level 1 support and Ticket closed?",
+    "raw_tag_response": "Between the ticket being assigned to level 1 support and its final closure, the process typically involves <error referenceIds=\"WBfJzKU9R1Z2TYuN-row-header-0-event-count / WBfJzKU9R1Z2TYuN-row-header-0-session-count\" errorId=\"WBfJzKU9R1Z2TYuN-row-header-0-event-count / WBfJzKU9R1Z2TYuN-row-header-0-session-count\">8.24</error> events on average across <cite referenceIds=\"WBfJzKU9R1Z2TYuN-row-header-0-session-count\">9,695</cite> tracked sessions. The most frequent sequence, occurring in <error referenceIds=\"670BMgCozuaPCH0Z-cell-0-2-number-0\" errorId=\"670BMgCozuaPCH0Z-cell-0-2-number-0\">21.5%</error> of cases, involves an escalation where level 1 moves the ticket to level 2 support before it is eventually solved and feedback is received. Approximately <cite referenceIds=\"WBfJzKU9R1Z2TYuN-cell-0-0-number-3\">59.8%</cite> of all sequences include a \"Level 1 escalates to level 2 support\" event, showing a high rate of escalation within this dataset. Conversely, level 1 support successfully resolves the ticket without further escalation in <error referenceIds=\"yYrYbbOMH3Pcsmln-row-header-1-session-count\" errorId=\"yYrYbbOMH3Pcsmln-row-header-1-session-count\">4,850</error> sessions, which is the second most common path. Nearly all tickets (<cite referenceIds=\"WBfJzKU9R1Z2TYuN-cell-0-0-number-0\">96.8%</cite>) transit through a work-in-progress (WIP) state for level 1 immediately following assignment.",
+    "error_tag_response": "Between the ticket being assigned to level 1 support and its final closure, the process typically involves <error>8.24</error> events on average across 9,695 tracked sessions. The most frequent sequence, occurring in <error>21.5%</error> of cases, involves an escalation where level 1 moves the ticket to level 2 support before it is eventually solved and feedback is received. Approximately 59.8% of all sequences include a \"Level 1 escalates to level 2 support\" event, showing a high rate of escalation within this dataset. Conversely, level 1 support successfully resolves the ticket without further escalation in <error>4,850</error> sessions, which is the second most common path. Nearly all tickets (96.8%) transit through a work-in-progress (WIP) state for level 1 immediately following assignment.",
+    "total": 3,
+    "covered": 3,
+    "facts": [
+      {
+        "fact": "8.24",
+        "covered": true
+      },
+      {
+        "fact": "21.5%",
+        "covered": true
+      },
+      {
+        "fact": "4,850",
+        "covered": true
+      }
+    ]
+  },
+  {
+    "id": "incident-segmentation-funnel",
+    "prompt": "Within tickets from Ticket created to Ticket closed, what is the funnel from WIP - level 1 support to Level 1 escalates to level 2 support to WIP - level 2 support to Ticket solved by level 2 support?",
+    "raw_tag_response": "Within the dataset of <error referenceIds=\"gfweHfbyD70egrcF-row-header-0-session-count\" errorId=\"gfweHfbyD70egrcF-row-header-0-session-count\">11,500</error> tickets that were tracked from creation to closure, <cite referenceIds=\"gfweHfbyD70egrcF-row-header-1-session-count\">9,382</cite> sessions (<cite referenceIds=\"gfweHfbyD70egrcF-row-header-1-session-count / gfweHfbyD70egrcF-row-header-0-session-count\">93.8%</cite>) reached the \"WIP - level 1 support\" stage. The transition to level 2 support saw <cite referenceIds=\"gfweHfbyD70egrcF-row-header-7-session-count\">5,797</cite> tickets (<error referenceIds=\"gfweHfbyD70egrcF-row-header-7-session-count / gfweHfbyD70egrcF-row-header-0-session-count\" errorId=\"gfweHfbyD70egrcF-row-header-7-session-count / gfweHfbyD70egrcF-row-header-0-session-count\">42.5%</error>) officially escalate, while <cite referenceIds=\"gfweHfbyD70egrcF-row-header-3-session-count\">6,082</cite> sessions actually recorded \"WIP - level 2 support\" activity. From there, level 2 support successfully solved <cite referenceIds=\"gfweHfbyD70egrcF-row-header-4-session-count\">5,677</cite> tickets, which represents a <error referenceIds=\"gfweHfbyD70egrcF-row-header-4-session-count / gfweHfbyD70egrcF-row-header-3-session-count\" errorId=\"gfweHfbyD70egrcF-row-header-4-session-count / gfweHfbyD70egrcF-row-header-3-session-count\">76.8%</error> conversion rate from the level 2 work-in-progress stage. These figures suggest that while level 1 handles most initial work, <cite referenceIds=\"gfweHfbyD70egrcF-cell-5-0-number-0\">over half</cite> of all closed tickets eventually require level 2 intervention to reach resolution.",
+    "error_tag_response": "Within the dataset of <error>11,500</error> tickets that were tracked from creation to closure, 9,382 sessions (93.8%) reached the \"WIP - level 1 support\" stage. The transition to level 2 support saw 5,797 tickets (<error>42.5%</error>) officially escalate, while 6,082 sessions actually recorded \"WIP - level 2 support\" activity. From there, level 2 support successfully solved 5,677 tickets, which represents a <error>76.8%</error> conversion rate from the level 2 work-in-progress stage. These figures suggest that while level 1 handles most initial work, over half of all closed tickets eventually require level 2 intervention to reach resolution.",
+    "total": 3,
+    "covered": 3,
+    "facts": [
+      {
+        "fact": "11,500",
+        "covered": true
+      },
+      {
+        "fact": "42.5%",
+        "covered": true
+      },
+      {
+        "fact": "76.8%",
+        "covered": true
+      }
+    ]
+  },
+  {
+    "id": "incident-pattern-filter-numerical",
+    "prompt": "For tickets containing WIP - level 1 support followed by Ticket solved by level 1 support without escalation to level 2, what is the average resolution time?",
+    "raw_tag_response": "The average resolution time for tickets that were solved by level 1 support without escalation to level 2 is <error referenceIds=\"xEUe9bM5JWljalgK-row-header-1-duration\" errorId=\"xEUe9bM5JWljalgK-row-header-1-duration\">14.85 hours</error>. This specific subset of tickets includes <error referenceIds=\"xEUe9bM5JWljalgK-row-header-1-session-count\" errorId=\"xEUe9bM5JWljalgK-row-header-1-session-count\">2,842</error> instances, representing <error referenceIds=\"xEUe9bM5JWljalgK-row-header-1-session-count / xEUe9bM5JWljalgK-row-header-0-session-count\" errorId=\"xEUe9bM5JWljalgK-row-header-1-session-count / xEUe9bM5JWljalgK-row-header-0-session-count\">28.42%</error> of all <cite referenceIds=\"xEUe9bM5JWljalgK-row-header-0-session-count\">10,000</cite> tickets in the dataset. This resolution time is <cite referenceIds=\"xEUe9bM5JWljalgK-row-header-1-duration < xEUe9bM5JWljalgK-row-header-0-duration\">lower</cite> than the overall average of <cite referenceIds=\"xEUe9bM5JWljalgK-row-header-0-duration\">15.06 hours</cite> across all ticket types in the system. The median resolution time for this group is <error referenceIds=\"xEUe9bM5JWljalgK-row-header-1-duration\" errorId=\"xEUe9bM5JWljalgK-row-header-1-duration\">11.43 hours</error>, indicating that half of these tickets are resolved relatively quickly. Furthermore, the maximum resolution time observed for a ticket in this category reached <error referenceIds=\"ZTkErnskr6nrO6lM-cell-1-0\" errorId=\"ZTkErnskr6nrO6lM-cell-1-0\">44.73 hours</error>.",
+    "error_tag_response": "The average resolution time for tickets that were solved by level 1 support without escalation to level 2 is <error>14.85 hours</error>. This specific subset of tickets includes <error>2,842</error> instances, representing <error>28.42%</error> of all 10,000 tickets in the dataset. This resolution time is lower than the overall average of 15.06 hours across all ticket types in the system. The median resolution time for this group is <error>11.43 hours</error>, indicating that half of these tickets are resolved relatively quickly. Furthermore, the maximum resolution time observed for a ticket in this category reached 44.73 hours.",
+    "total": 4,
+    "covered": 4,
+    "facts": [
+      {
+        "fact": "14.85 hours",
+        "covered": true
+      },
+      {
+        "fact": "2,842",
+        "covered": true
+      },
+      {
+        "fact": "28.42%",
+        "covered": true
+      },
+      {
+        "fact": "11.43 hours",
+        "covered": true
+      }
+    ]
+  },
+  {
+    "id": "incident-pattern-filter-categorical",
+    "prompt": "For tickets containing Level 1 escalates to level 2 support followed by Ticket solved by level 2 support, what is the reporter distribution?",
+    "raw_tag_response": "Across the dataset, <error referenceIds=\"6TSCttbKTGjIospT-row-header-0-session-count\" errorId=\"6TSCttbKTGjIospT-row-header-0-session-count\">6,128</error> sessions featured a sequence where Level 1 support escalated a ticket to Level 2 followed by a successful Level 2 resolution. Emily emerged as the <error referenceIds=\"6TSCttbKTGjIospT-cell-0-0-number-0\" errorId=\"6TSCttbKTGjIospT-cell-0-0-number-0\">second</error> most frequent reporter in this category with <cite referenceIds=\"6TSCttbKTGjIospT-row-header-0-session-count * 6TSCttbKTGjIospT-cell-0-0-number-0\">1,587</cite> tickets, representing <cite referenceIds=\"6TSCttbKTGjIospT-cell-0-0-number-0\">29.54%</cite> of the total. Charlie and John contributed similar volumes of <cite referenceIds=\"6TSCttbKTGjIospT-row-header-0-session-count * 6TSCttbKTGjIospT-cell-0-0-number-1\">1,077</cite> and <cite referenceIds=\"6TSCttbKTGjIospT-row-header-0-session-count * 6TSCttbKTGjIospT-cell-0-0-number-2\">1,058</cite> sessions respectively, each hovering around the <cite referenceIds=\"6TSCttbKTGjIospT-cell-0-0-number-1 ~ 6TSCttbKTGjIospT-cell-0-0-number-2\">20%</cite> mark. Bob accounted for <cite referenceIds=\"6TSCttbKTGjIospT-row-header-0-session-count * 6TSCttbKTGjIospT-cell-0-0-number-3\">921</cite> tickets (<cite referenceIds=\"6TSCttbKTGjIospT-cell-0-0-number-3\">17.14%</cite>), while Alice recorded the <error referenceIds=\"6TSCttbKTGjIospT-cell-0-0-number-4\" errorId=\"6TSCttbKTGjIospT-cell-0-0-number-4\">highest</error> volume with <cite referenceIds=\"6TSCttbKTGjIospT-row-header-0-session-count * 6TSCttbKTGjIospT-cell-0-0-number-4\">729</cite> sessions (<cite referenceIds=\"6TSCttbKTGjIospT-cell-0-0-number-4\">13.57%</cite>). This distribution reveals that Emily initiates nearly <error referenceIds=\"6TSCttbKTGjIospT-cell-0-0-number-0\" errorId=\"6TSCttbKTGjIospT-cell-0-0-number-0\">45%</error> of the cases that specifically require Level 2 intervention and closure.",
+    "error_tag_response": "Across the dataset, <error>6,128</error> sessions featured a sequence where Level 1 support escalated a ticket to Level 2 followed by a successful Level 2 resolution. Emily emerged as the <error>second</error> most frequent reporter in this category with 1,587 tickets, representing 29.54% of the total. Charlie and John contributed similar volumes of 1,077 and 1,058 sessions respectively, each hovering around the 20% mark. Bob accounted for 921 tickets (17.14%), while Alice recorded the <error>highest</error> volume with 729 sessions (13.57%). This distribution reveals that Emily initiates nearly <error>45%</error> of the cases that specifically require Level 2 intervention and closure.",
+    "total": 4,
+    "covered": 4,
+    "facts": [
+      {
+        "fact": "6,128",
+        "covered": true
+      },
+      {
+        "fact": "second",
+        "covered": true
+      },
+      {
+        "fact": "highest",
+        "covered": true
+      },
+      {
+        "fact": "45%",
+        "covered": true
+      }
+    ]
+  },
+  {
+    "id": "incident-pattern-filter-event-attr",
+    "prompt": "For tickets containing Customer feedback received, what events occur most frequently?",
+    "raw_tag_response": "Among the <error referenceIds=\"6XU5mgMgkZ6bjOxp-row-header-0-session-count\" errorId=\"6XU5mgMgkZ6bjOxp-row-header-0-session-count\">6,432</error> unique tickets that recorded customer feedback, the most frequent event is 'Customer feedback received' with <error referenceIds=\"6XU5mgMgkZ6bjOxp-row-header-0-event-count * 6XU5mgMgkZ6bjOxp-cell-0-0-number-0\" errorId=\"6XU5mgMgkZ6bjOxp-row-header-0-event-count * 6XU5mgMgkZ6bjOxp-cell-0-0-number-0\">7,110</error> total occurrences. Excluding this, 'WIP - level 1 support' is the most common operational step with <cite referenceIds=\"6XU5mgMgkZ6bjOxp-row-header-0-event-count * 6XU5mgMgkZ6bjOxp-cell-0-0-number-1\">9,251</cite> instances, followed by 'Ticket closed' and 'Ticket created' with <cite referenceIds=\"6XU5mgMgkZ6bjOxp-row-header-0-event-count * 6XU5mgMgkZ6bjOxp-cell-0-0-number-2\">9,128</cite> and <cite referenceIds=\"6XU5mgMgkZ6bjOxp-row-header-0-event-count * 6XU5mgMgkZ6bjOxp-cell-0-0-number-3\">8,759</cite> occurrences respectively. Notably, 'WIP - level 2 support' appears <cite referenceIds=\"6XU5mgMgkZ6bjOxp-row-header-0-event-count * 6XU5mgMgkZ6bjOxp-cell-0-0-number-5\">6,244</cite> times, indicating that over <error referenceIds=\"6XU5mgMgkZ6bjOxp-cell-0-1-number-0\" errorId=\"6XU5mgMgkZ6bjOxp-cell-0-1-number-0\">54%</error> of feedback-linked sessions required higher-tier technical intervention. This complexity is further evidenced by the fact that only <cite referenceIds=\"6XU5mgMgkZ6bjOxp-row-header-0-event-count * 6XU5mgMgkZ6bjOxp-cell-0-0-number-8\">3,586</cite> instances of 'Ticket solved by level 1 support' were recorded, whereas 'Ticket solved by level 2 support' occurred <error referenceIds=\"6XU5mgMgkZ6bjOxp-row-header-0-event-count * 6XU5mgMgkZ6bjOxp-cell-0-0-number-6\" errorId=\"6XU5mgMgkZ6bjOxp-row-header-0-event-count * 6XU5mgMgkZ6bjOxp-cell-0-0-number-6\">4,106</error> times.",
+    "error_tag_response": "Among the <error>6,432</error> unique tickets that recorded customer feedback, the most frequent event is 'Customer feedback received' with <error>7,110</error> total occurrences. Excluding this, 'WIP - level 1 support' is the most common operational step with 9,251 instances, followed by 'Ticket closed' and 'Ticket created' with 9,128 and 8,759 occurrences respectively. Notably, 'WIP - level 2 support' appears 6,244 times, indicating that over <error>54%</error> of feedback-linked sessions required higher-tier technical intervention. This complexity is further evidenced by the fact that only 3,586 instances of 'Ticket solved by level 1 support' were recorded, whereas 'Ticket solved by level 2 support' occurred <error>4,106</error> times.",
+    "total": 4,
+    "covered": 4,
+    "facts": [
+      {
+        "fact": "6,432",
+        "covered": true
+      },
+      {
+        "fact": "7,110",
+        "covered": true
+      },
+      {
+        "fact": "54%",
+        "covered": true
+      },
+      {
+        "fact": "4,106",
+        "covered": true
+      }
+    ]
+  },
+  {
+    "id": "incident-pattern-filter-pattern",
+    "prompt": "For tickets containing Ticket reopened by customer, what are the most common event sequences after reopening?",
+    "raw_tag_response": "In the analyzed dataset of <cite referenceIds=\"YaVfzhcCggbyBvQa-row-header-0-session-count\">10,000</cite> total sessions, there are <error referenceIds=\"YaVfzhcCggbyBvQa-row-header-1-session-count\" errorId=\"YaVfzhcCggbyBvQa-row-header-1-session-count\">512</error> instances where a ticket was reopened by a customer, representing <error referenceIds=\"YaVfzhcCggbyBvQa-row-header-1-session-count / YaVfzhcCggbyBvQa-row-header-0-session-count\" errorId=\"YaVfzhcCggbyBvQa-row-header-1-session-count / YaVfzhcCggbyBvQa-row-header-0-session-count\">5.12%</error> of all cases. For all <error referenceIds=\"YaVfzhcCggbyBvQa-row-header-1-session-count\" errorId=\"YaVfzhcCggbyBvQa-row-header-1-session-count\">512</error> of these occurrences, the immediate next event was <error referenceIds=\"YaVfzhcCggbyBvQa-cell-2-0\" errorId=\"YaVfzhcCggbyBvQa-cell-2-0-step-3-distribution-0-pattern-0-value\">Level 1 escalates to level 2 support</error>. The data shows that <cite referenceIds=\"YaVfzhcCggbyBvQa-cell-2-0-number-3\">100%</cite> of these reopened tickets followed the exact same four-event sequence to resolution. This final path always consisted of <error referenceIds=\"YaVfzhcCggbyBvQa-cell-2-0\" errorId=\"YaVfzhcCggbyBvQa-cell-2-0-step-3-distribution-3-pattern-0-value\">Level 1 escalates to level 2 support</error>, followed by <cite referenceIds=\"YaVfzhcCggbyBvQa-cell-2-0-step-3-distribution-3-pattern-1-value\">Ticket solved by level 2 support</cite>, <cite referenceIds=\"YaVfzhcCggbyBvQa-cell-2-0-step-3-distribution-3-pattern-2-value\">Customer feedback received</cite>, and finally, <cite referenceIds=\"YaVfzhcCggbyBvQa-cell-2-0-step-3-distribution-3-pattern-3-value\">Ticket closed</cite>.",
+    "error_tag_response": "In the analyzed dataset of 10,000 total sessions, there are <error>512</error> instances where a ticket was reopened by a customer, representing <error>5.12%</error> of all cases. For all <error>512</error> of these occurrences, the immediate next event was <error>Level 1 escalates to level 2 support</error>. The data shows that 100% of these reopened tickets followed the exact same four-event sequence to resolution. This final path always consisted of <error>Level 1 escalates to level 2 support</error>, followed by Ticket solved by level 2 support, Customer feedback received, and finally, Ticket closed.",
+    "total": 5,
+    "covered": 5,
+    "facts": [
+      {
+        "fact": "512",
+        "covered": true
+      },
+      {
+        "fact": "5.12%",
+        "covered": true
+      },
+      {
+        "fact": "512",
+        "covered": true
+      },
+      {
+        "fact": "Level 1 escalates to level 2 support",
+        "covered": true
+      },
+      {
+        "fact": "Level 1 escalates to level 2 support",
+        "covered": true
+      }
+    ]
+  },
+  {
+    "id": "incident-pattern-filter-funnel",
+    "prompt": "For tickets containing Level 1 escalates to level 2 support, what is the funnel from WIP - level 2 support to Ticket solved by level 2 support to Customer feedback received to Ticket closed?",
+    "raw_tag_response": "For the <cite referenceIds=\"tgmv2ItJmOPnu1Ki-row-header-0-session-count\">5,797</cite> tickets that included the \"Level 1 escalates to level 2 support\" event, the funnel through the level 2 resolution stages is remarkably consistent. A total of <error referenceIds=\"tgmv2ItJmOPnu1Ki-row-header-0-session-count * tgmv2ItJmOPnu1Ki-cell-0-0-number-1\" errorId=\"tgmv2ItJmOPnu1Ki-row-header-0-session-count * tgmv2ItJmOPnu1Ki-cell-0-0-number-1\">5,114</error> sessions, or approximately <error referenceIds=\"tgmv2ItJmOPnu1Ki-cell-0-0-number-1\" errorId=\"tgmv2ItJmOPnu1Ki-cell-0-0-number-1\">88.2%</error> of the escalated volume, transitioned into the \"WIP - level 2 support\" phase. As the process continued, <cite referenceIds=\"tgmv2ItJmOPnu1Ki-row-header-0-session-count * tgmv2ItJmOPnu1Ki-cell-0-0-number-2\">5,372</cite> tickets were successfully recorded as \"Ticket solved by level 2 support,\" demonstrating a high conversion rate of <cite referenceIds=\"tgmv2ItJmOPnu1Ki-cell-0-0-number-2\">92.7%</cite> from the initial escalation. Customer engagement remained strong as well, with <error referenceIds=\"tgmv2ItJmOPnu1Ki-row-header-0-session-count * tgmv2ItJmOPnu1Ki-cell-0-0-number-3\" errorId=\"tgmv2ItJmOPnu1Ki-row-header-0-session-count * tgmv2ItJmOPnu1Ki-cell-0-0-number-3\">4,417</error> sessions reaching the \"Customer feedback received\" milestone, which is about <error referenceIds=\"tgmv2ItJmOPnu1Ki-cell-0-0-number-3\" errorId=\"tgmv2ItJmOPnu1Ki-cell-0-0-number-3\">76.2%</error> of the escalated pool. Finally, the funnel concludes with all <cite referenceIds=\"tgmv2ItJmOPnu1Ki-row-header-0-session-count * tgmv2ItJmOPnu1Ki-cell-0-2-number-1\">5,797</cite> escalated tickets reaching the \"Ticket closed\" status, representing a <cite referenceIds=\"tgmv2ItJmOPnu1Ki-cell-0-2-number-1\">100%</cite> completion rate for the escalated cohort.",
+    "error_tag_response": "For the 5,797 tickets that included the \"Level 1 escalates to level 2 support\" event, the funnel through the level 2 resolution stages is remarkably consistent. A total of <error>5,114</error> sessions, or approximately <error>88.2%</error> of the escalated volume, transitioned into the \"WIP - level 2 support\" phase. As the process continued, 5,372 tickets were successfully recorded as \"Ticket solved by level 2 support,\" demonstrating a high conversion rate of 92.7% from the initial escalation. Customer engagement remained strong as well, with <error>4,417</error> sessions reaching the \"Customer feedback received\" milestone, which is about <error>76.2%</error> of the escalated pool. Finally, the funnel concludes with all 5,797 escalated tickets reaching the \"Ticket closed\" status, representing a 100% completion rate for the escalated cohort.",
+    "total": 4,
+    "covered": 4,
+    "facts": [
+      {
+        "fact": "5,114",
+        "covered": true
+      },
+      {
+        "fact": "88.2%",
+        "covered": true
+      },
+      {
+        "fact": "4,417",
+        "covered": true
+      },
+      {
+        "fact": "76.2%",
+        "covered": true
+      }
+    ]
+  }
+]

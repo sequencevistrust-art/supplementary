@@ -1,0 +1,61 @@
+[
+  { "id": "clickstream-none-numerical", "dataset": "clickstream", "rowOp": "none", "colOp": "numerical", "question": "What is the average total purchase amount across all sessions?" },
+  { "id": "clickstream-none-categorical", "dataset": "clickstream", "rowOp": "none", "colOp": "categorical", "question": "What is the traffic source distribution across all sessions?" },
+  { "id": "clickstream-none-event-attr", "dataset": "clickstream", "rowOp": "none", "colOp": "event-attribute", "question": "What product categories are most commonly browsed?" },
+  { "id": "clickstream-none-pattern", "dataset": "clickstream", "rowOp": "none", "colOp": "pattern", "question": "What are the most common page navigation patterns?" },
+  { "id": "clickstream-none-funnel", "dataset": "clickstream", "rowOp": "none", "colOp": "funnel", "question": "What is the funnel from page_view to add_to_cart to checkout to purchase?" },
+
+  { "id": "clickstream-num-filter-numerical", "dataset": "clickstream", "rowOp": "num-filter", "colOp": "numerical", "question": "For users aged 45 to 70, what is the sum of total purchase amounts?" },
+  { "id": "clickstream-num-filter-categorical", "dataset": "clickstream", "rowOp": "num-filter", "colOp": "categorical", "question": "For sessions with more than 5 page views, what is the device distribution?" },
+  { "id": "clickstream-num-filter-event-attr", "dataset": "clickstream", "rowOp": "num-filter", "colOp": "event-attribute", "question": "For users aged 25 to 40, what payment methods appear in their events?" },
+  { "id": "clickstream-num-filter-pattern", "dataset": "clickstream", "rowOp": "num-filter", "colOp": "pattern", "question": "For sessions with 3 or more items added to cart, what are the most common category browsing sequences?" },
+  { "id": "clickstream-num-filter-funnel", "dataset": "clickstream", "rowOp": "num-filter", "colOp": "funnel", "question": "For users under 30, what is the conversion funnel from page_view to add_to_cart to purchase?" },
+
+  { "id": "clickstream-cat-filter-numerical", "dataset": "clickstream", "rowOp": "cat-filter", "colOp": "numerical", "question": "For organic traffic, what is the average number of unique products viewed?" },
+  { "id": "clickstream-cat-filter-categorical", "dataset": "clickstream", "rowOp": "cat-filter", "colOp": "categorical", "question": "For desktop users, how many unique session countries are there?" },
+  { "id": "clickstream-cat-filter-event-attr", "dataset": "clickstream", "rowOp": "cat-filter", "colOp": "event-attribute", "question": "For US visitors, what product categories are most commonly browsed?" },
+  { "id": "clickstream-cat-filter-pattern", "dataset": "clickstream", "rowOp": "cat-filter", "colOp": "pattern", "question": "For mobile users, what are the most common product category browsing sequences?" },
+  { "id": "clickstream-cat-filter-funnel", "dataset": "clickstream", "rowOp": "cat-filter", "colOp": "funnel", "question": "For users who opted into marketing, what is the conversion funnel from page_view to add_to_cart to checkout to purchase?" },
+
+  { "id": "clickstream-segmentation-numerical", "dataset": "clickstream", "rowOp": "segmentation", "colOp": "numerical", "question": "For sessions containing add_to_cart followed by purchase, what is the average number of unique products viewed?" },
+  { "id": "clickstream-segmentation-categorical", "dataset": "clickstream", "rowOp": "segmentation", "colOp": "categorical", "question": "For sessions with page_view followed by checkout, what is the session country distribution?" },
+  { "id": "clickstream-segmentation-event-attr", "dataset": "clickstream", "rowOp": "segmentation", "colOp": "event-attribute", "question": "Between add_to_cart and purchase events, what pages do users visit?" },
+  { "id": "clickstream-segmentation-pattern", "dataset": "clickstream", "rowOp": "segmentation", "colOp": "pattern", "question": "What are the common category browsing sequences between page_view and add_to_cart?" },
+  { "id": "clickstream-segmentation-funnel", "dataset": "clickstream", "rowOp": "segmentation", "colOp": "funnel", "question": "Within sessions from page_view to purchase, what is the add_to_cart to checkout conversion funnel?" },
+
+  { "id": "clickstream-pattern-filter-numerical", "dataset": "clickstream", "rowOp": "pattern-filter", "colOp": "numerical", "question": "For sessions containing page_view followed by add_to_cart but not purchase, what is the average number of items added to cart?" },
+  { "id": "clickstream-pattern-filter-categorical", "dataset": "clickstream", "rowOp": "pattern-filter", "colOp": "categorical", "question": "For sessions containing add_to_cart followed by purchase, what is the traffic source distribution?" },
+  { "id": "clickstream-pattern-filter-event-attr", "dataset": "clickstream", "rowOp": "pattern-filter", "colOp": "event-attribute", "question": "For sessions containing checkout followed by purchase, what product categories appear?" },
+  { "id": "clickstream-pattern-filter-pattern", "dataset": "clickstream", "rowOp": "pattern-filter", "colOp": "pattern", "question": "For sessions containing page_view followed by checkout, what are the most common page sequences?" },
+  { "id": "clickstream-pattern-filter-funnel", "dataset": "clickstream", "rowOp": "pattern-filter", "colOp": "funnel", "question": "For sessions containing add_to_cart, what is the checkout to purchase conversion funnel?" },
+
+  { "id": "incident-none-numerical", "dataset": "incident", "rowOp": "none", "colOp": "numerical", "question": "What is the average resolution time across all tickets?" },
+  { "id": "incident-none-categorical", "dataset": "incident", "rowOp": "none", "colOp": "categorical", "question": "What is the issue type distribution across all tickets?" },
+  { "id": "incident-none-event-attr", "dataset": "incident", "rowOp": "none", "colOp": "event-attribute", "question": "What events occur most frequently across all tickets?" },
+  { "id": "incident-none-pattern", "dataset": "incident", "rowOp": "none", "colOp": "pattern", "question": "What are the most common event sequences in ticket resolution?" },
+  { "id": "incident-none-funnel", "dataset": "incident", "rowOp": "none", "colOp": "funnel", "question": "What is the funnel from Ticket created to Ticket assigned to level 1 support to WIP - level 1 support to Ticket solved by level 1 support to Ticket closed?" },
+
+  { "id": "incident-num-filter-numerical", "dataset": "incident", "rowOp": "num-filter", "colOp": "numerical", "question": "For tickets with resolution time over 24 hours, what is the average total number of events?" },
+  { "id": "incident-num-filter-categorical", "dataset": "incident", "rowOp": "num-filter", "colOp": "categorical", "question": "For tickets with customer satisfaction of 4 or above, what is the report channel distribution?" },
+  { "id": "incident-num-filter-event-attr", "dataset": "incident", "rowOp": "num-filter", "colOp": "event-attribute", "question": "For tickets with fewer than 6 events, what resolvers appear most frequently?" },
+  { "id": "incident-num-filter-pattern", "dataset": "incident", "rowOp": "num-filter", "colOp": "pattern", "question": "For tickets with customer satisfaction of 1 or 2, what are the most common event sequences?" },
+  { "id": "incident-num-filter-funnel", "dataset": "incident", "rowOp": "num-filter", "colOp": "funnel", "question": "For tickets with resolution time under 12 hours, what is the funnel from Ticket created to Ticket assigned to level 1 support to Ticket solved by level 1 support to Ticket closed?" },
+
+  { "id": "incident-cat-filter-numerical", "dataset": "incident", "rowOp": "cat-filter", "colOp": "numerical", "question": "For bug reports, what is the maximum resolution time?" },
+  { "id": "incident-cat-filter-categorical", "dataset": "incident", "rowOp": "cat-filter", "colOp": "categorical", "question": "For tickets reported via Phone, what is the priority distribution?" },
+  { "id": "incident-cat-filter-event-attr", "dataset": "incident", "rowOp": "cat-filter", "colOp": "event-attribute", "question": "For high priority tickets, what resolvers handle them most frequently?" },
+  { "id": "incident-cat-filter-pattern", "dataset": "incident", "rowOp": "cat-filter", "colOp": "pattern", "question": "For feature requests, what are the most common event sequences?" },
+  { "id": "incident-cat-filter-funnel", "dataset": "incident", "rowOp": "cat-filter", "colOp": "funnel", "question": "For tickets reported via the App, what is the funnel from Ticket created to Ticket assigned to level 1 support to Level 1 escalates to level 2 support to Ticket solved by level 2 support to Ticket closed?" },
+
+  { "id": "incident-segmentation-numerical", "dataset": "incident", "rowOp": "segmentation", "colOp": "numerical", "question": "For tickets that went from Ticket assigned to level 1 support to Ticket solved by level 1 support, what is the average resolution time?" },
+  { "id": "incident-segmentation-categorical", "dataset": "incident", "rowOp": "segmentation", "colOp": "categorical", "question": "For tickets that escalated from level 1 to level 2 support, what is the issue type distribution?" },
+  { "id": "incident-segmentation-event-attr", "dataset": "incident", "rowOp": "segmentation", "colOp": "event-attribute", "question": "Between Level 1 escalates to level 2 support and Ticket solved by level 2 support, what events occur?" },
+  { "id": "incident-segmentation-pattern", "dataset": "incident", "rowOp": "segmentation", "colOp": "pattern", "question": "What event patterns occur between Ticket assigned to level 1 support and Ticket closed?" },
+  { "id": "incident-segmentation-funnel", "dataset": "incident", "rowOp": "segmentation", "colOp": "funnel", "question": "Within tickets from Ticket created to Ticket closed, what is the funnel from WIP - level 1 support to Level 1 escalates to level 2 support to WIP - level 2 support to Ticket solved by level 2 support?" },
+
+  { "id": "incident-pattern-filter-numerical", "dataset": "incident", "rowOp": "pattern-filter", "colOp": "numerical", "question": "For tickets containing WIP - level 1 support followed by Ticket solved by level 1 support without escalation to level 2, what is the average resolution time?" },
+  { "id": "incident-pattern-filter-categorical", "dataset": "incident", "rowOp": "pattern-filter", "colOp": "categorical", "question": "For tickets containing Level 1 escalates to level 2 support followed by Ticket solved by level 2 support, what is the reporter distribution?" },
+  { "id": "incident-pattern-filter-event-attr", "dataset": "incident", "rowOp": "pattern-filter", "colOp": "event-attribute", "question": "For tickets containing Customer feedback received, what events occur most frequently?" },
+  { "id": "incident-pattern-filter-pattern", "dataset": "incident", "rowOp": "pattern-filter", "colOp": "pattern", "question": "For tickets containing Ticket reopened by customer, what are the most common event sequences after reopening?" },
+  { "id": "incident-pattern-filter-funnel", "dataset": "incident", "rowOp": "pattern-filter", "colOp": "funnel", "question": "For tickets containing Level 1 escalates to level 2 support, what is the funnel from WIP - level 2 support to Ticket solved by level 2 support to Customer feedback received to Ticket closed?" }
+]

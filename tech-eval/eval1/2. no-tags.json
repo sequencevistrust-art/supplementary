@@ -1,0 +1,252 @@
+[
+  {
+    "id": "clickstream-none-numerical",
+    "prompt": "What is the average total purchase amount across all sessions?",
+    "response": "Across all 10,000 sessions, the average total purchase amount is $130.73. These sessions have an average duration of 65.9 minutes."
+  },
+  {
+    "id": "clickstream-none-categorical",
+    "prompt": "What is the traffic source distribution across all sessions?",
+    "response": "Across all 10,000 sessions, **Organic** search is the most common traffic source, accounting for 33.6% of all traffic.\n\nThe full distribution is as follows:\n*   **Organic**: 33.6%\n*   **Direct**: 25.34%\n*   **Social**: 12.31%\n*   **Paid**: 11.91%\n*   **Email**: 8.6%\n*   **Referral**: 8.24%"
+  },
+  {
+    "id": "clickstream-none-event-attr",
+    "prompt": "What product categories are most commonly browsed?",
+    "response": "Based on an analysis of 10,000 sessions, the most commonly browsed product categories are:\n\n*   **Books**: 16.35% of all product-related events.\n*   **Toys**: 15.16%\n*   **Beauty**: 14.65%\n*   **Fashion**: 12.01%\n*   **Sports**: 11.48%\n*   **Home & Kitchen**: 11.4%\n*   **Electronics**: 8.38%\n\nAdditionally, 10.57% of events did not have a specific category assigned, which typically occurs on general pages such as the homepage or within the checkout process."
+  },
+  {
+    "id": "clickstream-none-pattern",
+    "prompt": "What are the most common page navigation patterns?",
+    "response": "The most common page navigation patterns in the dataset are dominated by repeated page views and transitions to adding items to the cart. Every session in the dataset contains at least one **page_view** event, and the patterns reveal a high frequency of exploratory browsing.\n\n### Top Page Navigation Patterns\n\nThe following patterns represent the most frequent sequences of interactions:\n\n*   **Repeated Browsing**: The most frequent patterns involve multiple consecutive page views. \n    *   **1 page_view**: 10,000 sessions (Avg. duration: 65.9 minutes)\n    *   **2 page_views**: 8,733 sessions (Avg. duration: 68.2 minutes)\n    *   **3 page_views**: 7,490 sessions (Avg. duration: 76.2 minutes)\n    *   **4 page_views**: 6,258 sessions (Avg. duration: 84 minutes)\n    *   **5 page_views**: 4,993 sessions (Avg. duration: 91.9 minutes)\n\n*   **Conversion Intent (Add to Cart)**: Patterns leading to or including an \"add to cart\" action are also highly prevalent.\n    *   **page_view \u2192 add_to_cart**: 6,812 sessions (Avg. duration: 73 minutes)\n    *   **page_view \u2192 page_view \u2192 add_to_cart**: 5,659 sessions (Avg. duration: 80.2 minutes)\n    *   **page_view \u2192 add_to_cart \u2192 page_view**: 5,645 sessions (Avg. duration: 79.8 minutes)\n\n### Key Observations\n1.  **Exploration is Extensive**: The session counts for extended page view sequences (up to 5 page views) remain quite high, indicating that users frequently browse multiple products or categories before leaving or converting.\n2.  **Add to Cart Prerequisites**: Every session that included an **add_to_cart** event (6,812 sessions) also contained the **page_view \u2192 add_to_cart** pattern (6,812 sessions), suggesting that users typically view a product page immediately before adding it to their cart.\n3.  **Post-Cart Behavior**: A significant number of users continue browsing after adding an item to their cart, as seen in the **add_to_cart \u2192 page_view** pattern appearing in 5,645 sessions."
+  },
+  {
+    "id": "clickstream-none-funnel",
+    "prompt": "What is the funnel from page_view to add_to_cart to checkout to purchase?",
+    "response": "The conversion funnel from `page_view` to `purchase` across all 10,000 sessions shows the following progression:\n\n*   **Page View to Add to Cart**: 68.12% of users proceed to add an item to their cart. This transition takes an average of 21.86 minutes with 1.35 intervening events.\n*   **Add to Cart to Checkout**: Conversion drops to 38.22% of the original population. This is the most significant drop-off point and the longest stage of the journey, taking about 53.86 minutes and 3.59 events.\n*   **Checkout to Purchase**: 28.58% of initial users complete a purchase. For those who reach checkout, the final conversion to purchase is high, occurring quickly in just 5.54 minutes with fewer than 0.01 events in between.\n\nThe overall end-to-end conversion rate for the funnel is 28.58%."
+  },
+  {
+    "id": "clickstream-num-filter-numerical",
+    "prompt": "For users aged 45 to 70, what is the sum of total purchase amounts?",
+    "response": "For users aged 45 to 70, the total purchase amount across all sessions is $161,074.22.\n\nThis segment consists of 4,457 sessions, with an average session duration of 1.1 hours."
+  },
+  {
+    "id": "clickstream-num-filter-categorical",
+    "prompt": "For sessions with more than 5 page views, what is the device distribution?",
+    "response": "For sessions with more than 5 page views (totaling 3,688 sessions with an average duration of 100 minutes), mobile is the most common device used:\n\n*   **Mobile**: 53.77%\n*   **Desktop**: 38.88%\n*   **Tablet**: 7.35%"
+  },
+  {
+    "id": "clickstream-num-filter-event-attr",
+    "prompt": "For users aged 25 to 40, what payment methods appear in their events?",
+    "response": "For users aged 25 to 40, there were a total of 2,785 sessions analyzed. The payment methods that appear in their events and session records include:\n\n*   **Card**: The most common payment method, used in 587 sessions.\n*   **PayPal**: Appearing in 112 sessions.\n*   **Wallet**: Used in 79 sessions.\n*   **Cash on Delivery (COD)**: Appearing in 37 sessions.\n\nA significant majority of the sessions for this age group (1,970 sessions) did not have a specific payment method recorded, which typically indicates sessions where no purchase was completed. For those who did select a method, **card** was the most frequent choice."
+  },
+  {
+    "id": "clickstream-num-filter-pattern",
+    "prompt": "For sessions with 3 or more items added to cart, what are the most common category browsing sequences?",
+    "response": "For sessions where 3 or more items were added to the cart (1,287 sessions), the most common category browsing sequences involve both broad exploration and repeated engagement within specific categories.\n\n### Top Category Browsing Sequences\n\nThe most frequent patterns for these high-engagement sessions include:\n\n*   **Books**: Appears in 60.99% of these sessions.\n*   **Beauty**: Browsed in 57.03% of sessions.\n*   **Toys**: Seen in 56.02% of sessions.\n*   **Fashion**: Browsed in 44.37% of sessions.\n*   **Home & Kitchen**: Viewed in 41.10% of sessions.\n\n### Repeated Browsing Patterns\nA significant portion of these users engage in multi-step browsing within the same category:\n*   **Books \u2192 Books**: 48.95% of sessions.\n*   **Toys \u2192 Toys**: 43.82% of sessions.\n*   **Beauty \u2192 Beauty**: 42.74% of sessions.\n\nAdditionally, a pattern with no specific category attribute was found in 57.26% of sessions, which typically corresponds to non-product interactions such as viewing general landing pages or the checkout process."
+  },
+  {
+    "id": "clickstream-num-filter-funnel",
+    "prompt": "For users under 30, what is the conversion funnel from page_view to add_to_cart to purchase?",
+    "response": "For users under 30 (ages 18\u201329), the conversion funnel shows that while a majority of sessions involve adding items to a cart, final purchase conversion occurs in about 27.76% of total sessions.\n\n### **Conversion Funnel Breakdown**\n\n| Funnel Step | Session Conversion | Avg. Time from Prev. Step | Avg. Events from Prev. Step |\n| :--- | :--- | :--- | :--- |\n| **1. page_view** | 100% | \u2014 | \u2014 |\n| **2. add_to_cart** | 68.47% | 22 minutes | 1.38 |\n| **3. purchase** | 27.76% | 59 minutes | 4.60 |\n\n### **Key Insights**\n*   **Initial Engagement**: A high percentage of these 2,014 sessions (68.47%) successfully reach the add-to-cart stage, typically doing so within 22 minutes of their first page view.\n*   **Purchase Completion**: There is a significant drop-off between adding to cart and final purchase, with only 40.54% of those who add items eventually completing the transaction. \n*   **Decision Period**: The transition from adding to the cart to purchasing takes considerably longer\u2014nearly an hour on average\u2014and involves 4.60 additional events, suggesting a more deliberate comparison or checkout process.\n*   **Total Session Time**: Across the entire segment, the average session duration is 65.6 minutes."
+  },
+  {
+    "id": "clickstream-cat-filter-numerical",
+    "prompt": "For organic traffic, what is the average number of unique products viewed?",
+    "response": "For users arriving via organic traffic (3,360 sessions), the average number of unique products viewed per session is 4.44."
+  },
+  {
+    "id": "clickstream-cat-filter-categorical",
+    "prompt": "For desktop users, how many unique session countries are there?",
+    "response": "There are 17 unique session countries among the 3,829 desktop user sessions analyzed."
+  },
+  {
+    "id": "clickstream-cat-filter-event-attr",
+    "prompt": "For US visitors, what product categories are most commonly browsed?",
+    "response": "For US visitors, the most commonly browsed product categories are **Books**, **Beauty**, and **Toys**.\n\nAcross 1,782 sessions from the US, the breakdown of category-related events is as follows:\n\n*   **Books**: 16.98%\n*   **Beauty**: 15.18%\n*   **Toys**: 14.11%\n*   **Fashion**: 12.19%\n*   **Home & Kitchen**: 10.93%\n*   **Sports**: 10.88%\n*   **Electronics**: 9.13%\n\nAdditionally, 10.61% of events did not have a specific category assigned. These sessions lasted an average of 66.56 minutes."
+  },
+  {
+    "id": "clickstream-cat-filter-pattern",
+    "prompt": "For mobile users, what are the most common product category browsing sequences?",
+    "response": "For mobile users, the most common product category browsing sequences primarily consist of single-category views, with **Books**, **Toys**, and **Beauty** being the most frequent.\n\n### Top Category Browsing Patterns\nThe following patterns represent the top browsing sequences discovered for mobile users, ranked by session frequency:\n\n*   **Books**: The most common browsing behavior, appearing in 2,368 sessions with an average purchase amount of $119.40.\n*   **Toys**: Followed closely by Toys with 2,262 sessions and a slightly higher average spend of $125.91.\n*   **Beauty**: This category was browsed in 2,114 sessions, leading to an average purchase of $139.16.\n*   **Fashion**: Browsed in 1,872 sessions, with an average spend of $148.64.\n*   **Home & Kitchen**: Seen in 1,803 sessions ($154.28 avg purchase).\n*   **Sports**: This segment accounts for 1,790 sessions and shows a higher purchase value of $168.08.\n*   **Electronics**: While the least frequent in the top 10 (1,346 sessions), it yielded the highest average purchase amount at $177.22.\n\n### Multi-Step Browsing Sequences\nThe analysis also identified repeated category views as common sequences:\n*   **Books \u2192 Books**: 1,390 sessions featured users viewing multiple items in the Books category. This deeper browsing resulted in a lower average spend ($108.81) compared to single-view sessions.\n*   **Non-Product Sequences**: A significant number of sessions (1,548) involved sequences of pages without an assigned product category (e.g., home, account, or checkout pages)."
+  },
+  {
+    "id": "clickstream-cat-filter-funnel",
+    "prompt": "For users who opted into marketing, what is the conversion funnel from page_view to add_to_cart to checkout to purchase?",
+    "response": "For users who opted into marketing (5,490 sessions), the conversion funnel shows a significant drop-off between adding items to the cart and reaching the checkout page.\n\n### Conversion Funnel\nThe progression through the key stages of the purchasing journey is as follows:\n*   **Page View**: 100%\n*   **Add to Cart**: 67.87%\n*   **Checkout**: 37.94%\n*   **Purchase**: 28.31%\n\n### Stage Transitions\n*   **Page View to Add to Cart**: On average, users take 21.8 minutes and encounter 1.34 events before adding an item to their cart.\n*   **Add to Cart to Checkout**: This stage sees the largest drop in conversion (29.93%) and has the longest duration, with users spending an average of 53.7 minutes and performing 3.58 additional events before proceeding.\n*   **Checkout to Purchase**: Once users reach the checkout, the final conversion is relatively efficient, taking an average of 5.5 minutes with 0.005 intervening events.\n\nOverall, marketing opt-in sessions last an average of 65.6 minutes."
+  },
+  {
+    "id": "clickstream-segmentation-numerical",
+    "prompt": "For sessions containing add_to_cart followed by purchase, what is the average number of unique products viewed?",
+    "response": "For sessions that include an `add_to_cart` event followed by a `purchase` event, the average number of unique products viewed is **5.13**.\n\nThis segment accounts for **2,868** sessions in total."
+  },
+  {
+    "id": "clickstream-segmentation-categorical",
+    "prompt": "For sessions with page_view followed by checkout, what is the session country distribution?",
+    "response": "For sessions that include a `page_view` followed by a `checkout` (3,834 sessions), the country distribution is led by the **United States**, which accounts for 18.15% of the total.\n\nThe remaining top countries are distributed as follows:\n*   **GB**: 7.75%\n*   **IN**: 7.59%\n*   **BR**: 7.09%\n*   **DE**: 6.73%\n*   **FR**: 6.47%\n*   **AU**: 5.53%\n*   **MX**: 5.45%\n*   **CA**: 5.40%\n\nOther markets such as Spain (4.77%), the Netherlands (4.64%), and Singapore (4.64%) each contribute less than 5% to this segment."
+  },
+  {
+    "id": "clickstream-segmentation-event-attr",
+    "prompt": "Between add_to_cart and purchase events, what pages do users visit?",
+    "response": "For the 2,868 sessions that progressed from an initial `add_to_cart` to a `purchase`, the journey between these two events typically takes about 48 minutes. During this interval, users primarily visit three types of pages:\n\n*   **Checkout**: This is an almost universal step, appearing in 99.65% of these journeys. It accounts for 21.69% of the total events in this segment.\n*   **Page Views**: These are the most frequent interactions, making up 61.85% of all events between adding to cart and purchasing. At least one additional `page_view` occurs in 83.30% of sessions.\n*   **Additional Add to Cart Events**: About half of the users (50.10%) continue to add more items to their cart before finally purchasing, with these actions representing 16.46% of the intermediate activity.\n\nThe most common sequence is for a user to view another page before proceeding to checkout (83.30%), and nearly half (49.90%) specifically add another item and then move directly to the checkout page."
+  },
+  {
+    "id": "clickstream-segmentation-pattern",
+    "prompt": "What are the common category browsing sequences between page_view and add_to_cart?",
+    "response": "The analysis of 6,812 sessions reveals several common category browsing patterns that occur between a `page_view` and an `add_to_cart` event. On average, users spend about 32.21 minutes browsing between these two steps.\n\nThe most frequent single-category sequences observed in this segment are:\n\n*   **Books**: The most common category browsed, appearing in 18.63% of these sequences.\n*   **Toys**: Followed closely at 17.69%.\n*   **Beauty**: Accounts for 16.06% of the browsing paths.\n*   **Sports, Fashion, and Home & Kitchen**: These three categories show very similar frequency, each appearing in roughly 12.8% of the sequences.\n*   **Electronics**: This is the least frequent major category in this specific path, found in 7.96% of instances."
+  },
+  {
+    "id": "clickstream-segmentation-funnel",
+    "prompt": "Within sessions from page_view to purchase, what is the add_to_cart to checkout conversion funnel?",
+    "response": "For sessions that include both a `page_view` and a `purchase` event (2,868 sessions), the conversion funnel from `add_to_cart` to `checkout` is extremely high:\n\n*   **add_to_cart**: 100% of these sessions include at least one `add_to_cart` event.\n*   **checkout**: 99.65% of these sessions successfully proceed from adding an item to the cart to the checkout stage.\n\nOn average, users in this group take 54 minutes to move from their first `add_to_cart` to `checkout`, performing 3.61 events in between. These converting sessions have an overall average duration of 80.67 minutes."
+  },
+  {
+    "id": "clickstream-pattern-filter-numerical",
+    "prompt": "For sessions containing page_view followed by add_to_cart but not purchase, what is the average number of items added to cart?",
+    "response": "For sessions that included a `page_view` followed by an `add_to_cart` but did not result in a `purchase`, the average number of items added to the cart was 1.74. This analysis was conducted across 3,944 sessions, which had an average duration of 1.12 hours."
+  },
+  {
+    "id": "clickstream-pattern-filter-categorical",
+    "prompt": "For sessions containing add_to_cart followed by purchase, what is the traffic source distribution?",
+    "response": "For sessions that include an `add_to_cart` event followed by a `purchase` event (a total of 2,868 sessions), the traffic source distribution is as follows:\n\n*   **Organic**: 32.95%\n*   **Direct**: 25.31%\n*   **Social**: 13.21%\n*   **Paid**: 11.85%\n*   **Email**: 8.37%\n*   **Referral**: 8.30%\n\nOrganic traffic is the leading source for this converting segment, accounting for nearly one-third of these sessions."
+  },
+  {
+    "id": "clickstream-pattern-filter-event-attr",
+    "prompt": "For sessions containing checkout followed by purchase, what product categories appear?",
+    "response": "In sessions where users proceed from checkout to purchase (2,868 sessions), the following product categories appear most frequently in their journey:\n\n*   **Books**: 14.64%\n*   **Toys**: 13.75%\n*   **Beauty**: 13.33%\n*   **Fashion**: 10.56%\n*   **Sports**: 9.85%\n*   **Home & Kitchen**: 9.37%\n*   **Electronics**: 6.07%\n\nAdditionally, 22.43% of the events in these sessions do not have a specific product category associated with them, which typically corresponds to general actions like the checkout and purchase steps themselves."
+  },
+  {
+    "id": "clickstream-pattern-filter-pattern",
+    "prompt": "For sessions containing page_view followed by checkout, what are the most common page sequences?",
+    "response": "For sessions that include a **page_view** followed by a **checkout**, the most common page sequences are centered around the standard e-commerce flow, with a high frequency of recurring page views. There are 3,834 sessions matching this criteria, with an average duration of 79.4 minutes.\n\n### Most Common Page Sequences\nThe top discovered patterns within these sessions are:\n\n*   **Standard Conversion Path**: The sequence **page_view \u2192 add_to_cart \u2192 checkout** is nearly universal in this group, occurring in 3,822 sessions (99.69%).\n*   **Multi-View Journeys**: \n    *   **page_view \u2192 page_view \u2192 checkout**: 3,647 sessions (95.12%).\n    *   **page_view \u2192 page_view \u2192 page_view**: 3,314 sessions (86.44%).\n\n### Overall Event Distribution\nAcross all sessions that reach both a page view and checkout, the total event breakdown is:\n*   **page_view**: 59.53% of all events.\n*   **add_to_cart**: 20.31%.\n*   **checkout**: 11.53%.\n*   **purchase**: 8.63%.\n\n### Conversion Funnel Performance\nFor this specific segment, the conversion from reaching checkout to completing a purchase is high:\n*   **Checkout to Purchase**: 99.69% of these sessions reached the checkout step, and 74.54% successfully completed a **purchase**.\n*   **Timing**: The average time from **add_to_cart** to **checkout** is 53.86 minutes, while the final step from **checkout** to **purchase** is much faster, averaging 5.54 minutes."
+  },
+  {
+    "id": "clickstream-pattern-filter-funnel",
+    "prompt": "For sessions containing add_to_cart, what is the checkout to purchase conversion funnel?",
+    "response": "For sessions that included at least one **add_to_cart** event (6,812 sessions), the conversion funnel from checkout to purchase is as follows:\n\n*   **Checkout**: 56.28% of these sessions proceeded to the checkout stage.\n*   **Purchase**: 42.10% of the sessions successfully completed a purchase.\n\nThis represents a conversion rate of 74.8% for those who reached the checkout phase. On average, it took users 5.5 minutes to move from checkout to purchase, with virtually no other events occurring between these two steps."
+  },
+  {
+    "id": "incident-none-numerical",
+    "prompt": "What is the average resolution time across all tickets?",
+    "response": "Across all 10,000 tickets, the average resolution time is 28.52 hours."
+  },
+  {
+    "id": "incident-none-categorical",
+    "prompt": "What is the issue type distribution across all tickets?",
+    "response": "Across the 10,000 total tickets analyzed, the issue type distribution is as follows:\n\n*   **Performance Issue**: 25.71%\n*   **Bug**: 21.09%\n*   **Feature Request**: 20.15%\n*   **Incident**: 13.71%\n*   **Service Request**: 9.76%\n*   **Maintenance**: 4.98%\n*   **Technical Issue**: 4.6%\n\nThe average resolution duration across all ticket types is 15.06 hours."
+  },
+  {
+    "id": "incident-none-event-attr",
+    "prompt": "What events occur most frequently across all tickets?",
+    "response": "Across all 10,000 tickets, the most frequent events are:\n\n*   **Ticket closed**: 13.48%\n*   **WIP - level 1 support**: 13.24%\n*   **Ticket created**: 13.00%\n*   **Ticket assigned to level 1 support**: 12.85%\n*   **Customer feedback received**: 12.47%\n\nOther notable events include **WIP - level 2 support** (9.06%), **Ticket solved by level 2 support** (7.86%), and **Level 1 escalates to level 2 support** (7.54%). Most of the activity is concentrated within level 1 support and the standard ticket lifecycle (creation, assignment, feedback, and closure)."
+  },
+  {
+    "id": "incident-none-pattern",
+    "prompt": "What are the most common event sequences in ticket resolution?",
+    "response": "Based on an analysis of 10,000 ticket sessions, the most common event sequences follow a standard lifecycle primarily handled by Level 1 support.\n\n### Most Frequent Resolution Path\nThe most complete common sequence involves the ticket being created, assigned, worked on, and finally closed:\n**`Ticket created` \u2192 `Ticket assigned to level 1 support` \u2192 `WIP - level 1 support` \u2192 `Ticket closed`**\n*   **Volume**: This sequence occurs in 9,382 sessions.\n*   **Average Duration**: The path takes approximately 15.5 hours to complete.\n*   **Common Issues**: This path is most frequently seen with **Performance Issues** (26.49%), **Bugs** (20.57%), and **Feature Requests** (20.1%).\n*   **Priority**: Roughly half of these tickets are **Medium** priority (49.55%), followed by **Low** (30.01%) and **High** (20.43%).\n\n### Variations in Support Flow\nOther frequent patterns highlight variations in how tickets are logged or processed:\n*   **Direct-to-WIP**: A significant number of tickets (9,382) show a sequence of **`Ticket created` \u2192 `WIP - level 1 support`**, where the formal assignment step might be bypassed or not logged.\n*   **Simplified L1 Cycle**: The sequence **`Ticket created` \u2192 `Ticket assigned to level 1 support` \u2192 `Ticket closed`** appears in 9,695 sessions, indicating that many tickets are resolved immediately upon assignment without an extended \"Work in Progress\" (WIP) phase.\n\n### General Observations\nAcross all common sequences, the distribution of issues remains consistent:\n*   **Performance Issues** are the most prevalent, accounting for approximately 26% of tickets.\n*   **Bugs** and **Feature Requests** each represent about 21% and 20% respectively.\n*   The majority of resolution activity stays within **Level 1 support**, with an average overall session duration of 15 hours."
+  },
+  {
+    "id": "incident-none-funnel",
+    "prompt": "What is the funnel from Ticket created to Ticket assigned to level 1 support to WIP - level 1 support to Ticket solved by level 1 support to Ticket closed?",
+    "response": "The funnel analysis for the ticket resolution process reveals a significant drop-off at the level 1 support resolution stage:\n\n### Funnel Progression\n*   **Ticket created**: 100% of tickets enter the process.\n*   **Ticket assigned to level 1 support**: 96.95% of created tickets are successfully assigned.\n*   **WIP - level 1 support**: 93.82% of tickets move into the \"Work in Progress\" stage with level 1 support.\n*   **Ticket solved by level 1 support**: There is a major drop-off here, as only 35.86% of tickets are solved at this level. This suggests that nearly 57.96% of tickets are either escalated, rejected, or remain unresolved by level 1 staff.\n*   **Ticket closed**: Every ticket solved by level 1 support is eventually closed, maintaining a rate of 35.86%.\n\n### Time Between Steps\n*   **Assignment**: It takes an average of 3.89 hours for a ticket to be assigned after creation.\n*   **Initial Response**: Work typically begins 61.62 minutes after assignment.\n*   **Resolution Time**: For those tickets solved by level 1, the work-in-progress phase lasts an average of 5.72 hours.\n*   **Closing**: Once solved, tickets are closed in an average of 2.04 hours."
+  },
+  {
+    "id": "incident-num-filter-numerical",
+    "prompt": "For tickets with resolution time over 24 hours, what is the average total number of events?",
+    "response": "Tickets with an average resolution time exceeding 24 hours are primarily found among **Low** priority issues, which have an average duration of 25.86 hours. For this segment of 2,978 tickets, the average total number of events is **7.75**.\n\nA further breakdown of these low-priority tickets reveals how specific factors influence both the resolution time and the event count:\n\n*   **Reopened Tickets**: Low-priority tickets that were reopened (113 sessions) take significantly longer to resolve, averaging **39.79 hours**. These tickets also have a much higher average event count of **12**.\n*   **Non-Reopened Tickets**: The majority of low-priority tickets (2,865 sessions) are resolved in **25.31 hours** on average, with a lower average of **7.58** events.\n\nIn comparison, higher-priority tickets are resolved much faster, with **Medium** priority tickets averaging **12.21 hours** and **High** priority tickets averaging **6.27 hours**."
+  },
+  {
+    "id": "incident-num-filter-categorical",
+    "prompt": "For tickets with customer satisfaction of 4 or above, what is the report channel distribution?",
+    "response": "For tickets with a customer satisfaction score of 4 or above (4,630 sessions), the average resolution duration is approximately 14.8 hours.\n\nThe **Website** is the primary report channel for these high-satisfaction tickets, accounting for over half of the distribution. The full breakdown of report channels is as follows:\n\n*   **Website**: 53.74%\n*   **Email**: 36.95%\n*   **App**: 6.54%\n*   **Phone**: 2.76%"
+  },
+  {
+    "id": "incident-num-filter-event-attr",
+    "prompt": "For tickets with fewer than 6 events, what resolvers appear most frequently?",
+    "response": "For tickets with fewer than 6 events, no resolvers are assigned, as the `resolver` attribute is undefined (empty) for 100% of events in these sessions.\n\nThis lack of resolvers is explained by the nature of these short-lived tickets. Analysis of the event distribution for this segment (313 sessions) shows that they typically follow a path of immediate rejection or closure:\n*   **Ticket created**: 24.98%\n*   **Ticket assigned to level 1 support**: 24.98%\n*   **Ticket closed**: 24.98%\n*   **Ticket rejected by level 1 support**: 24.90%\n\nSince these tickets are predominantly rejected by level 1 support (24.90%) rather than being solved, no resolver is ever recorded for them."
+  },
+  {
+    "id": "incident-num-filter-pattern",
+    "prompt": "For tickets with customer satisfaction of 1 or 2, what are the most common event sequences?",
+    "response": "For tickets with a customer satisfaction score of 1 or 2, the most common event sequences involve the standard ticket lifecycle, with a very high frequency of tickets being handled primarily by level 1 support before closing.\n\n### Frequent Event Sequences\nThe analysis reveals several common patterns within the 2,286 low-satisfaction sessions:\n\n*   **Direct Lifecycle**: The most fundamental sequence is **Ticket created** followed by **Ticket closed**, which appears in 100% of the analyzed tickets.\n*   **Initial Assignment**: A vast majority (97.77%) of these tickets follow the sequence **Ticket created** \u2192 **Ticket assigned to level 1 support**.\n*   **Standard Level 1 Workflow**: The full sequence of **Ticket created** \u2192 **Ticket assigned to level 1 support** \u2192 **Ticket closed** is also very frequent, occurring in 2,235 sessions (97.77%).\n*   **Work In Progress**: About 87.71% of these journeys (2,005 sessions) include a work-in-progress stage: **Ticket created** \u2192 **Ticket assigned to level 1 support** \u2192 **WIP - level 1 support** \u2192 **Ticket closed**.\n\n### Key Observations\n*   **Resolution Time**: These low-satisfaction tickets have an average duration of 15.24 hours (54,878 seconds).\n*   **Support Level**: The top patterns are dominated by **level 1 support** interactions. Notably, more advanced escalations (Level 2 or Level 3) do not appear in the top 10 most frequent sequences for this segment, suggesting that many unsatisfied customers may be experiencing issues that are resolved (or closed) without reaching higher-level technical support."
+  },
+  {
+    "id": "incident-num-filter-funnel",
+    "prompt": "For tickets with resolution time under 12 hours, what is the funnel from Ticket created to Ticket assigned to level 1 support to Ticket solved by level 1 support to Ticket closed?",
+    "response": "To analyze the funnel for tickets with a resolution time under 12 hours, I segmented the data by priority to identify populations that consistently meet this threshold and analyzed their progression through the support lifecycle.\n\n### Funnel Analysis for High-Priority Tickets (Avg. 6.27 hours)\nHigh-priority tickets (2,039 sessions) have an average total session duration of 6.27 hours, making them a representative segment for fast-resolution behaviors.\n\nThe conversion funnel from creation to closure for this group is as follows:\n\n*   **Ticket created**: 100%\n*   **Ticket assigned to level 1 support**: 97.35%\n    *   **Avg. Time to Assign**: 1.69 hours\n*   **Ticket solved by level 1 support**: 35.12%\n    *   **Avg. Time to Solve**: 2.94 hours\n*   **Ticket closed**: 35.12%\n    *   **Avg. Time to Close**: 39.7 minutes\n\n### Comparison Across Priorities\nWhile high-priority tickets are resolved quickly, lower priorities show significantly longer durations:\n\n*   **Medium Priority**: These tickets (4,983 sessions) have an average duration of 12.21 hours, hovering just above the 12-hour threshold. Their Level 1 resolution rate is slightly higher at 36.32%.\n*   **Low Priority**: These tickets (2,978 sessions) take significantly longer, averaging 25.86 hours. Despite the delay, 35.59% are still solved by level 1 support.\n\n### Key Insights\n*   **Assignment Speed**: For fast-resolution tickets (High Priority), assignment to level 1 happens in roughly 1.69 hours, which is nearly 4x faster than low-priority tickets (6.64 hours).\n*   **Resolution Efficiency**: Once assigned, level 1 support takes 2.94 hours to solve high-priority issues.\n*   **L1 Resolution Cap**: Across all priority levels, level 1 support successfully solves and closes approximately 35-36% of tickets. The remaining tickets typically require escalation or alternative resolution paths."
+  },
+  {
+    "id": "incident-cat-filter-numerical",
+    "prompt": "For bug reports, what is the maximum resolution time?",
+    "response": "The maximum resolution time recorded for any ticket in the dataset is **55.53 hours**, according to the metadata for the `resolutionHours` attribute. Bug reports, specifically, show the highest engagement and resolution times compared to other issue types.\n\n### Key Resolution Metrics for Bug Reports\n*   **Average Resolution Time**: Bug reports have an average session duration of 16.22 hours, which is the highest average across all issue types (compared to 14.53 hours for Incidents and 15.23 hours for Performance Issues).\n*   **Resolution by Priority**: The time required to resolve bugs varies significantly by priority:\n    *   **Low Priority**: These tickets take the longest, with an average duration of 27.43 hours.\n    *   **Medium Priority**: Average resolution time is 12.96 hours.\n    *   **High Priority**: These are resolved most quickly, averaging 6.76 hours.\n*   **Success Rate**: Despite the longer resolution times, 93.22% of bug reports are successfully solved."
+  },
+  {
+    "id": "incident-cat-filter-categorical",
+    "prompt": "For tickets reported via Phone, what is the priority distribution?",
+    "response": "For tickets reported via the **Phone** channel (290 sessions), the priority distribution is as follows:\n\n*   **Medium**: 52.76%\n*   **Low**: 27.59%\n*   **High**: 19.66%\n\nThe majority of phone-reported tickets are classified as Medium priority, while High priority tickets represent the smallest portion of this group."
+  },
+  {
+    "id": "incident-cat-filter-event-attr",
+    "prompt": "For high priority tickets, what resolvers handle them most frequently?",
+    "response": "To analyze which resolvers handle high-priority tickets most frequently, I filtered the dataset for sessions with a **High** priority and examined the distribution of event-level involvement. \n\n### High Priority Ticket Overview\nThere are **2,039** high-priority ticket sessions in the dataset, representing approximately **20.39%** of all reported issues. These sessions have an average duration of **6.27 hours**.\n\n### Resolver Involvement by Support Level\nWhile the dataset contains a specific `resolver` attribute, analysis shows that individual names (such as Ava or David) are not populated for these events. Instead, resolver activity is categorized by support levels (Level 1, Level 2, and Level 3). \n\nFor high-priority tickets, the handling frequency across different support levels is as follows:\n\n*   **Level 1 Support**: This is the most frequent handling group. **Work-in-progress (WIP)** actions at this level account for **13.20%** of all events in these sessions, and **12.88%** of events involve the ticket being assigned to Level 1.\n*   **Level 2 Support**: This level handles a significant portion of high-priority work, with **WIP** events at **9.11%**. Notably, Level 2 resolves more high-priority tickets than Level 1, with **7.96%** of events being \"solved by Level 2\" compared to only **4.56%** for Level 1.\n*   **Level 3 Support**: Deep technical support is involved less frequently, with **WIP** actions accounting for **1.32%** and resolutions for **0.24%** of events.\n\nIn summary, while Level 1 support performs the most frequent actions and assignments on high-priority tickets, **Level 2 support** is the most frequent tier for actually **resolving** them (7.96% vs 4.56%)."
+  },
+  {
+    "id": "incident-cat-filter-pattern",
+    "prompt": "For feature requests, what are the most common event sequences?",
+    "response": "For feature requests, which account for 2,015 sessions, the most common event sequences follow a highly standardized support path.\n\nThe most frequent sequences identified are:\n\n*   **Creation and Closure**: All feature requests (100%) include a **Ticket created** event and eventually reach a **Ticket closed** state (100%).\n*   **Standard Level 1 Lifecycle**:\n    *   The transition from **Ticket created** to **Ticket assigned to level 1 support** is nearly universal, appearing in 97.32% of journeys.\n    *   This is typically followed by work and closure, with the sequence **Ticket created** \u2192 **Ticket assigned to level 1 support** \u2192 **Ticket closed** also occurring in 97.32% of sessions.\n*   **Active Support Engagement**:\n    *   Including the work-in-progress phase, the sequence **Ticket created** \u2192 **Ticket assigned to level 1 support** \u2192 **WIP - level 1 support** is found in 93.6% of feature request sessions.\n    *   The most comprehensive common path is **Ticket created** \u2192 **Ticket assigned to level 1 support** \u2192 **WIP - level 1 support** \u2192 **Ticket closed**, which characterizes 93.6% of all feature request journeys.\n\nThese patterns suggest that the vast majority of feature requests are managed and resolved directly by Level 1 support without common escalations to higher tiers appearing in the top sequences. On average, these sessions take about 14.6 hours to complete."
+  },
+  {
+    "id": "incident-cat-filter-funnel",
+    "prompt": "For tickets reported via the App, what is the funnel from Ticket created to Ticket assigned to level 1 support to Level 1 escalates to level 2 support to Ticket solved by level 2 support to Ticket closed?",
+    "response": "For tickets reported via the **App** (600 sessions), the conversion funnel from creation to closure by level 2 support is as follows:\n\n*   **Ticket created**: 100%\n*   **Ticket assigned to level 1 support**: 97.33% of tickets are assigned to level 1, taking an average of 3.8 hours.\n*   **Level 1 escalates to level 2 support**: 61.67% of tickets reach the escalation stage. This transition occurs approximately 5.1 hours after assignment, with an average of 1 event occurring in between.\n*   **Ticket solved by level 2 support**: 56% of the original tickets are solved by level 2. This step takes an additional 5.6 hours on average after escalation.\n*   **Ticket closed**: 56% of tickets are ultimately closed, typically 1.7 hours after being solved.\n\nThe most significant drop-off in this specific path occurs at the escalation step, where about 35.66% of tickets assigned to level 1 are not escalated to level 2 (likely because they are resolved or rejected at level 1). Once a ticket is escalated, there is a 90.8% success rate for level 2 support to solve it."
+  },
+  {
+    "id": "incident-segmentation-numerical",
+    "prompt": "For tickets that went from Ticket assigned to level 1 support to Ticket solved by level 1 support, what is the average resolution time?",
+    "response": "For tickets that transition from **Ticket assigned to level 1 support** to **Ticket solved by level 1 support**, the average resolution time for that specific segment is **6.75 hours**.\n\n### Key Metrics for this Transition\n*   **Segment Duration**: On average, it takes **6.75 hours** (24,316 seconds) to move from assignment to solution by level 1 support.\n*   **Ticket Volume**: There are **3,586** tickets that followed this specific path.\n*   **Work Intensity**: During this resolution period, there are an average of **1.55 events** occurring between assignment and solution (such as \"WIP - level 1 support\").\n*   **Total Ticket Lifespan**: For this cohort of tickets, the average end-to-end duration (from creation to the final event) is **12.68 hours** (45,640 seconds)."
+  },
+  {
+    "id": "incident-segmentation-categorical",
+    "prompt": "For tickets that escalated from level 1 to level 2 support, what is the issue type distribution?",
+    "response": "For tickets that escalated to level 2 support (5,982 sessions), the issue type distribution is as follows:\n\n*   **Performance Issue**: 32.73%\n*   **Feature Request**: 19.53%\n*   **Bug**: 15.81%\n*   **Incident**: 13.37%\n*   **Service Request**: 9.45%\n*   **Maintenance**: 4.76%\n*   **Technical Issue**: 4.35%\n\nPerformance issues are the most frequent reason for escalation, accounting for nearly one-third of all escalated tickets."
+  },
+  {
+    "id": "incident-segmentation-event-attr",
+    "prompt": "Between Level 1 escalates to level 2 support and Ticket solved by level 2 support, what events occur?",
+    "response": "The analysis of 5,372 sessions shows that the segment between **Level 1 escalates to level 2 support** and **Ticket solved by level 2 support** takes an average of 12.4 hours.\n\nDuring this interval, the following individual events occur most frequently:\n*   **WIP - level 2 support**: 68.87% of events\n*   **Level 2 escalates to level 3 support**: 9.52%\n*   **WIP - level 3 support**: 9.52%\n*   **Ticket assigned to level 2 support**: 9.52%\n*   **Customer feedback received**: 2.57%\n\n### Common Patterns\nThe most frequent journey within this segment is simply **WIP - level 2 support**, which appears in 100% of sessions. However, a significant minority of tickets (7.58%) follow a more complex path involving escalation to and from level 3:\n1.  **WIP - level 2 support**\n2.  **Level 2 escalates to level 3 support**\n3.  **WIP - level 3 support**\n4.  **Ticket assigned to level 2 support** (reassigned for final resolution)\n\nAdditionally, 9.62% of sessions record multiple **WIP - level 2 support** status updates before the ticket is eventually solved."
+  },
+  {
+    "id": "incident-segmentation-pattern",
+    "prompt": "What event patterns occur between Ticket assigned to level 1 support and Ticket closed?",
+    "response": "Between **Ticket assigned to level 1 support** and **Ticket closed**, the journey typically involves level 1 work, customer interactions, and frequent escalations to level 2 support. \n\nBased on the top discovered patterns in this segment:\n\n### Core Level 1 Handling\nThe most frequent patterns involve initial processing by level 1 support:\n*   **Initial Work**: The event **WIP - level 1 support** occurs in the vast majority of cases, appearing in a primary segment of 9,382 sessions.\n*   **Customer Interaction**: In 86.18% of those sessions, work is followed by **Customer feedback received** (86.18%). In fact, a dedicated segment of 8,085 sessions shows a 100% frequency for the sequence: **WIP - level 1 support** \u2192 **Customer feedback received**.\n\n### Escalation and Resolution Flows\nA significant portion of tickets require escalation to resolve:\n*   **Level 2 Escalation**: A segment of 5,797 sessions consists entirely of cases where **Level 1 escalates to level 2 support** (100%). This is almost always preceded by **WIP - level 1 support** (99.98%).\n*   **Level 2 Processing**: Following escalation, the journey frequently proceeds to **WIP - level 2 support**, appearing in 96.46% of the escalation segment.\n*   **Complex Resolution**: A more detailed pattern involving 57.26% of the primary segment follows the full path: **WIP - level 1 support** \u2192 **Level 1 escalates to level 2 support** \u2192 **WIP - level 2 support** \u2192 **Ticket solved by level 2 support**.\n\nOverall, the average duration between assignment and closure across these patterns is approximately 9.25 hours, though segments with more complex level 2 involvement can take slightly longer, averaging around 11.17 hours."
+  },
+  {
+    "id": "incident-segmentation-funnel",
+    "prompt": "Within tickets from Ticket created to Ticket closed, what is the funnel from WIP - level 1 support to Level 1 escalates to level 2 support to WIP - level 2 support to Ticket solved by level 2 support?",
+    "response": "In analyzing the 10,000 ticket lifecycles from creation to closure, the funnel for Level 2 support resolution shows a significant drop-off during the escalation process.\n\n### Level 2 Support Escalation Funnel\nThe funnel begins with the initial handling by Level 1 support and follows the path to a Level 2 resolution:\n\n*   **WIP - level 1 support**: 93.82% of these tickets enter work-in-progress with Level 1 support.\n*   **Level 1 escalates to level 2 support**: 57.96% of tickets are escalated, taking an average of 4.25 hours from the start of Level 1 work.\n*   **WIP - level 2 support**: 55.92% reach Level 2 work-in-progress, usually within 1.04 hours of the escalation.\n*   **Ticket solved by level 2 support**: 53.72% of the total population is ultimately solved by Level 2, requiring an average of 4.84 hours of work time at this level.\n\nThe most notable transition is the escalation itself, where the conversion rate drops from 93.82% to 57.96%, indicating that many tickets are either resolved at Level 1 or follow a different path. Once escalated and picked up by Level 2, the resolution rate remains high, with 96.07% of tickets that enter Level 2 WIP being successfully solved by that level."
+  },
+  {
+    "id": "incident-pattern-filter-numerical",
+    "prompt": "For tickets containing WIP - level 1 support followed by Ticket solved by level 1 support without escalation to level 2, what is the average resolution time?",
+    "response": "For tickets where **WIP - level 1 support** is followed by **Ticket solved by level 1 support** (without any escalation to level 2 in between), the average resolution time for this specific sequence is approximately **6.29 hours** (22,649 seconds).\n\nThis analysis is based on a population of **3,401** ticket sessions that matched this specific pattern."
+  },
+  {
+    "id": "incident-pattern-filter-categorical",
+    "prompt": "For tickets containing Level 1 escalates to level 2 support followed by Ticket solved by level 2 support, what is the reporter distribution?",
+    "response": "For tickets that follow the sequence of **Level 1 escalates to level 2 support** followed by **Ticket solved by level 2 support** (representing 5,372 sessions with an average duration of 17.5 hours), the reporter distribution is as follows:\n\n*   **Emily**: 29.54%\n*   **Charlie**: 20.05%\n*   **John**: 19.69%\n*   **Bob**: 17.14%\n*   **Alice**: 13.57%"
+  },
+  {
+    "id": "incident-pattern-filter-event-attr",
+    "prompt": "For tickets containing Customer feedback received, what events occur most frequently?",
+    "response": "Analyzing 8,759 tickets that included customer feedback, which typically take an average of 15.4 hours to resolve, the most frequent events are:\n\n*   **Customer feedback received**: Accounts for 13.83% of all events in these sequences.\n*   **WIP - level 1 support**: Represents 13.34% of the total event volume.\n*   **Ticket closed**: Makes up 13.16% of occurrences.\n*   **Ticket created**: Comprises 12.63% of events.\n*   **Ticket assigned to level 1 support**: Accounts for 12.46%.\n*   **WIP - level 2 support**: Represents 9% of activity.\n*   **Ticket solved by level 2 support**: Occurs in 7.67% of events.\n*   **Level 1 escalates to level 2 support**: Represents 7.02% of the volume.\n\nOther notable events include tickets being solved by level 1 support (5.17%) and assignments to level 2 support (1.61%)."
+  },
+  {
+    "id": "incident-pattern-filter-pattern",
+    "prompt": "For tickets containing Ticket reopened by customer, what are the most common event sequences after reopening?",
+    "response": "For tickets that have been **reopened by a customer** (369 sessions), the subsequent journey typically lasts an average of 5.95 hours. \n\nThe event sequences following a reopening are remarkably consistent, with the following patterns appearing in all 369 cases:\n\n*   **Work in Progress**: Every reopened ticket immediately proceeds to **WIP - level 2 support** (100%).\n*   **Resolution**: The most frequent path involves Level 2 support resolving the issue: **WIP - level 2 support \u2192 Ticket solved by level 2 support** (100%).\n*   **Feedback and Closure**: These sessions then consistently include feedback and final closure:\n    *   **WIP - level 2 support \u2192 Ticket solved by level 2 support \u2192 Customer feedback received** (100%)\n    *   **WIP - level 2 support \u2192 Ticket solved by level 2 support \u2192 Customer feedback received \u2192 Ticket closed** (100%)\n\nThis suggests a highly standardized process where Level 2 support handles all re-opened tickets through to final resolution and closure."
+  },
+  {
+    "id": "incident-pattern-filter-funnel",
+    "prompt": "For tickets containing Level 1 escalates to level 2 support, what is the funnel from WIP - level 2 support to Ticket solved by level 2 support to Customer feedback received to Ticket closed?",
+    "response": "For tickets that include a \"Level 1 escalates to level 2 support\" event (5,797 sessions), the progression from active support to ticket closure is highly efficient.\n\n### Level 2 Support Funnel Breakdown\nThe funnel shows strong retention from the initial work-in-progress stage through to final closure:\n\n*   **WIP - level 2 support**: 96.46% of these escalated tickets enter the active \"Work in Progress\" stage with Level 2.\n*   **Ticket solved by level 2 support**: 92.67% of tickets are successfully solved by the Level 2 team. This represents a conversion rate of 96.07% from the WIP stage.\n*   **Customer feedback received**: 80.18% of tickets proceed to the feedback stage.\n*   **Ticket closed**: 80.18% reach final closure. Notably, every ticket that receives feedback is subsequently closed.\n\n### Transition Metrics\nThe transition between stages is characterized by relatively short durations and minimal intervening actions:\n\n*   **WIP to Solved**: This stage takes the longest, averaging 4.84 hours with 0.59 events occurring in between.\n*   **Solved to Feedback**: Customers typically provide feedback within 1.58 hours of the ticket being solved, with 0.32 events between steps.\n*   **Feedback to Closed**: The final closure happens quickly, taking an average of 1.03 hours with no other events occurring in between."
+  }
+]

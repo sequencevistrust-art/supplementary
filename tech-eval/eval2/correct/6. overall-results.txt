@@ -1,0 +1,27 @@
+total fact count: 362
+total fact identified: 358
+fact identification accuracy: 98.9% (358/362)
+
+fact reference pair count: 344
+correct association: 316
+fact association accuracy: 91.9% (316/344)
+
+--- Breakdown by row operation ---
+
+row operation                                            Fact ID         Fact Assoc
+-----------------------------------------------------------------------------------
+none                                              100.0% (81/81)      94.8% (73/77)
+num-filter                                         96.9% (62/64)      90.9% (50/55)
+cat-filter                                         98.6% (68/69)      88.7% (63/71)
+segmentation                                       98.6% (72/73)      89.2% (58/65)
+pattern-filter                                    100.0% (75/75)      94.7% (72/76)
+
+--- Breakdown by column operation ---
+
+column operation                                         Fact ID         Fact Assoc
+-----------------------------------------------------------------------------------
+numerical                                          95.6% (65/68)      98.5% (65/66)
+categorical                                       100.0% (78/78)     100.0% (78/78)
+event-attr                                        100.0% (69/69)      77.5% (55/71)
+pattern                                            98.4% (63/64)      85.0% (51/60)
+funnel                                            100.0% (83/83)      97.1% (67/69)

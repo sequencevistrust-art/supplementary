@@ -1,0 +1,15 @@
+cd~/Desktop/projects/crowd
+cd ~/Desktop/projects/crowd
+ls
+ls()
+setwd("/path/to/crowd-exp")
+setwd("/path/to/crowd-exp")
+wd
+source("study 1/analysis.R")
+setwd("/Users/terrance/Desktop/projects/supplementary/crowd-exp")
+source("study 1/analysis.R")
+source("study 1/analysis.R")
+setwd("/Users/terrance/Desktop/projects/supplementary/crowd-exp/study 1")
+source("analysis.R")
+setwd("/Users/terrance/Desktop/projects/supplementary/crowd-exp/study 2")
+source("analysis.R")

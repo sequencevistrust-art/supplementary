@@ -1,0 +1,1268 @@
+[
+  {
+    "id": "clickstream-none-numerical",
+    "cited_text": "$42.85",
+    "ref_ids_str": "ZR5KAmFpzHo2R6Wd-cell-0-2 / ZR5KAmFpzHo2R6Wd-row-header-0-session-count",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-none-numerical",
+    "cited_text": "$145.20",
+    "ref_ids_str": "ZR5KAmFpzHo2R6Wd-cell-2-0",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-none-numerical",
+    "cited_text": "31.2%",
+    "ref_ids_str": "ZR5KAmFpzHo2R6Wd-row-header-2-session-count / ZR5KAmFpzHo2R6Wd-row-header-0-session-count",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-none-categorical",
+    "cited_text": "3,810",
+    "ref_ids_str": "vSoBX0PZNi86Y13Z-row-header-0-session-count * vSoBX0PZNi86Y13Z-cell-0-0-number-0",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-none-categorical",
+    "cited_text": "38.10%",
+    "ref_ids_str": "vSoBX0PZNi86Y13Z-cell-0-0-number-0",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-none-categorical",
+    "cited_text": "5.47%",
+    "ref_ids_str": "vSoBX0PZNi86Y13Z-cell-0-0-number-5",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-none-categorical",
+    "cited_text": "63.44%",
+    "ref_ids_str": "vSoBX0PZNi86Y13Z-cell-0-0-number-0 + vSoBX0PZNi86Y13Z-cell-0-0-number-1",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-none-event-attr",
+    "cited_text": "Toys",
+    "ref_ids_str": "Xlq5cjPfriS9Xu8N-cell-0-0-number-0 > Xlq5cjPfriS9Xu8N-cell-0-0-number-1",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-none-event-attr",
+    "cited_text": "8,421",
+    "ref_ids_str": "Xlq5cjPfriS9Xu8N-row-header-0-event-count * Xlq5cjPfriS9Xu8N-cell-0-0-number-0",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-none-event-attr",
+    "cited_text": "19.28%",
+    "ref_ids_str": "Xlq5cjPfriS9Xu8N-cell-0-0-number-2",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-none-event-attr",
+    "cited_text": "5,103",
+    "ref_ids_str": "Xlq5cjPfriS9Xu8N-row-header-0-event-count * Xlq5cjPfriS9Xu8N-cell-0-0-number-7",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-none-pattern",
+    "cited_text": "15.4%",
+    "ref_ids_str": "UBh8fhZpE8WudIML-row-header-1-session-count / UBh8fhZpE8WudIML-row-header-0-session-count",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-none-pattern",
+    "cited_text": "842 sessions",
+    "ref_ids_str": "UBh8fhZpE8WudIML-cell-2-1-number-1 * UBh8fhZpE8WudIML-row-header-2-session-count",
+    "correctness": false
+  },
+  {
+    "id": "clickstream-none-pattern",
+    "cited_text": "rarer",
+    "ref_ids_str": "UBh8fhZpE8WudIML-cell-0-0-number-1 > (UBh8fhZpE8WudIML-row-header-1-session-count / UBh8fhZpE8WudIML-row-header-0-session-count)",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-none-pattern",
+    "cited_text": "3.12%",
+    "ref_ids_str": "UBh8fhZpE8WudIML-cell-0-0-number-1",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-none-pattern",
+    "cited_text": "133 sessions",
+    "ref_ids_str": "UBh8fhZpE8WudIML-cell-0-0-number-1 * UBh8fhZpE8WudIML-row-header-0-session-count",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-none-funnel",
+    "cited_text": "7,215",
+    "ref_ids_str": "a91kCMFdIjQpCH0L-row-header-0-session-count * a91kCMFdIjQpCH0L-cell-0-0-number-1",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-none-funnel",
+    "cited_text": "3,834",
+    "ref_ids_str": "a91kCMFdIjQpCH0L-row-header-0-session-count * a91kCMFdIjQpCH0L-cell-0-0-number-2",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-none-funnel",
+    "cited_text": "41.20%",
+    "ref_ids_str": "a91kCMFdIjQpCH0L-cell-0-0-number-2",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-none-funnel",
+    "cited_text": "3,102",
+    "ref_ids_str": "a91kCMFdIjQpCH0L-row-header-0-session-count * a91kCMFdIjQpCH0L-cell-0-0-number-3",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-none-funnel",
+    "cited_text": "63.75%",
+    "ref_ids_str": "a91kCMFdIjQpCH0L-cell-0-0-number-2 / a91kCMFdIjQpCH0L-cell-0-0-number-1",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-none-funnel",
+    "cited_text": "28.68%",
+    "ref_ids_str": "a91kCMFdIjQpCH0L-cell-0-0-number-3",
+    "correctness": false
+  },
+  {
+    "id": "clickstream-num-filter-numerical",
+    "cited_text": "$184,321.45",
+    "ref_ids_str": "sjOnEaoitjrRoEk4-cell-1-0",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-num-filter-numerical",
+    "cited_text": "58.14%",
+    "ref_ids_str": "sjOnEaoitjrRoEk4-cell-1-0 / sjOnEaoitjrRoEk4-cell-0-0",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-num-filter-numerical",
+    "cited_text": "$142.18",
+    "ref_ids_str": "sjOnEaoitjrRoEk4-cell-1-1",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-num-filter-categorical",
+    "cited_text": "4,120",
+    "ref_ids_str": "7rxGyinBvluvShYA-row-header-0-session-count",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-num-filter-categorical",
+    "cited_text": "49.32%",
+    "ref_ids_str": "7rxGyinBvluvShYA-cell-0-0-number-0",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-num-filter-categorical",
+    "cited_text": "315",
+    "ref_ids_str": "7rxGyinBvluvShYA-row-header-0-session-count * 7rxGyinBvluvShYA-cell-0-0-number-2",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-num-filter-event-attr",
+    "cited_text": "642",
+    "ref_ids_str": "FQulMkTkeezLAFRZ-row-header-0-session-count * FQulMkTkeezLAFRZ-cell-0-0-number-1",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-num-filter-event-attr",
+    "cited_text": "78.9%",
+    "ref_ids_str": "FQulMkTkeezLAFRZ-cell-0-0-number-1 / (FQulMkTkeezLAFRZ-cell-0-0-number-1 + FQulMkTkeezLAFRZ-cell-0-0-number-2 + FQulMkTkeezLAFRZ-cell-0-0-number-3 + FQulMkTkeezLAFRZ-cell-0-0-number-4)",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-num-filter-event-attr",
+    "cited_text": "129",
+    "ref_ids_str": "FQulMkTkeezLAFRZ-row-header-0-session-count * FQulMkTkeezLAFRZ-cell-0-0-number-2",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-num-filter-pattern",
+    "cited_text": "1,492",
+    "ref_ids_str": "xofqErVv7P66NcPv-row-header-0-session-count",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-num-filter-pattern",
+    "cited_text": "32",
+    "ref_ids_str": "xofqErVv7P66NcPv-row-header-1-session-count",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-num-filter-pattern",
+    "cited_text": "8.42",
+    "ref_ids_str": "xofqErVv7P66NcPv-cell-0-0",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-num-filter-pattern",
+    "cited_text": "9",
+    "ref_ids_str": "xofqErVv7P66NcPv-row-header-2-session-count",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-num-filter-funnel",
+    "cited_text": "2,451 sessions",
+    "ref_ids_str": "AUU68i2UTDfHNSYV-row-header-1-session-count",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-num-filter-funnel",
+    "cited_text": "52.19%",
+    "ref_ids_str": "AUU68i2UTDfHNSYV-cell-1-0-number-1",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-num-filter-funnel",
+    "cited_text": "18.34%",
+    "ref_ids_str": "AUU68i2UTDfHNSYV-cell-1-0-number-2",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-cat-filter-numerical",
+    "cited_text": "4,120",
+    "ref_ids_str": "285ltDqCPCnTWWVr-row-header-2-session-count",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-cat-filter-numerical",
+    "cited_text": "41.20%",
+    "ref_ids_str": "285ltDqCPCnTWWVr-row-header-2-session-count / 285ltDqCPCnTWWVr-row-header-6-session-count",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-cat-filter-numerical",
+    "cited_text": "5.18",
+    "ref_ids_str": "285ltDqCPCnTWWVr-cell-2-0",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-cat-filter-numerical",
+    "cited_text": "5.62",
+    "ref_ids_str": "285ltDqCPCnTWWVr-cell-2-1",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-cat-filter-categorical",
+    "cited_text": "24",
+    "ref_ids_str": "d7kGrMpQSdOS6Nhn-cell-2-0",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-cat-filter-categorical",
+    "cited_text": "45.12%",
+    "ref_ids_str": "d7kGrMpQSdOS6Nhn-row-header-2-session-count / (d7kGrMpQSdOS6Nhn-row-header-0-session-count + d7kGrMpQSdOS6Nhn-row-header-1-session-count + d7kGrMpQSdOS6Nhn-row-header-2-session-count)",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-cat-filter-categorical",
+    "cited_text": "812",
+    "ref_ids_str": "d7kGrMpQSdOS6Nhn-row-header-2-session-count * d7kGrMpQSdOS6Nhn-cell-2-1-number-0",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-cat-filter-event-attr",
+    "cited_text": "\"Fashion\"",
+    "ref_ids_str": "jrh6j5CsMpFa7KCX-cell-0-1-number-0 > jrh6j5CsMpFa7KCX-cell-0-1-number-3",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-cat-filter-event-attr",
+    "cited_text": "1,568",
+    "ref_ids_str": "jrh6j5CsMpFa7KCX-row-header-0-event-count * jrh6j5CsMpFa7KCX-cell-0-1-number-3",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-cat-filter-event-attr",
+    "cited_text": "19.4%",
+    "ref_ids_str": "jrh6j5CsMpFa7KCX-cell-0-1-number-3",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-cat-filter-event-attr",
+    "cited_text": "\"Home & Kitchen\"",
+    "ref_ids_str": "jrh6j5CsMpFa7KCX-cell-0-1-number-4 > jrh6j5CsMpFa7KCX-cell-0-1-number-7",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-cat-filter-pattern",
+    "cited_text": "6,218",
+    "ref_ids_str": "9Rq1O8ovoVRtgHEz-row-header-0-session-count",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-cat-filter-pattern",
+    "cited_text": "186",
+    "ref_ids_str": "9Rq1O8ovoVRtgHEz-row-header-0-session-count * 9Rq1O8ovoVRtgHEz-cell-0-0-number-0",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-cat-filter-pattern",
+    "cited_text": "51.4%",
+    "ref_ids_str": "9Rq1O8ovoVRtgHEz-row-header-1-session-count / 9Rq1O8ovoVRtgHEz-row-header-0-session-count",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-cat-filter-pattern",
+    "cited_text": "3,953",
+    "ref_ids_str": "9Rq1O8ovoVRtgHEz-row-header-1-session-count",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-cat-filter-pattern",
+    "cited_text": "\"Fashion -> Sports,\"",
+    "ref_ids_str": "9Rq1O8ovoVRtgHEz-row-header-2-session-count < 9Rq1O8ovoVRtgHEz-row-header-3-session-count",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-cat-filter-pattern",
+    "cited_text": "24",
+    "ref_ids_str": "9Rq1O8ovoVRtgHEz-row-header-2-session-count",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-cat-filter-pattern",
+    "cited_text": "22",
+    "ref_ids_str": "9Rq1O8ovoVRtgHEz-row-header-3-session-count , 9Rq1O8ovoVRtgHEz-row-header-4-session-count",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-cat-filter-pattern",
+    "cited_text": "47",
+    "ref_ids_str": "9Rq1O8ovoVRtgHEz-row-header-5-session-count , 9Rq1O8ovoVRtgHEz-row-header-6-session-count",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-cat-filter-pattern",
+    "cited_text": "4,167",
+    "ref_ids_str": "9Rq1O8ovoVRtgHEz-row-header-0-event-count * 9Rq1O8ovoVRtgHEz-cell-0-1-number-0",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-cat-filter-funnel",
+    "cited_text": "5,120",
+    "ref_ids_str": "2OEA4TVMeEaTDSNS-row-header-0-session-count",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-cat-filter-funnel",
+    "cited_text": "74.22%",
+    "ref_ids_str": "2OEA4TVMeEaTDSNS-cell-0-0-number-1",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-cat-filter-funnel",
+    "cited_text": "2,089",
+    "ref_ids_str": "2OEA4TVMeEaTDSNS-row-header-0-session-count * 2OEA4TVMeEaTDSNS-cell-0-0-number-2",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-cat-filter-funnel",
+    "cited_text": "38.05%",
+    "ref_ids_str": "2OEA4TVMeEaTDSNS-cell-0-0-number-2",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-cat-filter-funnel",
+    "cited_text": "56.07%",
+    "ref_ids_str": "2OEA4TVMeEaTDSNS-cell-0-0-number-2 / 2OEA4TVMeEaTDSNS-cell-0-0-number-1",
+    "correctness": false
+  },
+  {
+    "id": "clickstream-cat-filter-funnel",
+    "cited_text": "1,558",
+    "ref_ids_str": "2OEA4TVMeEaTDSNS-row-header-0-session-count * 2OEA4TVMeEaTDSNS-cell-0-0-number-3",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-cat-filter-funnel",
+    "cited_text": "34.15%",
+    "ref_ids_str": "2OEA4TVMeEaTDSNS-cell-0-0-number-3",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-cat-filter-funnel",
+    "cited_text": "62.45%",
+    "ref_ids_str": "2OEA4TVMeEaTDSNS-cell-0-0-number-3 / 2OEA4TVMeEaTDSNS-cell-0-0-number-2",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-segmentation-numerical",
+    "cited_text": "6.27",
+    "ref_ids_str": "dBnUFXiNboCMPdyJ-cell-2-0",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-segmentation-numerical",
+    "cited_text": "3,941",
+    "ref_ids_str": "dBnUFXiNboCMPdyJ-row-header-2-session-count",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-segmentation-numerical",
+    "cited_text": "57.85%",
+    "ref_ids_str": "dBnUFXiNboCMPdyJ-row-header-2-session-count / dBnUFXiNboCMPdyJ-row-header-1-session-count",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-segmentation-numerical",
+    "cited_text": "lower",
+    "ref_ids_str": "dBnUFXiNboCMPdyJ-cell-2-0 > dBnUFXiNboCMPdyJ-cell-0-0",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-segmentation-categorical",
+    "cited_text": "4,185",
+    "ref_ids_str": "ewKGqw2HRups6G75-row-header-0-session-count",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-segmentation-categorical",
+    "cited_text": "16.42%",
+    "ref_ids_str": "ewKGqw2HRups6G75-cell-0-0-number-0",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-segmentation-categorical",
+    "cited_text": "Canada (CA)",
+    "ref_ids_str": "ewKGqw2HRups6G75-cell-0-0-number-1 > ewKGqw2HRups6G75-cell-0-0-number-8",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-segmentation-event-attr",
+    "cited_text": "3,154",
+    "ref_ids_str": "kV60Zmzdeb7ZnLcz-row-header-0-session-count",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-segmentation-event-attr",
+    "cited_text": "54.7%",
+    "ref_ids_str": "kV60Zmzdeb7ZnLcz-row-header-1-session-count / kV60Zmzdeb7ZnLcz-row-header-0-session-count",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-segmentation-event-attr",
+    "cited_text": "Electronics",
+    "ref_ids_str": "gAywVfgbcwW4Cyct-cell-1-1-number-1 > gAywVfgbcwW4Cyct-cell-1-1-number-2 > gAywVfgbcwW4Cyct-cell-1-1-number-3 > gAywVfgbcwW4Cyct-cell-1-1-number-4 > gAywVfgbcwW4Cyct-cell-1-1-number-5 > gAywVfgbcwW4Cyct-cell-1-1-number-6 > gAywVfgbcwW4Cyct-cell-1-1-number-7",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-segmentation-event-attr",
+    "cited_text": "1,460",
+    "ref_ids_str": "kV60Zmzdeb7ZnLcz-row-header-1-event-count * gAywVfgbcwW4Cyct-cell-1-1-number-7",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-segmentation-event-attr",
+    "cited_text": "1,384",
+    "ref_ids_str": "kV60Zmzdeb7ZnLcz-row-header-1-event-count * gAywVfgbcwW4Cyct-cell-1-1-number-2",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-segmentation-event-attr",
+    "cited_text": "1,376",
+    "ref_ids_str": "kV60Zmzdeb7ZnLcz-row-header-1-event-count * gAywVfgbcwW4Cyct-cell-1-1-number-3",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-segmentation-event-attr",
+    "cited_text": "712",
+    "ref_ids_str": "kV60Zmzdeb7ZnLcz-row-header-2-session-count",
+    "correctness": false
+  },
+  {
+    "id": "clickstream-segmentation-pattern",
+    "cited_text": "82.5%",
+    "ref_ids_str": "Wz9CA5rzcNk0ppmJ-cell-0-0-number-8 + Wz9CA5rzcNk0ppmJ-cell-0-0-number-9",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-segmentation-pattern",
+    "cited_text": "14,302",
+    "ref_ids_str": "vGibA9QZHGCr0FsD-row-header-0-event-count * Wz9CA5rzcNk0ppmJ-cell-0-2-number-1",
+    "correctness": false
+  },
+  {
+    "id": "clickstream-segmentation-pattern",
+    "cited_text": "3,184",
+    "ref_ids_str": "V38NBVdjxJHaxHSe-row-header-0-session-count * V38NBVdjxJHaxHSe-cell-0-0-number-1",
+    "correctness": false
+  },
+  {
+    "id": "clickstream-segmentation-pattern",
+    "cited_text": "Electronics",
+    "ref_ids_str": "V38NBVdjxJHaxHSe-cell-2-0-number-1 * V38NBVdjxJHaxHSe-row-header-2-session-count > V38NBVdjxJHaxHSe-cell-9-0-number-1 * V38NBVdjxJHaxHSe-row-header-9-session-count",
+    "correctness": false
+  },
+  {
+    "id": "clickstream-segmentation-funnel",
+    "cited_text": "7,415 sessions (74.15%)",
+    "ref_ids_str": "uxQBza0OMMuLRpzE-row-header-0-session-count * uxQBza0OMMuLRpzE-cell-0-0-number-1,uxQBza0OMMuLRpzE-cell-0-0-number-1",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-segmentation-funnel",
+    "cited_text": "3,834",
+    "ref_ids_str": "uxQBza0OMMuLRpzE-row-header-0-session-count * uxQBza0OMMuLRpzE-cell-0-0-number-2",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-segmentation-funnel",
+    "cited_text": "63.29%",
+    "ref_ids_str": "uxQBza0OMMuLRpzE-cell-0-0-number-2 / uxQBza0OMMuLRpzE-cell-0-0-number-1",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-segmentation-funnel",
+    "cited_text": "2,868",
+    "ref_ids_str": "uxQBza0OMMuLRpzE-row-header-0-session-count * uxQBza0OMMuLRpzE-cell-0-0-number-3",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-segmentation-funnel",
+    "cited_text": "35.12%",
+    "ref_ids_str": "uxQBza0OMMuLRpzE-cell-0-0-number-3",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-pattern-filter-numerical",
+    "cited_text": "4,112",
+    "ref_ids_str": "XEDa88rLDrny9MgD-row-header-1-session-count",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-pattern-filter-numerical",
+    "cited_text": "2.15",
+    "ref_ids_str": "XEDa88rLDrny9MgD-cell-1-0",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-pattern-filter-numerical",
+    "cited_text": "8,840",
+    "ref_ids_str": "XEDa88rLDrny9MgD-row-header-1-event-count * XEDa88rLDrny9MgD-cell-1-3-number-1",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-pattern-filter-numerical",
+    "cited_text": "41.12%",
+    "ref_ids_str": "XEDa88rLDrny9MgD-row-header-1-session-count / 0saZ6NuaAXYRXnNK-row-header-0-session-count",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-pattern-filter-categorical",
+    "cited_text": "35.12%",
+    "ref_ids_str": "YW7xs2BJRpQgHjtJ-cell-0-0-number-0",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-pattern-filter-categorical",
+    "cited_text": "2,645",
+    "ref_ids_str": "YW7xs2BJRpQgHjtJ-row-header-0-session-count",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-pattern-filter-categorical",
+    "cited_text": "10.44%",
+    "ref_ids_str": "YW7xs2BJRpQgHjtJ-cell-0-0-number-4",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-pattern-filter-categorical",
+    "cited_text": "less",
+    "ref_ids_str": "YW7xs2BJRpQgHjtJ-cell-0-0-number-0 + YW7xs2BJRpQgHjtJ-cell-0-0-number-1",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-pattern-filter-event-attr",
+    "cited_text": "3,054",
+    "ref_ids_str": "3elqDGeoUldFQ5aG-row-header-0-session-count",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-pattern-filter-event-attr",
+    "cited_text": "Fashion",
+    "ref_ids_str": "3elqDGeoUldFQ5aG-cell-0-0-number-1 > 3elqDGeoUldFQ5aG-cell-0-0-number-4",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-pattern-filter-event-attr",
+    "cited_text": "4,120",
+    "ref_ids_str": "3elqDGeoUldFQ5aG-row-header-0-event-count * 3elqDGeoUldFQ5aG-cell-0-0-number-4",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-pattern-filter-event-attr",
+    "cited_text": "1,395",
+    "ref_ids_str": "3elqDGeoUldFQ5aG-row-header-0-event-count * 3elqDGeoUldFQ5aG-cell-0-0-number-7",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-pattern-filter-pattern",
+    "cited_text": "4,192",
+    "ref_ids_str": "QFEUjeKFlz6bWiPf-row-header-0-session-count",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-pattern-filter-pattern",
+    "cited_text": "256",
+    "ref_ids_str": "QFEUjeKFlz6bWiPf-row-header-1-session-count",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-pattern-filter-pattern",
+    "cited_text": "6.11%",
+    "ref_ids_str": "QFEUjeKFlz6bWiPf-row-header-1-session-count / QFEUjeKFlz6bWiPf-row-header-0-session-count",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-pattern-filter-pattern",
+    "cited_text": "105",
+    "ref_ids_str": "IJ5hkGKNMtFTkMim-row-header-2-session-count",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-pattern-filter-pattern",
+    "cited_text": "31",
+    "ref_ids_str": "QFEUjeKFlz6bWiPf-row-header-3-session-count",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-pattern-filter-pattern",
+    "cited_text": "12.45",
+    "ref_ids_str": "QFEUjeKFlz6bWiPf-cell-0-1",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-pattern-filter-pattern",
+    "cited_text": "74.80%",
+    "ref_ids_str": "QFEUjeKFlz6bWiPf-cell-0-2-number-3 / QFEUjeKFlz6bWiPf-cell-0-2-number-2",
+    "correctness": false
+  },
+  {
+    "id": "clickstream-pattern-filter-funnel",
+    "cited_text": "7,419",
+    "ref_ids_str": "aMlRlJ6hFKXCOWYG-row-header-0-session-count",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-pattern-filter-funnel",
+    "cited_text": "63.15%",
+    "ref_ids_str": "aMlRlJ6hFKXCOWYG-cell-0-1-number-0",
+    "correctness": true
+  },
+  {
+    "id": "clickstream-pattern-filter-funnel",
+    "cited_text": "3,105",
+    "ref_ids_str": "aMlRlJ6hFKXCOWYG-row-header-0-session-count * aMlRlJ6hFKXCOWYG-cell-0-2-number-1",
+    "correctness": false
+  },
+  {
+    "id": "clickstream-pattern-filter-funnel",
+    "cited_text": "35.74%",
+    "ref_ids_str": "aMlRlJ6hFKXCOWYG-cell-0-2-number-1",
+    "correctness": true
+  },
+  {
+    "id": "incident-none-numerical",
+    "cited_text": "14.80",
+    "ref_ids_str": "dS6TUA1RvoE01VHi-cell-0-0",
+    "correctness": true
+  },
+  {
+    "id": "incident-none-numerical",
+    "cited_text": "9,120",
+    "ref_ids_str": "dS6TUA1RvoE01VHi-row-header-1-session-count",
+    "correctness": true
+  },
+  {
+    "id": "incident-none-numerical",
+    "cited_text": "lower",
+    "ref_ids_str": "dS6TUA1RvoE01VHi-cell-1-0 > dS6TUA1RvoE01VHi-cell-0-0",
+    "correctness": true
+  },
+  {
+    "id": "incident-none-numerical",
+    "cited_text": "14.12",
+    "ref_ids_str": "dS6TUA1RvoE01VHi-cell-1-0",
+    "correctness": true
+  },
+  {
+    "id": "incident-none-categorical",
+    "cited_text": "12,450",
+    "ref_ids_str": "0mBeixeiSnlPPjzE-row-header-0-session-count",
+    "correctness": true
+  },
+  {
+    "id": "incident-none-categorical",
+    "cited_text": "29.45%",
+    "ref_ids_str": "0mBeixeiSnlPPjzE-cell-0-0-number-0",
+    "correctness": true
+  },
+  {
+    "id": "incident-none-categorical",
+    "cited_text": "590",
+    "ref_ids_str": "0mBeixeiSnlPPjzE-row-header-0-session-count * 0mBeixeiSnlPPjzE-cell-0-0-number-6",
+    "correctness": true
+  },
+  {
+    "id": "incident-none-categorical",
+    "cited_text": "5.8%",
+    "ref_ids_str": "0mBeixeiSnlPPjzE-cell-0-0-number-6",
+    "correctness": true
+  },
+  {
+    "id": "incident-none-event-attr",
+    "cited_text": "11,452",
+    "ref_ids_str": "n5Q48GqTjfyYwbhW-row-header-0-event-count * n5Q48GqTjfyYwbhW-cell-0-0-number-0",
+    "correctness": true
+  },
+  {
+    "id": "incident-none-event-attr",
+    "cited_text": "45.3%",
+    "ref_ids_str": "n5Q48GqTjfyYwbhW-cell-0-0-number-0 + n5Q48GqTjfyYwbhW-cell-0-0-number-1 + n5Q48GqTjfyYwbhW-cell-0-0-number-2",
+    "correctness": true
+  },
+  {
+    "id": "incident-none-event-attr",
+    "cited_text": "second",
+    "ref_ids_str": "n5Q48GqTjfyYwbhW-cell-0-0-number-0 > n5Q48GqTjfyYwbhW-cell-0-0-number-1 > n5Q48GqTjfyYwbhW-cell-0-0-number-2 > n5Q48GqTjfyYwbhW-cell-0-0-number-3",
+    "correctness": true
+  },
+  {
+    "id": "incident-none-pattern",
+    "cited_text": "4,129",
+    "ref_ids_str": "lsRmFsHfgLjdlEr1-cell-0-1-number-0 * lsRmFsHfgLjdlEr1-row-header-0-session-count",
+    "correctness": false
+  },
+  {
+    "id": "incident-none-pattern",
+    "cited_text": "41.29%",
+    "ref_ids_str": "lsRmFsHfgLjdlEr1-cell-0-1-number-0",
+    "correctness": false
+  },
+  {
+    "id": "incident-none-pattern",
+    "cited_text": "903",
+    "ref_ids_str": "lsRmFsHfgLjdlEr1-cell-0-1-number-2 * lsRmFsHfgLjdlEr1-row-header-0-session-count",
+    "correctness": false
+  },
+  {
+    "id": "incident-none-funnel",
+    "cited_text": "8,642 (86.42%)",
+    "ref_ids_str": "T3PHN4k39OB1nMjQ-row-header-0-session-count * T3PHN4k39OB1nMjQ-cell-0-0-number-1 , T3PHN4k39OB1nMjQ-cell-0-0-number-1",
+    "correctness": true
+  },
+  {
+    "id": "incident-none-funnel",
+    "cited_text": "41.24%",
+    "ref_ids_str": "T3PHN4k39OB1nMjQ-cell-0-0-number-3",
+    "correctness": true
+  },
+  {
+    "id": "incident-none-funnel",
+    "cited_text": "slight minority",
+    "ref_ids_str": "100 - T3PHN4k39OB1nMjQ-cell-0-0-number-3",
+    "correctness": true
+  },
+  {
+    "id": "incident-num-filter-numerical",
+    "cited_text": "2,304",
+    "ref_ids_str": "RNoTzfuUNJbRYBgb-row-header-0-session-count",
+    "correctness": true
+  },
+  {
+    "id": "incident-num-filter-numerical",
+    "cited_text": "12.85",
+    "ref_ids_str": "RNoTzfuUNJbRYBgb-cell-0-0",
+    "correctness": true
+  },
+  {
+    "id": "incident-num-filter-numerical",
+    "cited_text": "23.0%",
+    "ref_ids_str": "RNoTzfuUNJbRYBgb-row-header-0-session-count / (RNoTzfuUNJbRYBgb-row-header-0-session-count + RNoTzfuUNJbRYBgb-row-header-1-session-count)",
+    "correctness": false
+  },
+  {
+    "id": "incident-num-filter-numerical",
+    "cited_text": "73.4%",
+    "ref_ids_str": "(RNoTzfuUNJbRYBgb-cell-0-0 - RNoTzfuUNJbRYBgb-cell-1-0) / RNoTzfuUNJbRYBgb-cell-1-0",
+    "correctness": true
+  },
+  {
+    "id": "incident-num-filter-categorical",
+    "cited_text": "48.12%",
+    "ref_ids_str": "PupUBnPwitFxMVn1-cell-0-0-number-0",
+    "correctness": true
+  },
+  {
+    "id": "incident-num-filter-categorical",
+    "cited_text": "1,902",
+    "ref_ids_str": "PupUBnPwitFxMVn1-row-header-0-session-count * PupUBnPwitFxMVn1-cell-0-0-number-1",
+    "correctness": true
+  },
+  {
+    "id": "incident-num-filter-categorical",
+    "cited_text": "5.43%",
+    "ref_ids_str": "PupUBnPwitFxMVn1-cell-0-0-number-3",
+    "correctness": true
+  },
+  {
+    "id": "incident-num-filter-categorical",
+    "cited_text": "4,910",
+    "ref_ids_str": "PupUBnPwitFxMVn1-row-header-0-session-count",
+    "correctness": true
+  },
+  {
+    "id": "incident-num-filter-event-attr",
+    "cited_text": "438",
+    "ref_ids_str": "(k5EH5O6qGWBGOhVW-row-header-0-event-count * k5EH5O6qGWBGOhVW-cell-0-0-number-1) + (k5EH5O6qGWBGOhVW-row-header-1-event-count * k5EH5O6qGWBGOhVW-cell-1-0-number-1)",
+    "correctness": false
+  },
+  {
+    "id": "incident-num-filter-event-attr",
+    "cited_text": "219",
+    "ref_ids_str": "k5EH5O6qGWBGOhVW-row-header-0-event-count * k5EH5O6qGWBGOhVW-cell-0-0-number-2",
+    "correctness": false
+  },
+  {
+    "id": "incident-num-filter-event-attr",
+    "cited_text": "317",
+    "ref_ids_str": "k5EH5O6qGWBGOhVW-row-header-0-session-count + k5EH5O6qGWBGOhVW-row-header-1-session-count",
+    "correctness": false
+  },
+  {
+    "id": "incident-num-filter-pattern",
+    "cited_text": "2,514",
+    "ref_ids_str": "wsxLMP1rJNjiRt4c-row-header-0-session-count",
+    "correctness": true
+  },
+  {
+    "id": "incident-num-filter-pattern",
+    "cited_text": "642",
+    "ref_ids_str": "wsxLMP1rJNjiRt4c-row-header-4-session-count",
+    "correctness": true
+  },
+  {
+    "id": "incident-num-filter-pattern",
+    "cited_text": "Variant 8",
+    "ref_ids_str": "wsxLMP1rJNjiRt4c-row-header-1-session-count-step-2-recordAttribute-value",
+    "correctness": true
+  },
+  {
+    "id": "incident-num-filter-pattern",
+    "cited_text": "54.1%",
+    "ref_ids_str": "(wsxLMP1rJNjiRt4c-row-header-4-session-count + wsxLMP1rJNjiRt4c-row-header-3-session-count + wsxLMP1rJNjiRt4c-row-header-1-session-count) / wsxLMP1rJNjiRt4c-row-header-0-session-count",
+    "correctness": true
+  },
+  {
+    "id": "incident-num-filter-funnel",
+    "cited_text": "4,814",
+    "ref_ids_str": "VUZtzfRw7QRXnG32-row-header-0-session-count",
+    "correctness": true
+  },
+  {
+    "id": "incident-num-filter-funnel",
+    "cited_text": "4,407",
+    "ref_ids_str": "VUZtzfRw7QRXnG32-row-header-0-session-count * VUZtzfRw7QRXnG32-cell-0-0-number-1",
+    "correctness": true
+  },
+  {
+    "id": "incident-num-filter-funnel",
+    "cited_text": "91.12%",
+    "ref_ids_str": "VUZtzfRw7QRXnG32-cell-0-0-number-1",
+    "correctness": true
+  },
+  {
+    "id": "incident-num-filter-funnel",
+    "cited_text": "2,538",
+    "ref_ids_str": "VUZtzfRw7QRXnG32-row-header-0-session-count * VUZtzfRw7QRXnG32-cell-0-0-number-2",
+    "correctness": true
+  },
+  {
+    "id": "incident-num-filter-funnel",
+    "cited_text": "52.72%",
+    "ref_ids_str": "VUZtzfRw7QRXnG32-cell-0-0-number-2",
+    "correctness": true
+  },
+  {
+    "id": "incident-num-filter-funnel",
+    "cited_text": "2,538",
+    "ref_ids_str": "VUZtzfRw7QRXnG32-row-header-0-session-count * VUZtzfRw7QRXnG32-cell-0-0-number-3",
+    "correctness": true
+  },
+  {
+    "id": "incident-cat-filter-numerical",
+    "cited_text": "61.27",
+    "ref_ids_str": "ej4Xf2V2gt44Zj4T-cell-1-1",
+    "correctness": true
+  },
+  {
+    "id": "incident-cat-filter-numerical",
+    "cited_text": "19.45",
+    "ref_ids_str": "ej4Xf2V2gt44Zj4T-cell-1-0",
+    "correctness": true
+  },
+  {
+    "id": "incident-cat-filter-numerical",
+    "cited_text": "2,840",
+    "ref_ids_str": "ej4Xf2V2gt44Zj4T-row-header-0-session-count + ej4Xf2V2gt44Zj4T-row-header-1-session-count + ej4Xf2V2gt44Zj4T-row-header-2-session-count + ej4Xf2V2gt44Zj4T-row-header-3-session-count + ej4Xf2V2gt44Zj4T-row-header-4-session-count + ej4Xf2V2gt44Zj4T-row-header-5-session-count + ej4Xf2V2gt44Zj4T-row-header-6-session-count",
+    "correctness": false
+  },
+  {
+    "id": "incident-cat-filter-numerical",
+    "cited_text": "third-most",
+    "ref_ids_str": "ej4Xf2V2gt44Zj4T-row-header-4-session-count > ej4Xf2V2gt44Zj4T-row-header-1-session-count > ej4Xf2V2gt44Zj4T-row-header-2-session-count",
+    "correctness": true
+  },
+  {
+    "id": "incident-cat-filter-categorical",
+    "cited_text": "312",
+    "ref_ids_str": "TLjVD1OLKSg89MqE-row-header-0-session-count",
+    "correctness": true
+  },
+  {
+    "id": "incident-cat-filter-categorical",
+    "cited_text": "48.5%",
+    "ref_ids_str": "TLjVD1OLKSg89MqE-cell-0-0-number-0",
+    "correctness": true
+  },
+  {
+    "id": "incident-cat-filter-categorical",
+    "cited_text": "most frequent",
+    "ref_ids_str": "TLjVD1OLKSg89MqE-cell-0-0-number-0 > TLjVD1OLKSg89MqE-cell-0-0-number-2",
+    "correctness": true
+  },
+  {
+    "id": "incident-cat-filter-event-attr",
+    "cited_text": "1,455",
+    "ref_ids_str": "e2nliE5eOsGvfXzB-row-header-1-session-count",
+    "correctness": true
+  },
+  {
+    "id": "incident-cat-filter-event-attr",
+    "cited_text": "71.4%",
+    "ref_ids_str": "e2nliE5eOsGvfXzB-row-header-1-session-count / e2nliE5eOsGvfXzB-row-header-0-session-count",
+    "correctness": true
+  },
+  {
+    "id": "incident-cat-filter-event-attr",
+    "cited_text": "Emma",
+    "ref_ids_str": "e2nliE5eOsGvfXzB-row-header-3-session-count > e2nliE5eOsGvfXzB-row-header-2-session-count",
+    "correctness": false
+  },
+  {
+    "id": "incident-cat-filter-event-attr",
+    "cited_text": "David",
+    "ref_ids_str": "e2nliE5eOsGvfXzB-row-header-3-session-count > e2nliE5eOsGvfXzB-row-header-2-session-count",
+    "correctness": false
+  },
+  {
+    "id": "incident-cat-filter-event-attr",
+    "cited_text": "3,214",
+    "ref_ids_str": "e2nliE5eOsGvfXzB-row-header-1-event-count",
+    "correctness": true
+  },
+  {
+    "id": "incident-cat-filter-pattern",
+    "cited_text": "2,840",
+    "ref_ids_str": "ih16YHhJ1zZWiF5p-row-header-0-session-count",
+    "correctness": true
+  },
+  {
+    "id": "incident-cat-filter-pattern",
+    "cited_text": "46.22%",
+    "ref_ids_str": "EjqlH7DXaNG7hbtJ-cell-0-2-number-0",
+    "correctness": false
+  },
+  {
+    "id": "incident-cat-filter-pattern",
+    "cited_text": "9.15",
+    "ref_ids_str": "ih16YHhJ1zZWiF5p-cell-0-0",
+    "correctness": true
+  },
+  {
+    "id": "incident-cat-filter-funnel",
+    "cited_text": "742",
+    "ref_ids_str": "5TsucUiH69PuumBK-row-header-0-session-count",
+    "correctness": true
+  },
+  {
+    "id": "incident-cat-filter-funnel",
+    "cited_text": "485",
+    "ref_ids_str": "5TsucUiH69PuumBK-row-header-0-session-count * 5TsucUiH69PuumBK-cell-0-0-number-2",
+    "correctness": true
+  },
+  {
+    "id": "incident-cat-filter-funnel",
+    "cited_text": "78.2%",
+    "ref_ids_str": "5TsucUiH69PuumBK-cell-0-0-number-2",
+    "correctness": true
+  },
+  {
+    "id": "incident-cat-filter-funnel",
+    "cited_text": "moderate",
+    "ref_ids_str": "5TsucUiH69PuumBK-cell-0-0-number-3 / 5TsucUiH69PuumBK-cell-0-0-number-2",
+    "correctness": false
+  },
+  {
+    "id": "incident-segmentation-numerical",
+    "cited_text": "8.42 hours",
+    "ref_ids_str": "wiuBZ0PFqzioMDvB-cell-1-0",
+    "correctness": true
+  },
+  {
+    "id": "incident-segmentation-numerical",
+    "cited_text": "4,120 tickets",
+    "ref_ids_str": "wiuBZ0PFqzioMDvB-row-header-1-session-count",
+    "correctness": true
+  },
+  {
+    "id": "incident-segmentation-numerical",
+    "cited_text": "41.2%",
+    "ref_ids_str": "wiuBZ0PFqzioMDvB-row-header-1-session-count / wiuBZ0PFqzioMDvB-row-header-0-session-count",
+    "correctness": true
+  },
+  {
+    "id": "incident-segmentation-numerical",
+    "cited_text": "7.84 hours",
+    "ref_ids_str": "wiuBZ0PFqzioMDvB-cell-1-0",
+    "correctness": false
+  },
+  {
+    "id": "incident-segmentation-numerical",
+    "cited_text": "1.08 hours",
+    "ref_ids_str": "wiuBZ0PFqzioMDvB-cell-1-1",
+    "correctness": true
+  },
+  {
+    "id": "incident-segmentation-numerical",
+    "cited_text": "33.87 hours",
+    "ref_ids_str": "wiuBZ0PFqzioMDvB-cell-1-2",
+    "correctness": true
+  },
+  {
+    "id": "incident-segmentation-categorical",
+    "cited_text": "4,217",
+    "ref_ids_str": "31wAZ0nbB0jtgUkl-row-header-0-session-count",
+    "correctness": true
+  },
+  {
+    "id": "incident-segmentation-categorical",
+    "cited_text": "46.43%",
+    "ref_ids_str": "31wAZ0nbB0jtgUkl-cell-0-0-number-0",
+    "correctness": true
+  },
+  {
+    "id": "incident-segmentation-categorical",
+    "cited_text": "1,412",
+    "ref_ids_str": "31wAZ0nbB0jtgUkl-row-header-0-session-count * 31wAZ0nbB0jtgUkl-cell-0-0-number-1",
+    "correctness": true
+  },
+  {
+    "id": "incident-segmentation-categorical",
+    "cited_text": "Technical Issues",
+    "ref_ids_str": "31wAZ0nbB0jtgUkl-row-header-0-session-count * 31wAZ0nbB0jtgUkl-cell-0-0-number-5 , 31wAZ0nbB0jtgUkl-cell-0-0-step-2-category-5-value",
+    "correctness": false
+  },
+  {
+    "id": "incident-segmentation-event-attr",
+    "cited_text": "2,940",
+    "ref_ids_str": "DgnTTqyPmRVihfq0-row-header-0-session-count , uK5v5zFS7JjC2Ir9-row-header-2-session-count , DgnTTqyPmRVihfq0-row-header-0-event-count * DgnTTqyPmRVihfq0-cell-0-0-number-4",
+    "correctness": false
+  },
+  {
+    "id": "incident-segmentation-event-attr",
+    "cited_text": "4,215",
+    "ref_ids_str": "DgnTTqyPmRVihfq0-row-header-0-event-count * DgnTTqyPmRVihfq0-cell-0-0-number-0",
+    "correctness": true
+  },
+  {
+    "id": "incident-segmentation-event-attr",
+    "cited_text": "1,350",
+    "ref_ids_str": "DgnTTqyPmRVihfq0-row-header-0-event-count * DgnTTqyPmRVihfq0-cell-0-0-number-1",
+    "correctness": true
+  },
+  {
+    "id": "incident-segmentation-event-attr",
+    "cited_text": "582",
+    "ref_ids_str": "DgnTTqyPmRVihfq0-row-header-0-event-count * DgnTTqyPmRVihfq0-cell-0-0-number-4",
+    "correctness": true
+  },
+  {
+    "id": "incident-segmentation-pattern",
+    "cited_text": "8.24",
+    "ref_ids_str": "WBfJzKU9R1Z2TYuN-row-header-0-event-count / WBfJzKU9R1Z2TYuN-row-header-0-session-count",
+    "correctness": false
+  },
+  {
+    "id": "incident-segmentation-pattern",
+    "cited_text": "21.5%",
+    "ref_ids_str": "670BMgCozuaPCH0Z-cell-0-2-number-0",
+    "correctness": false
+  },
+  {
+    "id": "incident-segmentation-pattern",
+    "cited_text": "4,850",
+    "ref_ids_str": "yYrYbbOMH3Pcsmln-row-header-1-session-count",
+    "correctness": false
+  },
+  {
+    "id": "incident-segmentation-funnel",
+    "cited_text": "11,500",
+    "ref_ids_str": "gfweHfbyD70egrcF-row-header-0-session-count",
+    "correctness": true
+  },
+  {
+    "id": "incident-segmentation-funnel",
+    "cited_text": "42.5%",
+    "ref_ids_str": "gfweHfbyD70egrcF-row-header-7-session-count / gfweHfbyD70egrcF-row-header-0-session-count",
+    "correctness": true
+  },
+  {
+    "id": "incident-segmentation-funnel",
+    "cited_text": "76.8%",
+    "ref_ids_str": "gfweHfbyD70egrcF-row-header-4-session-count / gfweHfbyD70egrcF-row-header-3-session-count",
+    "correctness": true
+  },
+  {
+    "id": "incident-pattern-filter-numerical",
+    "cited_text": "14.85 hours",
+    "ref_ids_str": "xEUe9bM5JWljalgK-row-header-1-duration",
+    "correctness": true
+  },
+  {
+    "id": "incident-pattern-filter-numerical",
+    "cited_text": "2,842",
+    "ref_ids_str": "xEUe9bM5JWljalgK-row-header-1-session-count",
+    "correctness": true
+  },
+  {
+    "id": "incident-pattern-filter-numerical",
+    "cited_text": "28.42%",
+    "ref_ids_str": "xEUe9bM5JWljalgK-row-header-1-session-count / xEUe9bM5JWljalgK-row-header-0-session-count",
+    "correctness": true
+  },
+  {
+    "id": "incident-pattern-filter-numerical",
+    "cited_text": "11.43 hours",
+    "ref_ids_str": "xEUe9bM5JWljalgK-row-header-1-duration",
+    "correctness": false
+  },
+  {
+    "id": "incident-pattern-filter-numerical",
+    "cited_text": "44.73 hours",
+    "ref_ids_str": "ZTkErnskr6nrO6lM-cell-1-0",
+    "correctness": true
+  },
+  {
+    "id": "incident-pattern-filter-categorical",
+    "cited_text": "6,128",
+    "ref_ids_str": "6TSCttbKTGjIospT-row-header-0-session-count",
+    "correctness": true
+  },
+  {
+    "id": "incident-pattern-filter-categorical",
+    "cited_text": "second",
+    "ref_ids_str": "6TSCttbKTGjIospT-cell-0-0-number-0",
+    "correctness": true
+  },
+  {
+    "id": "incident-pattern-filter-categorical",
+    "cited_text": "highest",
+    "ref_ids_str": "6TSCttbKTGjIospT-cell-0-0-number-4",
+    "correctness": true
+  },
+  {
+    "id": "incident-pattern-filter-categorical",
+    "cited_text": "45%",
+    "ref_ids_str": "6TSCttbKTGjIospT-cell-0-0-number-0",
+    "correctness": true
+  },
+  {
+    "id": "incident-pattern-filter-event-attr",
+    "cited_text": "6,432",
+    "ref_ids_str": "6XU5mgMgkZ6bjOxp-row-header-0-session-count",
+    "correctness": true
+  },
+  {
+    "id": "incident-pattern-filter-event-attr",
+    "cited_text": "7,110",
+    "ref_ids_str": "6XU5mgMgkZ6bjOxp-row-header-0-event-count * 6XU5mgMgkZ6bjOxp-cell-0-0-number-0",
+    "correctness": true
+  },
+  {
+    "id": "incident-pattern-filter-event-attr",
+    "cited_text": "54%",
+    "ref_ids_str": "6XU5mgMgkZ6bjOxp-cell-0-1-number-0",
+    "correctness": true
+  },
+  {
+    "id": "incident-pattern-filter-event-attr",
+    "cited_text": "4,106",
+    "ref_ids_str": "6XU5mgMgkZ6bjOxp-row-header-0-event-count * 6XU5mgMgkZ6bjOxp-cell-0-0-number-6",
+    "correctness": true
+  },
+  {
+    "id": "incident-pattern-filter-pattern",
+    "cited_text": "512",
+    "ref_ids_str": "YaVfzhcCggbyBvQa-row-header-1-session-count",
+    "correctness": true
+  },
+  {
+    "id": "incident-pattern-filter-pattern",
+    "cited_text": "5.12%",
+    "ref_ids_str": "YaVfzhcCggbyBvQa-row-header-1-session-count / YaVfzhcCggbyBvQa-row-header-0-session-count",
+    "correctness": true
+  },
+  {
+    "id": "incident-pattern-filter-pattern",
+    "cited_text": "512",
+    "ref_ids_str": "YaVfzhcCggbyBvQa-row-header-1-session-count",
+    "correctness": true
+  },
+  {
+    "id": "incident-pattern-filter-pattern",
+    "cited_text": "Level 1 escalates to level 2 support",
+    "ref_ids_str": "YaVfzhcCggbyBvQa-cell-2-0",
+    "correctness": false
+  },
+  {
+    "id": "incident-pattern-filter-pattern",
+    "cited_text": "Level 1 escalates to level 2 support",
+    "ref_ids_str": "YaVfzhcCggbyBvQa-cell-2-0",
+    "correctness": false
+  },
+  {
+    "id": "incident-pattern-filter-funnel",
+    "cited_text": "5,114",
+    "ref_ids_str": "tgmv2ItJmOPnu1Ki-row-header-0-session-count * tgmv2ItJmOPnu1Ki-cell-0-0-number-1",
+    "correctness": true
+  },
+  {
+    "id": "incident-pattern-filter-funnel",
+    "cited_text": "88.2%",
+    "ref_ids_str": "tgmv2ItJmOPnu1Ki-cell-0-0-number-1",
+    "correctness": true
+  },
+  {
+    "id": "incident-pattern-filter-funnel",
+    "cited_text": "4,417",
+    "ref_ids_str": "tgmv2ItJmOPnu1Ki-row-header-0-session-count * tgmv2ItJmOPnu1Ki-cell-0-0-number-3",
+    "correctness": true
+  },
+  {
+    "id": "incident-pattern-filter-funnel",
+    "cited_text": "76.2%",
+    "ref_ids_str": "tgmv2ItJmOPnu1Ki-cell-0-0-number-3",
+    "correctness": true
+  }
+]

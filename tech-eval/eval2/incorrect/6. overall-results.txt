@@ -1,0 +1,27 @@
+total error count: 181
+total error identified: 179
+error identification accuracy: 98.9% (179/181)
+
+error reference pair count: 211
+correct association: 181
+error association accuracy: 85.8% (181/211)
+
+--- Breakdown by row operation ---
+
+row operation                                           Error ID        Error Assoc
+-----------------------------------------------------------------------------------
+none                                               97.1% (33/34)      87.2% (34/39)
+num-filter                                         97.0% (32/33)      89.2% (33/37)
+cat-filter                                        100.0% (37/37)      87.2% (41/47)
+segmentation                                      100.0% (36/36)      76.7% (33/43)
+pattern-filter                                    100.0% (41/41)      88.9% (40/45)
+
+--- Breakdown by column operation ---
+
+column operation                                        Error ID        Error Assoc
+-----------------------------------------------------------------------------------
+numerical                                          94.3% (33/35)      90.2% (37/41)
+categorical                                       100.0% (36/36)      97.2% (35/36)
+event-attr                                        100.0% (37/37)      82.9% (34/41)
+pattern                                           100.0% (36/36)      70.2% (33/47)
+funnel                                            100.0% (37/37)      91.3% (42/46)

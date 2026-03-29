@@ -1,0 +1,252 @@
+[
+  {
+    "id": "clickstream-none-numerical",
+    "prompt": "What is the average total purchase amount across all sessions?",
+    "response": "Across the total dataset of <fact>10,000</fact> recorded sessions, the average purchase amount for all visitors is $<fact>37.49</fact>. This calculation accounts for the <fact>7,132</fact> sessions that ended without a purchase, which represents a significant majority of the traffic. For the <fact>2,868</fact> sessions that successfully converted, the average purchase amount increases to $<fact>130.73</fact>. This results in an overall conversion rate of <fact>28.68</fact>% for the period covered in the logs. The individual transactions varied widely, with the highest single purchase amount reaching $<fact>1,815.84</fact>."
+  },
+  {
+    "id": "clickstream-none-categorical",
+    "prompt": "What is the traffic source distribution across all sessions?",
+    "response": "Across the total <fact>10,000</fact> sessions recorded, organic traffic is the most dominant source, accounting for <fact>3,360</fact> sessions or <fact>33.60</fact>% of the total. This is followed by direct traffic, which represents <fact>25.34</fact>% of all activity with <fact>2,534</fact> sessions. Social and paid channels contribute <fact>12.31</fact>% and <fact>11.91</fact>% respectively, while referral traffic is the smallest segment at <fact>8.24</fact>%. Collectively, the top two sources, organic and direct, comprise approximately <fact>58.94</fact>% of the overall traffic distribution."
+  },
+  {
+    "id": "clickstream-none-event-attr",
+    "prompt": "What product categories are most commonly browsed?",
+    "response": "The most commonly browsed product category in this clickstream dataset is **Books** which is the top category, which recorded <fact>7,809</fact> page views and makes up approximately <fact>17.43</fact>% of all browsing activity. **Toys** is the second most frequent category with a <fact>15.16</fact>% share of all events with <fact>7,369</fact> views, followed closely by **Beauty** which accounts for <fact>15.95</fact>% of views. Conversely, **Electronics** is the least browsed category among the primary groups representing the smallest portion (<fact>8.38</fact>%) of categorized events, totaling <fact>4,662</fact> views. Together, the top three categories—Books, Toys, and Beauty—represent nearly <fact>50</fact>% of the total browsing sessions recorded in the data."
+  },
+  {
+    "id": "clickstream-none-pattern",
+    "prompt": "What are the most common page navigation patterns?",
+    "response": "Analysis of the clickstream data reveals that the most common navigation pattern is a single \"page_view\" event, representing <fact>9.21</fact>% (<fact>921</fact> sessions) of all recorded visits. The second most frequent sequence consists of two consecutive \"page_view\" events, which accounts for <fact>6.50</fact>% (<fact>650</fact> sessions) of the <fact>10,000</fact> total sessions. Interestingly, the full conversion path from a \"page_view\" to a \"purchase\" event is significantly rarer, appearing in just <fact>1.33</fact>% (<fact>133</fact> sessions) of the dataset. These patterns suggest that a substantial portion of users are casual browsers who exit after minimal interaction with the site."
+  },
+  {
+    "id": "clickstream-none-funnel",
+    "prompt": "What is the funnel from page_view to add_to_cart to checkout to purchase?",
+    "response": "The session funnel begins with <fact>10,000</fact> unique sessions that recorded a page_view, of which <fact>6,812</fact> sessions (<fact>68.12</fact>%) proceeded to the add_to_cart stage. Following this, the volume drops to <fact>3,834</fact> sessions that reached the checkout phase, marking a session-to-checkout conversion rate of <fact>38.34</fact>%. Ultimately, <fact>2,868</fact> of these sessions resulted in a successful purchase, achieving a <fact>74.80</fact>% conversion rate specifically from the checkout step. This sequence identifies the transition from add_to_cart to checkout as the most significant point of friction, as only <fact>56.28</fact>% of cart-active sessions moved forward to checkout. Overall, the full-funnel conversion rate from initial page_view to purchase stands at <fact>28.68</fact>%."
+  },
+  {
+    "id": "clickstream-num-filter-numerical",
+    "prompt": "For users aged 45 to 70, what is the sum of total purchase amounts?",
+    "response": "For users aged 45 to 70, the sum of total purchase amounts is $<fact>161,074.22</fact>. This age group accounts for <fact>4,457</fact> sessions in the dataset, representing approximately <fact>42.96</fact>% of the overall purchase amount across all sessions. Out of these sessions, <fact>1,282</fact> resulted in a successful conversion, with an average purchase value of $<fact>125.64</fact>. <fact>Most</fact> of the activity within this demographic occurred on mobile devices, with the United States being the <fact>most frequent</fact> session country."
+  },
+  {
+    "id": "clickstream-num-filter-categorical",
+    "prompt": "For sessions with more than 5 page views, what is the device distribution?",
+    "response": "Among the dataset's high-engagement sessions, there are a total of <fact>3,688</fact> sessions that recorded more than 5 page views. Mobile devices represent the largest share of this user segment, making up <fact>53.77</fact>% of the traffic with <fact>1,983</fact> individual sessions. Desktop computers are the second most preferred method for these sessions, contributing <fact>38.88</fact>% of the total or <fact>1,434</fact> sessions. Tablets account for the smallest portion of this high-activity group, representing only <fact>7.35</fact>% of the sessions with <fact>271</fact> total records. This distribution indicates that mobile users are significantly more likely to engage in longer browsing sessions compared to tablet users."
+  },
+  {
+    "id": "clickstream-num-filter-event-attr",
+    "prompt": "For users aged 25 to 40, what payment methods appear in their events?",
+    "response": "For users aged 25 to 40, <fact>four</fact> distinct payment methods appear in their event data: card, paypal, wallet, and cod. The most prominent method is card, which was used in <fact>587</fact> separate sessions, accounting for <fact>72.02</fact>% of all recorded payments for this age range. Paypal serves as the second most frequent option with <fact>112</fact> sessions, while digital wallets were used in <fact>79</fact> sessions. In total, <fact>815</fact> payment events were documented out of the <fact>2,785</fact> sessions involving users in this 25-40 age cohort."
+  },
+  {
+    "id": "clickstream-num-filter-funnel",
+    "prompt": "For users under 30, what is the conversion funnel from page_view to add_to_cart to purchase?",
+    "response": "For users under 30, the clickstream data identifies <fact>2,014</fact> sessions that began with at least one page_view event. Of these initial interactions, <fact>1,379</fact> sessions transitioned to the next stage by including an add_to_cart action, representing a strong mid-funnel conversion rate of <fact>68.47</fact>%. Ultimately, <fact>559</fact> of these sessions resulted in a completed purchase, yielding an overall session conversion rate of <fact>27.76</fact>% for the under-30 demographic. Notably, once an item was added to the cart, the conversion rate into a final purchase stood at <fact>40.54</fact>%, indicating a relatively low abandonment rate compared to earlier stages."
+  },
+  {
+    "id": "clickstream-cat-filter-numerical",
+    "prompt": "For organic traffic, what is the average number of unique products viewed?",
+    "response": "The organic traffic source accounts for <fact>3,360</fact> sessions, which represents <fact>33.60</fact>% of the total sessions analyzed in the dataset. For these organic sessions, the average number of unique products viewed per visit is <fact>4.44</fact>. This engagement level is slightly higher than the <fact>4.33</fact> unique products viewed by visitors arriving via paid channels. Additionally, organic users generate an average of <fact>4.47</fact> page views per session, illustrating a high level of interest in the site's offerings."
+  },
+  {
+    "id": "clickstream-cat-filter-categorical",
+    "prompt": "For desktop users, how many unique session countries are there?",
+    "response": "Among the desktop user base, there are <fact>17</fact> unique session countries represented across the data set. These sessions account for <fact>38.29</fact>% of the total recorded activity, with <fact>3,829</fact> total sessions being attributed to desktop devices. The United States is the most common session country for this group, with <fact>646</fact> sessions. India follows as the second most frequent country for desktop traffic, contributing <fact>304</fact> individual sessions."
+  },
+  {
+    "id": "clickstream-cat-filter-event-attr",
+    "prompt": "For US visitors, what product categories are most commonly browsed?",
+    "response": "Among US visitors, the \"Books\" category is the most commonly browsed, accounting for <fact>1,442</fact> page views and approximately <fact>17.97</fact>% of total US browsing activity. This is followed by \"Beauty,\" which generated <fact>1,333</fact> page views, and \"Toys\" with <fact>1,242</fact> views. \"Fashion\" also shows significant engagement, contributing <fact>1,106</fact> page views to the total. In contrast, \"Electronics\" is the least browsed category among the primary segments, with <fact>897</fact> total page views. Overall, the dataset captures <fact>8,025</fact> distinct page view events from US visitors across these various product lines."
+  },
+  {
+    "id": "clickstream-cat-filter-pattern",
+    "prompt": "For mobile users, what are the most common product category browsing sequences?",
+    "response": "Among the <fact>5,437</fact> mobile browsing sessions analyzed, the <fact>most frequent</fact> product category browsing pattern consists of a single-step view, with the \"Books\" category topping the list at <fact>129</fact> sessions. However, a significant majority of mobile users (<fact>72.71</fact>%, or <fact>3,953</fact> sessions) engaged in more complex browsing by visiting multiple unique product categories. The most common multi-category transition observed is \"Books -> Toys,\" occurring in <fact>24</fact> distinct sessions, followed closely by \"Books -> Fashion\" and \"Books -> Home & Kitchen,\" which each appeared in <fact>22</fact> sessions. Repetitive viewing of the same category is also prevalent, with sequences like \"Toys -> Toys\" and \"Beauty -> Beauty\" both appearing <fact>47</fact> times. Across all mobile events, \"Books\" remains the most viewed category overall with a total of <fact>4,167</fact> page views."
+  },
+  {
+    "id": "clickstream-cat-filter-funnel",
+    "prompt": "For users who opted into marketing, what is the conversion funnel from page_view to add_to_cart to checkout to purchase?",
+    "response": "For the <fact>5,490</fact> sessions where users opted into marketing, the conversion funnel shows a steady decline as users progress toward purchase. While <fact>every</fact> session in this group included at least one page view, only <fact>3,726</fact> (<fact>67.87</fact>%) sessions resulted in an item being added to the cart. The checkout stage was reached by <fact>2,089</fact> (<fact>38.05</fact>%) sessions, representing a <fact>56.07</fact>% conversion rate from the add-to-cart stage. Ultimately, <fact>1,558</fact> sessions resulted in a final purchase, yielding an overall session-to-purchase conversion rate of <fact>28.38</fact>%. The highest efficiency in the funnel occurs at the final stage, where <fact>74.58</fact>% of users who reached checkout successfully completed their transaction."
+  },
+  {
+    "id": "clickstream-segmentation-numerical",
+    "prompt": "For sessions containing add_to_cart followed by purchase, what is the average number of unique products viewed?",
+    "response": "Sessions featuring an 'add_to_cart' event followed by a 'purchase' resulted in an average of <fact>5.13</fact> unique products viewed by the customer. Out of the <fact>6,812</fact> total sessions that included an 'add_to_cart' action, <fact>2,868</fact> sessions (or <fact>42.10</fact>%) successfully transitioned to a purchase later in the same session. The number of unique products explored by these purchasing users ranged from a minimum of <fact>1</fact> to a maximum of <fact>8</fact>. This group typically displays a higher level of engagement compared to the overall average of <fact>4.46</fact> unique products per session, highlighting a clear pathway from product discovery to transaction completion."
+  },
+  {
+    "id": "clickstream-segmentation-categorical",
+    "prompt": "For sessions with page_view followed by checkout, what is the session country distribution?",
+    "response": "Analysis of the session data reveals that there were <fact>3,834</fact> unique sessions where a \"page_view\" event occurred before a \"checkout\" event. The United States (US) represents the largest share of this audience, accounting for <fact>696</fact> sessions, which is approximately <fact>18.15</fact>% of the total distribution. Following the US, Great Britain (GB) and India (IN) were the next most frequent origins, contributing <fact>7.75</fact>% and <fact>7.59</fact>% of the qualified sessions, respectively. Together, these top three countries represent roughly <fact>one-third</fact> of the total activity for this specific user flow. Other significant contributors include Brazil and Germany, which make up <fact>7.09</fact>% and <fact>6.73</fact>% of the distribution."
+  },
+  {
+    "id": "clickstream-segmentation-event-attr",
+    "prompt": "Between add_to_cart and purchase events, what pages do users visit?",
+    "response": "Analysis of the event data shows that <fact>2,868</fact> sessions culminated in a purchase, and <fact>83.3</fact>% of these sessions involved browsing other pages after the first add_to_cart event. During this specific window, users viewed a total of <fact>8,149</fact> pages, with the top-ranked category being Books with <fact>1,460</fact> views. Following the leader, the Toys and Beauty categories were the next most frequent destinations with <fact>1,384</fact> and <fact>1,376</fact> views respectively. Conversely, only <fact>480</fact> sessions completed a purchase without any additional product page views between the first cart addition and the final sale."
+  },
+  {
+    "id": "clickstream-segmentation-pattern",
+    "prompt": "What are the common category browsing sequences between page_view and add_to_cart?",
+    "response": "In the sample event data, the most common category browsing sequences leading from a page_view to an add_to_cart occur within the same category <fact>99.6</fact>% of the time, totaling <fact>11,875</fact> such transitions. The highest-frequency sequence is the transition from a Books page_view to a Books add_to_cart with <fact>2,543</fact> occurrences. This is followed by the Toys category, which saw <fact>2,227</fact> sequences, and the Beauty category with <fact>2,130</fact> occurrences. Cross-category transitions, such as moving from a Books page to adding a Toy to the cart, are extremely rare, accounting for only <fact>0.4</fact>% of all analyzed sequences."
+  },
+  {
+    "id": "clickstream-segmentation-funnel",
+    "prompt": "Within sessions from page_view to purchase, what is the add_to_cart to checkout conversion funnel?",
+    "response": "Out of the <fact>10,000</fact> sessions that began with a page view, <fact>6,812</fact> sessions (<fact>68.12</fact>%) successfully advanced to adding an item to the cart. The funnel then shows that <fact>3,834</fact> of those sessions reached the checkout stage, which indicates a conversion rate of <fact>56.28</fact>% from the add-to-cart step. The final conversion from checkout to purchase was the most successful stage, with <fact>2,868</fact> sessions completing their orders at a <fact>74.80</fact>% success rate. This results in an end-to-end conversion efficiency of <fact>28.68</fact>% for the entire path from initial browsing to a final transaction."
+  },
+  {
+    "id": "clickstream-pattern-filter-numerical",
+    "prompt": "For sessions containing page_view followed by add_to_cart but not purchase, what is the average number of items added to cart?",
+    "response": "Based on the clickstream data, there are <fact>3,944</fact> sessions where a user performed a page view followed by adding at least one item to their cart but did not complete a purchase. For this specific group of sessions, the average number of items added to the cart is <fact>1.74</fact>. This segment contributed a total of <fact>6,862</fact> add-to-cart events, with individual session cart sizes ranging from <fact>1</fact> to <fact>7</fact> items. These sessions account for <fact>39.44</fact>% of the <fact>10,000</fact> total sessions recorded in the dataset. This indicates that while nearly 40% of visitors show high intent by adding items to their cart, they exit the site before reaching the purchase stage."
+  },
+  {
+    "id": "clickstream-pattern-filter-categorical",
+    "prompt": "For sessions containing add_to_cart followed by purchase, what is the traffic source distribution?",
+    "response": "For sessions where a product was added to the cart before a purchase, the distribution is dominated by organic traffic, representing <fact>32.95</fact>% of the <fact>2,868</fact> total qualifying sessions. Direct traffic constitutes the second-largest share at <fact>25.31</fact>%, while social media referrals account for <fact>13.21</fact>% of the total. On the lower end, email marketing and referral sites contribute <fact>8.37</fact>% and <fact>8.30</fact>% respectively. Combined, organic and direct sources are responsible for more than <fact>58</fact>% of these successful conversion paths."
+  },
+  {
+    "id": "clickstream-pattern-filter-event-attr",
+    "prompt": "For sessions containing checkout followed by purchase, what product categories appear?",
+    "response": "Based on the event logs, there are <fact>2,868</fact> distinct sessions where a checkout event is followed by a purchase event. Within these specific sessions, all <fact>seven</fact> product categories were present, with Books being the most frequent category, appearing <fact>3,744</fact> times. Toys and Beauty were also heavily represented, with <fact>3,517</fact> and <fact>3,410</fact> event occurrences respectively. Electronics was the least frequently encountered category in these purchase-completing sessions, appearing only <fact>1,552</fact> times."
+  },
+  {
+    "id": "clickstream-pattern-filter-pattern",
+    "prompt": "For sessions containing page_view followed by checkout, what are the most common page sequences?",
+    "response": "In the dataset, there are <fact>3,834</fact> unique sessions that include at least one page view followed by a checkout event. The most common sequence of actions in these sessions is \"page_view, add_to_cart, checkout, purchase,\" which accounts for <fact>133</fact> sessions (<fact>3.47</fact>%). Another frequent pattern is \"page_view, add_to_cart, page_view, checkout, purchase,\" appearing <fact>105</fact> times. When analyzing category-specific journeys, the path consisting of two \"Books\" category events followed by checkout and purchase is the most prevalent specific sequence, occurring <fact>31</fact> times. On average, these sessions contain <fact>8.67</fact> total events, and <fact>74.80</fact>% of them culminate in a confirmed purchase after reaching the checkout step."
+  },
+  {
+    "id": "clickstream-pattern-filter-funnel",
+    "prompt": "For sessions containing add_to_cart, what is the checkout to purchase conversion funnel?",
+    "response": "For sessions containing at least one \"add_to_cart\" event, the data shows a total of <fact>6,812</fact> sessions that entered this stage of the funnel. Among these sessions, <fact>3,834</fact> reached the checkout phase, representing a checkout entry rate of <fact>56.28</fact>% from the cart. Of the shoppers who reached the checkout stage, <fact>2,868</fact> sessions ultimately converted to a purchase, yielding a final purchase conversion rate of <fact>42.10</fact>% relative to the original cart additions. This indicates that approximately <fact>74.80</fact>% of users who proceeded to checkout successfully finalized their order."
+  },
+  {
+    "id": "incident-none-numerical",
+    "prompt": "What is the average resolution time across all tickets?",
+    "response": "Based on the records in the dataset, the average resolution time across all <fact>10,000</fact> tickets is <fact>15.06</fact> hours. The majority of these requests, specifically <fact>9,483</fact> tickets, were successfully solved and had a slightly higher average resolution time of <fact>15.45</fact> hours. Conversely, the tickets that remained unsolved had a shorter average resolution time of <fact>7.94</fact> hours. This indicates that successfully resolving a ticket typically takes <fact>more</fact> time than processes resulting in rejection or other non-solved outcomes."
+  },
+  {
+    "id": "incident-none-categorical",
+    "prompt": "What is the issue type distribution across all tickets?",
+    "response": "The dataset comprises <fact>10,000</fact> tickets, with \"Performance Issue\" being the most frequent issue type, accounting for <fact>25.71</fact>% of all entries. This is followed closely by \"Bug\" and \"Feature Request,\" which represent <fact>21.09</fact>% and <fact>20.15</fact>% of the total volume, respectively. In contrast, \"Technical Issue\" is the least common category, appearing in only <fact>460</fact> instances, or <fact>4.60</fact>% of cases. Together, the top three categories represent over <fact>66</fact>% of the service volume, while \"Maintenance\" accounts for <fact>4.98</fact>% of the total. \"Incident\" and \"Service Request\" fill out the middle ground with <fact>1,371</fact> and <fact>976</fact> tickets respectively."
+  },
+  {
+    "id": "incident-none-event-attr",
+    "prompt": "What events occur most frequently across all tickets?",
+    "response": "Across the entire dataset of <fact>76,894</fact> events, the most frequent event is \"Ticket closed,\" which occurred <fact>10,369</fact> times. This is followed closely by \"WIP - level 1 support\" with <fact>10,179</fact> occurrences and \"Ticket created,\" which has exactly <fact>10,000</fact> instances. These top three events combined represent approximately <fact>39.7</fact>% of the total event volume logged across the <fact>10,000</fact> unique sessions. Additionally, \"Ticket assigned to level 1 support\" ranks as the fourth most common event with <fact>9,880</fact> recorded occurrences."
+  },
+  {
+    "id": "incident-none-pattern",
+    "prompt": "What are the most common event sequences in ticket resolution?",
+    "response": "The most common event sequence in ticket resolution follows a path of escalation to level 2 support followed by customer feedback, appearing in <fact>3,762</fact> instances (<fact>37.62</fact>% of sessions). The second most frequent pattern involves level 1 support resolving the issue directly with feedback, which was observed in <fact>3,095</fact> cases, or <fact>30.95</fact>% of the <fact>10,000</fact> total sessions. A third common sequence follows the level 2 escalation path but omits the customer feedback step, occurring in <fact>724</fact> sessions. These three primary patterns account for over <fact>75</fact>% of the entire dataset's event flow."
+  },
+  {
+    "id": "incident-none-funnel",
+    "prompt": "What is the funnel from Ticket created to Ticket assigned to level 1 support to WIP - level 1 support to Ticket solved by level 1 support to Ticket closed?",
+    "response": "The process funnel for the <fact>10,000</fact> created tickets shows that <fact>9,695</fact> (<fact>96.95</fact>%) were successfully assigned to level 1 support. From those assigned, <fact>9,382</fact> (<fact>96.77</fact>%) transitioned to the \"WIP - level 1 support\" phase, indicating high engagement at the initial tier. However, the conversion to \"Ticket solved by level 1 support\" shows a sharp drop-off, with only <fact>3,586</fact> (<fact>35.86</fact>% of the total or <fact>38.22</fact>% of WIP tickets) reaching resolution at this level. Notably, all <fact>3,586</fact> of these resolved tickets (<fact>100.0</fact>%) reached the final \"Ticket closed\" stage within this specific sequential path. This suggests that while most tickets start with level 1, a significant majority of <fact>64.14</fact>% are either escalated or handled differently before an L1 resolution is recorded."
+  },
+  {
+    "id": "incident-num-filter-numerical",
+    "prompt": "For tickets with resolution time over 24 hours, what is the average total number of events?",
+    "response": "For the <fact>1,682</fact> tickets that required more than 24 hours to resolve, the average total number of events was <fact>9.09</fact> per session. These longer-running cases represent approximately <fact>16.8</fact>% of the total <fact>10,000</fact> recorded tickets in the dataset. By comparison, tickets resolved within 24 hours averaged <fact>7.41</fact> events, showing that more time-intensive resolutions involve additional process steps. Consequently, the average event count for tickets exceeding 24 hours is approximately <fact>22.7</fact>% higher than those completed within the first day."
+  },
+  {
+    "id": "incident-num-filter-categorical",
+    "prompt": "For tickets with customer satisfaction of 4 or above, what is the report channel distribution?",
+    "response": "Tickets with high customer satisfaction (4 or above) are primarily reported via the Website channel, which accounts for <fact>2,488</fact> tickets or <fact>53.74</fact>% of this group. Email is the second most frequent reporting method, representing <fact>36.95</fact>% of these high-rated cases with <fact>1,711</fact> total reports. The remaining distribution is split between the App and Phone channels, which contribute <fact>6.54</fact>% and <fact>2.76</fact>% respectively. In total, <fact>4,630</fact> tickets met the criteria for having a satisfaction score of 4 or higher."
+  },
+  {
+    "id": "incident-num-filter-event-attr",
+    "prompt": "For tickets with fewer than 6 events, what resolvers appear most frequently?",
+    "response": "For tickets with fewer than 6 events, Sam is the most frequent resolver, appearing <fact>401</fact> times across these sessions. David is the second most active resolver in this group, with a total of <fact>224</fact> appearances. In contrast, Emma appears as a resolver only <fact>1</fact> time for these shorter tickets. In total, <fact>313</fact> sessions were analyzed that met the criteria of having fewer than 6 events. The vast majority of these—<fact>312</fact> sessions—consisted of exactly <fact>4</fact> events."
+  },
+  {
+    "id": "incident-num-filter-pattern",
+    "prompt": "For tickets with customer satisfaction of 1 or 2, what are the most common event sequences?",
+    "response": "Among the dataset, there are <fact>2,286</fact> tickets where customers provided a low satisfaction rating of 1 or 2. The most prevalent event sequence is Variant 3, appearing in <fact>587</fact> tickets, which tracks a ticket through Level 1 assignment to an escalation and resolution at Level 2. Variant 1 follows as the second most common sequence with <fact>456</fact> instances, representing tickets resolved directly by Level 1 support. Variant 4 is the third most frequent pattern, appearing <fact>393</fact> times, and involves a Level 2 resolution without recorded customer feedback before closing. These top three event sequences represent approximately <fact>62.8</fact>% of all tickets with low satisfaction scores."
+  },
+  {
+    "id": "incident-num-filter-funnel",
+    "prompt": "For tickets with resolution time under 12 hours, what is the funnel from Ticket created to Ticket assigned to level 1 support to Ticket solved by level 1 support to Ticket closed?",
+    "response": "For tickets with a resolution time under 12 hours, there are a total of <fact>4,627</fact> cases starting the funnel at the creation event. From this initial group, <fact>4,407</fact> tickets, representing <fact>95.25</fact>% of cases, successfully progress to being assigned to level 1 support. The funnel narrows significantly at the next step, as only <fact>2,271</fact> tickets, or <fact>49.08</fact>% of the total, are actually solved by level 1 support within the same 12-hour period. Finally, all <fact>2,271</fact> of the tickets solved by level 1 support reached the ticket closed stage, resulting in <fact>no</fact> drop-off between the final two steps."
+  },
+  {
+    "id": "incident-cat-filter-numerical",
+    "prompt": "For bug reports, what is the maximum resolution time?",
+    "response": "The maximum resolution time recorded for bug reports in the dataset is <fact>55.53</fact> hours. This value is significantly higher than the average resolution time for bugs, which is approximately <fact>16.22</fact> hours across <fact>2,109</fact> total sessions. When comparing issue types, bug reports exhibit the longest maximum resolution time of any category, surpassing incidents and feature requests by nearly <fact>8</fact> hours. Bug reports represent the second-most frequent issue type in this dataset, with more than <fact>2,000</fact> unique records."
+  },
+  {
+    "id": "incident-cat-filter-categorical",
+    "prompt": "For tickets reported via Phone, what is the priority distribution?",
+    "response": "For tickets reported through the Phone channel, there are a total of <fact>290</fact> cases analyzed. The distribution shows that Medium priority is the most common category, representing approximately <fact>52.8</fact>% of the total with <fact>153</fact> tickets. Low priority follows with <fact>80</fact> tickets, accounting for about <fact>27.6</fact>% of the volume. High priority is the least frequent classification in this channel, with <fact>57</fact> tickets representing <fact>19.7</fact>% of the phone-based reports."
+  },
+  {
+    "id": "incident-cat-filter-event-attr",
+    "prompt": "For high priority tickets, what resolvers handle them most frequently?",
+    "response": "Sam is the most frequent resolver for high-priority tickets, appearing in <fact>1,809</fact> unique sessions out of a total <fact>2,039</fact> high-priority tickets. This level of involvement means Sam participates in approximately <fact>88.7</fact>% of all high-priority cases recorded. David and Emma follow as the next most frequent resolvers, managing <fact>1,243</fact> and <fact>1,139</fact> unique tickets respectively. In terms of activity volume, Sam logged <fact>3,214</fact> total events on these high-priority tickets, the highest of any staff member. Michael also plays a significant role, ranking fourth and managing <fact>921</fact> of these urgent sessions."
+  },
+  {
+    "id": "incident-cat-filter-pattern",
+    "prompt": "For feature requests, what are the most common event sequences?",
+    "response": "Analysis of the <fact>2,015</fact> feature request sessions reveals that the most frequent event sequence, accounting for <fact>39.75</fact>% of all cases, follows a path from level 1 escalation to level 2 resolution. This is followed by a direct 6-step sequence where level 1 support solves the ticket without escalation, occurring in <fact>32.01</fact>% of the data. On average, feature requests require <fact>7.40</fact> events to reach completion, reflecting the coordination needed between departments. Additionally, a specific sequence resulting in an immediate rejection by level 1 support represents <fact>3.72</fact>% of the total volume for this issue type."
+  },
+  {
+    "id": "incident-cat-filter-funnel",
+    "prompt": "For tickets reported via the App, what is the funnel from Ticket created to Ticket assigned to level 1 support to Level 1 escalates to level 2 support to Ticket solved by level 2 support to Ticket closed?",
+    "response": "For tickets reported via the App, the resolution funnel begins with <fact>600</fact> tickets created, of which <fact>584</fact> (<fact>97.3</fact>%) were assigned to level 1 support. A total of <fact>370</fact> tickets were escalated to level 2 support, accounting for approximately <fact>61.7</fact>% of the total App volume. From these escalated cases, <fact>336</fact> tickets were successfully resolved by level 2 support, representing a strong <fact>90.8</fact>% resolution rate for the second-tier team. Finally, all <fact>336</fact> of these resolved tickets eventually reached the \"Ticket closed\" stage, indicating a <fact>perfect</fact> finalization rate for this specific escalation path."
+  },
+  {
+    "id": "incident-segmentation-numerical",
+    "prompt": "For tickets that went from Ticket assigned to level 1 support to Ticket solved by level 1 support, what is the average resolution time?",
+    "response": "The average resolution time for tickets transitioning from level 1 assignment to level 1 solution is <fact>6.75</fact> hours. A total of <fact>3,586</fact> tickets followed this specific path, which represents approximately <fact>35.86</fact>% of the <fact>10,000</fact> cases in the dataset. The median resolution time is <fact>5.13</fact> hours, which is notably <fact>lower</fact> than the average, suggesting that many tickets are resolved in a shorter timeframe. Sam was the primary resolver for these cases, closing <fact>2,294</fact> tickets, while David completed <fact>1,292</fact>. The resolution times for this group ranged from a minimum of <fact>1.08</fact> hours to a maximum of <fact>33.87</fact> hours."
+  },
+  {
+    "id": "incident-segmentation-categorical",
+    "prompt": "For tickets that escalated from level 1 to level 2 support, what is the issue type distribution?",
+    "response": "A total of <fact>5,982</fact> tickets were escalated from level 1 to level 2 support in the provided data. Performance Issues constitute the largest share of these cases, with <fact>1,958</fact> tickets representing approximately <fact>32.73</fact>% of the distribution. Feature Requests are the next most frequent at <fact>1,168</fact> tickets, or <fact>19.53</fact>%, followed by Bugs at <fact>946</fact> tickets. At the lower end of the spectrum, Maintenance issues account for <fact>285</fact> of the escalated records."
+  },
+  {
+    "id": "incident-segmentation-event-attr",
+    "prompt": "Between Level 1 escalates to level 2 support and Ticket solved by level 2 support, what events occur?",
+    "response": "Between \"Level 1 escalates to level 2 support\" and \"Ticket solved by level 2 support,\" the primary event recorded is \"WIP - level 2 support,\" which occurs as the single intermediate step in <fact>4,855</fact> unique sessions. Across all <fact>5,372</fact> sessions containing this sequence, \"WIP - level 2 support\" is logged a total of <fact>5,889</fact> times. The data also shows that \"Level 2 escalates to level 3 support,\" \"WIP - level 3 support,\" and \"Ticket assigned to level 2 support\" each appear <fact>814</fact> times during this transition period. Finally, \"Customer feedback received\" is found <fact>220</fact> times between these two escalation-related events."
+  },
+  {
+    "id": "incident-segmentation-pattern",
+    "prompt": "What event patterns occur between Ticket assigned to level 1 support and Ticket closed?",
+    "response": "Between the ticket being assigned to level 1 support and its final closure, the process typically involves <fact>6.55</fact> events on average across <fact>9,695</fact> tracked sessions. The most frequent sequence, occurring in <fact>38.8</fact>% of cases, involves an escalation where level 1 moves the ticket to level 2 support before it is eventually solved and feedback is received. Approximately <fact>59.8</fact>% of all sequences include a \"Level 1 escalates to level 2 support\" event, showing a high rate of escalation within this dataset. Conversely, level 1 support successfully resolves the ticket without further escalation in <fact>3,095</fact> sessions, which is the <fact>second</fact> most common path. Nearly all tickets (<fact>96.8</fact>%) transit through a work-in-progress (WIP) state for level 1 immediately following assignment."
+  },
+  {
+    "id": "incident-segmentation-funnel",
+    "prompt": "Within tickets from Ticket created to Ticket closed, what is the funnel from WIP - level 1 support to Level 1 escalates to level 2 support to WIP - level 2 support to Ticket solved by level 2 support?",
+    "response": "Within the dataset of <fact>10,000</fact> tickets that were tracked from creation to closure, <fact>9,382</fact> sessions (<fact>93.8</fact>%) reached the \"WIP - level 1 support\" stage. The transition to level 2 support saw <fact>5,797</fact> tickets (<fact>58.0</fact>%) officially escalate, while <fact>6,082</fact> sessions actually recorded \"WIP - level 2 support\" activity. From there, level 2 support successfully solved <fact>5,677</fact> tickets, which represents a <fact>93.3</fact>% conversion rate from the level 2 work-in-progress stage. These figures suggest that while level 1 handles most initial work, over half of all closed tickets eventually require level 2 intervention to reach resolution."
+  },
+  {
+    "id": "incident-pattern-filter-numerical",
+    "prompt": "For tickets containing WIP - level 1 support followed by Ticket solved by level 1 support without escalation to level 2, what is the average resolution time?",
+    "response": "The average resolution time for tickets that were solved by level 1 support without escalation to level 2 is <fact>12.13</fact> hours. This specific subset of tickets includes <fact>3,401</fact> instances, representing <fact>34.01</fact>% of all <fact>10,000</fact> tickets in the dataset. This resolution time is <fact>lower</fact> than the overall average of <fact>15.06</fact> hours across all ticket types in the system. The median resolution time for this group is <fact>9.77</fact> hours, indicating that half of these tickets are resolved relatively quickly. Furthermore, the maximum resolution time observed for a ticket in this category reached <fact>44.73</fact> hours."
+  },
+  {
+    "id": "incident-pattern-filter-categorical",
+    "prompt": "For tickets containing Level 1 escalates to level 2 support followed by Ticket solved by level 2 support, what is the reporter distribution?",
+    "response": "Across the dataset, <fact>5,372</fact> sessions featured a sequence where Level 1 support escalated a ticket to Level 2 followed by a successful Level 2 resolution. Emily emerged as the most frequent reporter in this category with <fact>1,587</fact> tickets, representing <fact>29.54</fact>% of the total. Charlie and John contributed similar volumes of <fact>1,077</fact> and <fact>1,058</fact> sessions respectively, each hovering around the <fact>20</fact>% mark. Bob accounted for <fact>921</fact> tickets (<fact>17.14</fact>%), while Alice recorded the lowest volume with <fact>729</fact> sessions (<fact>13.57</fact>%). This distribution reveals that Emily initiates nearly <fact>30</fact>% of the cases that specifically require Level 2 intervention and closure."
+  },
+  {
+    "id": "incident-pattern-filter-event-attr",
+    "prompt": "For tickets containing Customer feedback received, what events occur most frequently?",
+    "response": "Among the <fact>8,759</fact> unique tickets that recorded customer feedback, the most frequent event is 'Customer feedback received' with <fact>9,591</fact> total occurrences. Excluding this, 'WIP - level 1 support' is the most common operational step with <fact>9,251</fact> instances, followed by 'Ticket closed' and 'Ticket created' with <fact>9,128</fact> and <fact>8,759</fact> occurrences respectively. Notably, 'WIP - level 2 support' appears <fact>6,244</fact> times, indicating that over <fact>71</fact>% of feedback-linked sessions required higher-tier technical intervention. This complexity is further evidenced by the fact that only <fact>3,586</fact> instances of 'Ticket solved by level 1 support' were recorded, whereas 'Ticket solved by level 2 support' occurred <fact>5,322</fact> times."
+  },
+  {
+    "id": "incident-pattern-filter-pattern",
+    "prompt": "For tickets containing Ticket reopened by customer, what are the most common event sequences after reopening?",
+    "response": "In the analyzed dataset of <fact>10,000</fact> total sessions, there are <fact>369</fact> instances where a ticket was reopened by a customer, representing <fact>3.69</fact>% of all cases. For all <fact>369</fact> of these occurrences, the immediate next event was WIP - level 2 support. The data shows that <fact>100</fact>% of these reopened tickets followed the exact same four-event sequence to resolution. This final path always consisted of WIP - level 2 support, followed by Ticket solved by level 2 support, Customer feedback received, and finally, Ticket closed."
+  },
+  {
+    "id": "incident-pattern-filter-funnel",
+    "prompt": "For tickets containing Level 1 escalates to level 2 support, what is the funnel from WIP - level 2 support to Ticket solved by level 2 support to Customer feedback received to Ticket closed?",
+    "response": "For the <fact>5,797</fact> tickets that included the \"Level 1 escalates to level 2 support\" event, the funnel through the level 2 resolution stages is remarkably consistent. A total of <fact>5,592</fact> sessions, or approximately <fact>96.5</fact>% of the escalated volume, transitioned into the \"WIP - level 2 support\" phase. As the process continued, <fact>5,372</fact> tickets were successfully recorded as \"Ticket solved by level 2 support,\" demonstrating a high conversion rate of <fact>92.7</fact>% from the initial escalation. Customer engagement remained strong as well, with <fact>4,868</fact> sessions reaching the \"Customer feedback received\" milestone, which is about <fact>84.0</fact>% of the escalated pool. Finally, the funnel concludes with all <fact>5,797</fact> escalated tickets reaching the \"Ticket closed\" status, representing a <fact>100</fact>% completion rate for the escalated cohort."
+  },
+  {
+    "id": "clickstream-num-filter-pattern",
+    "prompt": "For sessions with 3 or more items added to cart, what are the most common category browsing sequences?",
+    "response": "Among the <fact>1,287</fact> sessions where users added 3 or more items to their cart, the most frequent browsing sequence consists of five consecutive page views in the Books category, which was recorded in <fact>15</fact> unique sessions. These high-activity sessions typically maintain an average sequence length of <fact>6.59</fact> page views as users evaluate potential purchases. Analysis shows that only <fact>10.26</fact>% of these shoppers remained within a single product category, representing a total of <fact>132</fact> sessions that did not cross-shop. The second most common browsing pattern was a sequence of eight straight views within the Beauty category, occurring in <fact>9</fact> different sessions."
+  }
+]
